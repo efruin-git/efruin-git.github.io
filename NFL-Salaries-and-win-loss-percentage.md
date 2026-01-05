@@ -6,4 +6,8 @@ layout: default
 
 _yay_
 
+
+![Sunset over ancient ruins](images/Ancient_Ruins.jpg)
+
+
 [back](./)

@@ -7,7 +7,7 @@ layout: default
 _yay_
 
 
-![Sunset over ancient ruins](images/Ancient_Ruins.jpg)
+![NFL Salaries by Cap Hit 2020 Box and Whisker Plot](images/NFL_Salaries_cap_hit_box_whisker_0_90_perc.jpg)
 
 
 [back](./)

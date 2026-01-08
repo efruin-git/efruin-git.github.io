@@ -12,7 +12,7 @@
 
 ![Cap_Hit_Percent_2020_Box_Whisker](images/Cap_Hit_Percent_2020_Box_Whisker.png)
 
-![RMSE Screenshot](images/'RMSE Screenshot.png')
+![RMSE Screenshot](images/RMSE_Screenshot.png)
 
 ![Win_Loss_Perc_Displot](images/Win_Loss_Perc_Displot.png)
 

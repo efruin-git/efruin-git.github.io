@@ -79,7 +79,7 @@ _I will list player salaries in order, but multiple players from the same team t
 - PLAYOFF TEAM
 
 #22 **Geno Smith (QB)** $37.5M, **Las Vegas Raiders**, team record: 3-14, 14th in AFC  
-#24 **Maxx Crosby (DE)** $35.5M, **Las Vegas Radiers**
+#24 **Maxx Crosby (DE)** $35.5M, **Las Vegas Raiders**
 - _MISSED PLAYOFFS_
 
 #23 **Danielle Hunter (DE)** $35.6M, **Houston Texans**, team record: 12-5, 2nd AFC South, tied for 5th best record in NFL

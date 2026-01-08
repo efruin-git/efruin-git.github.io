@@ -1,8 +1,8 @@
----
-layout: default
----
 
-## Welcome to another page
+
+## Welcome to my NFL Salaries regression project page
+
+
 
 
 ![Box_Whisker_and_Gini_Coef](images/Box_Whisker_and_Gini_Coef.png)

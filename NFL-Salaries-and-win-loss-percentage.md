@@ -7,7 +7,7 @@ I'm a pro football fan and root for my hometown team, the Chicago Bears.  I'm ex
 
 I've played fantasy football for several years and have watched NFL games on tv.  A big topic of conversation that comes up is salaries.  I hear a lot of people say so-and-so deserves to get paid, they deserve they're money!  When players do get paid, sometimes they play well and sometimes they don't.  Sometimes they get injured and their salary is wasted.  With the playoffs upon us, I thought it would be interesting to see who's getting paid the big bucks and whether their teams are in the playoffs.  Are the big money players worth it?  How much do they influence a team's performance?
 
-I looked up the top salaries in the NFL and found the following site.  Let's compare the top money players to their team's performance in 2025.  Note there are 32 teams in the NFL and 14 make the playoffs.
+I looked up the top salaries in the NFL and found the following site.  Let's compare the top money players to their team's performance in 2025.  Note there are 32 teams in the NFL, 16 teams in each Conference (NFC and AFC), and 14 make the playoffs.
 [Top 25 NFL Salaries in 2025](https://www.nfl.com/photos/ranking-the-nfl-s-biggest-contracts-for-2025)
 
 _I will list multiple players from the same team together._
@@ -47,6 +47,48 @@ _I will list multiple players from the same team together._
 #15 (tie) Aidan Hutchinson (DE), Detroit Lions
 - MISSED PLAYOFFS
 
+#9 Justin Herbert (QB) $52.5M, Los Angeles Chargers, team record: 11-6, 2nd AFC West, 7 seed in AFC Playoffs
+- PLAYOFF TEAM
+
+#10 Lamar Jackson (QB) $52M, Baltimore Ravens, team record: 8-9, 9th in AFC
+- MISSED PLAYOFFS
+
+#11 Jalen Hurts (QB) $51M, Philadelphia Eagles, team record: 11-6, 1st NFC East, 3 seed in NFC Playoffs
+- PLAYOFF TEAM
+
+#13 Kyler Murray (QB) $46.1M, Arizona Cardinals, team record: 3-14, 16th in NFC
+- MISSED PLAYOFFS
+
+#14 Deshaun Watson (QB) $46M, Cleveland Browns, team record: 5-12, 13th in AFC
+#20 (tie) Myles Garrett (DE) $40M, Cleveland Browns
+- 2025 was Watson's 4th year on a huge contract with Cleveland.  He didn't play all year due to injury, and he missed half of last season as well.
+- MISSED PLAYOFFS
+
+#15 (tie) Patrick Mahomes (QB) $45M, Kansas City Chiefs, team record: 6-11, 12th in AFC
+- Mahomes has played in the Super Bowl 5 times and won 3.
+- MISSED PLAYOFFS
+
+#15 (tie) Kirk Cousins (QB) $45M, Atlanta Falcons, team record: 8-9, 11th in NFC
+- Cousins signed a big contract in 2024 and played most games that season.  He was replaced by the #8 pick rookie quarterback Michael Penix Jr. at the end of the season.  Cousins didn't play much this season until Penix Jr. got injured, and Cousin's ended the season with a 5-2 record.
+- MISSED PLAYOFFS
+
+#18 T.J. Watt (OLB) $41M, Pittsburgh Steelers, team record: 10-7, 1st AFC North, 4 seed in AFC Playoffs
+- PLAYOFF TEAM
+
+#20 (tie) Matthew Stafford (QB) $40M, Los Angeles Rams, team record: 12-5, 2nd NFC West, tied for 5th best record in NFL
+- PLAYOFF TEAM
+
+#22 Geno Smith (QB) $37.5M, Las Vegas Raiders, team record: 3-14, 14th in AFC
+#24 Maxx Crosby (DE) $35.5M, Las Vegas Radiers
+- MISSED PLAYOFFS
+
+#23 Danielle Hunter (DE) $35.6M, Houston Texans, team record: 12-5, 2nd AFC South, tied for 5th best record in NFL
+- PLAYOFF TEAM
+
+#25 Justin Jefferson (WR) $35M, Minnesota Vikings, team record: 9-8, 8th in NFC
+- MISSED PLAYOFFS
+
+- 
 
 
 

@@ -59,8 +59,7 @@ _I will list player salaries in order, but multiple players from the same team t
 #13 Kyler Murray (QB) $46.1M, Arizona Cardinals, team record: 3-14, 16th in NFC
 - _MISSED PLAYOFFS_
 
-#14 Deshaun Watson (QB) $46M, Cleveland Browns, team record: 5-12, 13th in AFC
-
+#14 Deshaun Watson (QB) $46M, Cleveland Browns, team record: 5-12, 13th in AFC  
 #20 (tie) Myles Garrett (DE) $40M, Cleveland Browns
 - 2025 was Watson's 4th year on a huge contract with Cleveland.  He didn't play all year due to injury, and he missed half of last season as well.
 - _MISSED PLAYOFFS_

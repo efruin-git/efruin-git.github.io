@@ -43,6 +43,10 @@ _I will list multiple players from the same team together._
 - [Brock Purdy 2023 Salary Comparison](https://www.espn.com/espn/feature/story/_/id/38512080/nfl-quarterbacks-earn-san-francisco-49ers-brock-purdy-salary)
 - PLAYOFF TEAM
 
+#7 (tie) Jared Goff (QB) $53M, Detroit Lions, team record: 9-8, 9th in NFC
+#15 (tie) Aidan Hutchinson (DE), Detroit Lions
+- MISSED PLAYOFFS
+
 
 
 

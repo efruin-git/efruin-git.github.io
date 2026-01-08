@@ -21,8 +21,8 @@ _I will list player salaries in order, but multiple players from the same team t
 - The Buffalo Bills are a perennial force.
 - PLAYOFF TEAM
 
-#2 (tie) Joe Burrow (QB) $55M, Cincinnati Bengals, team record: 6-11, 11th in AFC
-  #19 Ja'Marr Chase (WR) $40.25M, Cincinnati Bengals
+#2 (tie) Joe Burrow (QB) $55M, Cincinnati Bengals, team record: 6-11, 11th in AFC  
+#19 Ja'Marr Chase (WR) $40.25M, Cincinnati Bengals
 - Cincinnati was supposed to be a Super Bowl contender with their high-flying offense.  Perhaps they spent too much on their top players.
 - _MISSED PLAYOFFS_
 
@@ -30,8 +30,8 @@ _I will list player salaries in order, but multiple players from the same team t
 - Lawrence entered the league in 2021 and in his 5th season has the Jaguars rolling
 - PLAYOFF TEAM
 
-#2 (tie) Jordan Love (QB) $55M, Green Bay Packers, team record: 9-7-1, 2nd NFC North, 7 seed in NFC Playoffs
-  #12 Micah Parsons (LB) $46.5M, Green Bay Packers
+#2 (tie) Jordan Love (QB) $55M, Green Bay Packers, team record: 9-7-1, 2nd NFC North, 7 seed in NFC Playoffs  
+#12 Micah Parsons (LB) $46.5M, Green Bay Packers
 - Green Bay spent more money on top players than Cincinnati, but they have a much better record.
 - PLAYOFF TEAM
 
@@ -43,8 +43,8 @@ _I will list player salaries in order, but multiple players from the same team t
 - [Brock Purdy 2023 Salary Comparison](https://www.espn.com/espn/feature/story/_/id/38512080/nfl-quarterbacks-earn-san-francisco-49ers-brock-purdy-salary)
 - PLAYOFF TEAM
 
-#7 (tie) Jared Goff (QB) $53M, Detroit Lions, team record: 9-8, 9th in NFC
-  #15 (tie) Aidan Hutchinson (DE), Detroit Lions
+#7 (tie) Jared Goff (QB) $53M, Detroit Lions, team record: 9-8, 9th in NFC  
+#15 (tie) Aidan Hutchinson (DE), Detroit Lions
 - _MISSED PLAYOFFS_
 
 #9 Justin Herbert (QB) $52.5M, Los Angeles Chargers, team record: 11-6, 2nd AFC West, 7 seed in AFC Playoffs
@@ -79,8 +79,8 @@ _I will list player salaries in order, but multiple players from the same team t
 #20 (tie) Matthew Stafford (QB) $40M, Los Angeles Rams, team record: 12-5, 2nd NFC West, tied for 5th best record in NFL
 - PLAYOFF TEAM
 
-#22 Geno Smith (QB) $37.5M, Las Vegas Raiders, team record: 3-14, 14th in AFC
-  #24 Maxx Crosby (DE) $35.5M, Las Vegas Radiers
+#22 Geno Smith (QB) $37.5M, Las Vegas Raiders, team record: 3-14, 14th in AFC  
+#24 Maxx Crosby (DE) $35.5M, Las Vegas Radiers
 - _MISSED PLAYOFFS_
 
 #23 Danielle Hunter (DE) $35.6M, Houston Texans, team record: 12-5, 2nd AFC South, tied for 5th best record in NFL

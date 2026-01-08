@@ -7,10 +7,10 @@ I'm a pro football fan and root for my hometown team, the Chicago Bears.  I'm ex
 
 I've played fantasy football for several years and have watched NFL games on tv.  A big topic of conversation that comes up is salaries.  I hear a lot of people say so-and-so deserves to get paid, they deserve they're money!  When players do get paid, sometimes they play well and sometimes they don't.  Sometimes they get injured and their salary is wasted.  With the playoffs upon us, I thought it would be interesting to see who's getting paid the big bucks and whether their teams are in the playoffs.  Are the big money players worth it?  How much do they influence a team's performance?
 
-I looked up the top salaries in the NFL and found the following site.  Let's compare the top money players to their team's performance in 2025.  
-
-Note there are 32 teams in the NFL, 16 teams in each Conference (NFC and AFC), and 14 make the playoffs.
+I looked up the top salaries in the NFL and found the following site.  
 [Top 25 NFL Salaries in 2025](https://www.nfl.com/photos/ranking-the-nfl-s-biggest-contracts-for-2025)
+
+Let's compare the top money players to their team's performance in 2025.  Note there are 32 teams in the NFL, 16 teams in each Conference (NFC and AFC), and 14 make the playoffs.
 
 _I will list multiple players from the same team together._
 

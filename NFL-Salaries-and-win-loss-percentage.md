@@ -87,11 +87,11 @@ _I will list player salaries in order, but multiple players from the same team t
 
 #25 Justin Jefferson (WR) $35M, Minnesota Vikings, team record: 9-8, 8th in NFC
 - _MISSED PLAYOFFS_
-
-
-
-
-
+  
+  
+20 teams in the NFL paid at least one player a top-25 salary in 2025.  Only 9 of those teams made the playoffs.  It's also interesting to note that the three teams tied in the NFL with the best record at 14-3, the Denver Broncos, New England Patriots, and Seattle Seahawks, did not pay any player on their team a top-25 salary.  In 2023 Brock Purdy led the San Francisco 49ers to the Super Bowl on a rookie contract worth less than $2M/year.  The Denver Broncos and New England Patriots have quarterbacks on rookie contracts worth $5M/year and $9M/year respectively.  The Chicago Bears and Carolina Panthers also made the playoffs, with quarterbacks on rookie contracts earning $9M-$10M/year.  The Houston Texans round out the five teams in the playoffs this year with quarterbacks on rookie contracts.
+    
+  
 
 
 Here are several visuals I created in my regression.  They are improperly sized and out of order.  I plan on writing up my regression analysis and fixing the visuals in the next couple days.

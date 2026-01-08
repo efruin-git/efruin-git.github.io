@@ -2,6 +2,10 @@
 layout: default
 ---
 
+ADD 2025 SALARY BOX AND WHISKER PLOT GRAPHS
+USE Y-1 AND Y-2 TEAM STATS IN NEW REGRESSION OF FACTORS OUTSIDE CURRENT YEAR TEAM PERFORMANCE TO PREDICT CURRENT YEAR WIN-LOSS-PERCENTAGE
+
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./NFL-Salaries-and-win-loss-percentage.html).

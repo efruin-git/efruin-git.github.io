@@ -44,7 +44,7 @@ _I will list player salaries in order, but multiple players from the same team t
 - PLAYOFF TEAM
 
 #7 (tie) **Jared Goff (QB) $53M, Detroit Lions**, team record: 9-8, 9th in NFC  
-#15 (tie) **Aidan Hutchinson (DE), Detroit Lions**
+#15 (tie) **Aidan Hutchinson (DE) $45, Detroit Lions**
 - _MISSED PLAYOFFS_
 
 #9 **Justin Herbert (QB) $52.5M, Los Angeles Chargers**, team record: 11-6, 2nd AFC West, 7 seed in AFC Playoffs

@@ -4,8 +4,6 @@ layout: default
 
 ## Welcome to another page
 
-_yay_
-
 
 ![Box_Whisker_and_Gini_Coef](images/Box_Whisker_and_Gini_Coef.png)
 
@@ -14,7 +12,7 @@ _yay_
 
 ![Cap_Hit_Percent_2020_Box_Whisker](images/Cap_Hit_Percent_2020_Box_Whisker.png)
 
-![RMSE Screenshot](images/RMSE Screenshot.png)
+![RMSE Screenshot](images/'RMSE Screenshot.png')
 
 ![Win_Loss_Perc_Displot](images/Win_Loss_Perc_Displot.png)
 

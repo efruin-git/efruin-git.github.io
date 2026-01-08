@@ -2,7 +2,7 @@
 
 ## Welcome to My NFL Salaries Regression Project Page (regression work half-way down).
 
-1/7/2025  
+_1/7/2025_  
 I'm a pro football fan and root for my hometown team, the Chicago Bears.  I'm excited about the team's direction.  We have a great new coach, Ben Johnson, who has led the Bears to offensive production near the top of the NFL.  The Bears made the playoffs this year for the first time since 2020.  They've had a rough last 20 years.  The only other times they've made it to the playoffs since their Super Bowl appearance in 2006 were in 2010 and 2018.  I'm hoping for some better years ahead.
 
 A big topic of conversation in professional sports is salaries.  I hear a lot of people say so-and-so deserves to get paid, they deserve they're money!  When players do get paid, sometimes they play well and sometimes they don't.  Sometimes they get injured and their salary is wasted.  With the playoffs upon us, I thought it would be interesting to see who's getting paid the big bucks and whether their teams are in the playoffs.  Are the big money players worth it?  How much do they influence a team's performance?
@@ -91,10 +91,7 @@ _I will list player salaries in order, but multiple players from the same team t
   
 20 teams in the NFL paid at least one player a top-25 salary in 2025.  Only 9 of those teams made the playoffs.  It's also interesting to note that the three teams tied in the NFL with the best record at 14-3, the Denver Broncos, New England Patriots, and Seattle Seahawks, did not pay any player on their team a top-25 salary.  In 2023 Brock Purdy led the San Francisco 49ers to the Super Bowl on a rookie contract worth less than $2M/year.  The Denver Broncos and New England Patriots have quarterbacks on rookie contracts worth $5M/year and $9M/year respectively.  The Chicago Bears and Carolina Panthers also made the playoffs, with quarterbacks on rookie contracts earning $9M-$10M/year.  The Houston Texans round out the five teams in the playoffs this year with quarterbacks on rookie contracts.
     
-  
-
-
-Here are several visuals I created in my regression.  They are improperly sized and out of order.  I plan on writing up my regression analysis and fixing the visuals in the next couple days.
+With so many teams paying players big salaries and missing the playoffs, I decided to perform a regression study on player salaries, income inequality, and team records.  Here are several visuals I created in my regression.  They are improperly sized and out of order.  I plan on writing up my regression analysis and fixing the visuals in the next couple days.
 
 
 ![Box_Whisker_and_Gini_Coef](images/Box_Whisker_and_Gini_Coef.png)

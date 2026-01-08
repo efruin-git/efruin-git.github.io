@@ -22,6 +22,7 @@ _I will list player salaries in order, but multiple players from the same team t
 - PLAYOFF TEAM
 
 #2 (tie) Joe Burrow (QB) $55M, Cincinnati Bengals, team record: 6-11, 11th in AFC
+
 #19 Ja'Marr Chase (WR) $40.25M, Cincinnati Bengals
 - Cincinnati was supposed to be a Super Bowl contender with their high-flying offense.  Perhaps they spent too much on their top players.
 - _MISSED PLAYOFFS_
@@ -31,6 +32,7 @@ _I will list player salaries in order, but multiple players from the same team t
 - PLAYOFF TEAM
 
 #2 (tie) Jordan Love (QB) $55M, Green Bay Packers, team record: 9-7-1, 2nd NFC North, 7 seed in NFC Playoffs
+
 #12 Micah Parsons (LB) $46.5M, Green Bay Packers
 - Green Bay spent more money on top players than Cincinnati, but they have a much better record.
 - PLAYOFF TEAM
@@ -44,6 +46,7 @@ _I will list player salaries in order, but multiple players from the same team t
 - PLAYOFF TEAM
 
 #7 (tie) Jared Goff (QB) $53M, Detroit Lions, team record: 9-8, 9th in NFC
+
 #15 (tie) Aidan Hutchinson (DE), Detroit Lions
 - _MISSED PLAYOFFS_
 
@@ -60,6 +63,7 @@ _I will list player salaries in order, but multiple players from the same team t
 - _MISSED PLAYOFFS_
 
 #14 Deshaun Watson (QB) $46M, Cleveland Browns, team record: 5-12, 13th in AFC
+
 #20 (tie) Myles Garrett (DE) $40M, Cleveland Browns
 - 2025 was Watson's 4th year on a huge contract with Cleveland.  He didn't play all year due to injury, and he missed half of last season as well.
 - _MISSED PLAYOFFS_
@@ -79,6 +83,7 @@ _I will list player salaries in order, but multiple players from the same team t
 - PLAYOFF TEAM
 
 #22 Geno Smith (QB) $37.5M, Las Vegas Raiders, team record: 3-14, 14th in AFC
+
 #24 Maxx Crosby (DE) $35.5M, Las Vegas Radiers
 - _MISSED PLAYOFFS_
 

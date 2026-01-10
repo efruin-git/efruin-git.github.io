@@ -104,11 +104,11 @@ With so many teams paying players big salaries and missing the playoffs, I decid
 ![RMSE Screenshot](images/RMSE_Screenshot.png)
 
 <img src="images/Win_Loss_Perc_Displot.png" alt="Win_Loss_Perc_Displot" width="500">
+<img src="images/Win_Loss_Perc_Displot_Bfr2020.png" alt="Win_Loss_Perc_Displot_Bfr2020" width="500">
+<img src="images/Win_Loss_Perc_QQPlot.png" alt="Win_Loss_Perc_QQPlot" width="500">
+<img src="images/Win_Loss_Perc_QQPlot_Bfr2020.png" alt="Win_Loss_Perc_QQPlot_Bfr2020" width="500">
 
 
-![Win_Loss_Perc_Displot_Bfr2020](images/Win_Loss_Perc_Displot_Bfr2020.png)
-![Win_Loss_Perc_QQPlot](images/Win_Loss_Perc_QQPlot.png)
-![Win_Loss_Perc_QQPlot_Bfr2020](images/Win_Loss_Perc_QQPlot_Bfr2020.png)
 ![WLP_avg_gini_cap_perc_sum_vs_Fitted_2015_2020](images/WLP_avg_gini_cap_perc_sum_vs_Fitted_2015_2020.png)
 ![WLP_pred_vars_heatmap_2015_2020](images/WLP_pred_vars_heatmap_2015_2020.png)
 ![WLP_Resid_Fitted_Vals_2015_2020](images/WLP_Resid_Fitted_Vals_2015_2020.png)

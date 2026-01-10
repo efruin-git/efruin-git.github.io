@@ -103,7 +103,7 @@ With so many teams paying players big salaries and missing the playoffs, I decid
 
 ![RMSE Screenshot](images/RMSE_Screenshot.png)
 
-<img src="images/Win_Loss_Perc_Displot.png" alt="Win_Loss_Perc_Displot" width="100">
+<img src="images/Win_Loss_Perc_Displot.png" alt="Win_Loss_Perc_Displot" width="500">
 
 
 ![Win_Loss_Perc_Displot_Bfr2020](images/Win_Loss_Perc_Displot_Bfr2020.png)

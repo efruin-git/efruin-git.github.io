@@ -103,7 +103,7 @@ With so many teams paying players big salaries and missing the playoffs, I decid
 
 ![RMSE Screenshot](images/RMSE_Screenshot.png)
 
-![Win_Loss_Perc_Displot](images/Win_Loss_Perc_Displot.png width="200" height="150" alt="Alt text")
+![Win_Loss_Perc_Displot](images/Win_Loss_Perc_Displot.png){width=20%}
 
 ![Win_Loss_Perc_Displot_Bfr2020](images/Win_Loss_Perc_Displot_Bfr2020.png)
 ![Win_Loss_Perc_QQPlot](images/Win_Loss_Perc_QQPlot.png)

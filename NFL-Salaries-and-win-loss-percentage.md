@@ -105,8 +105,8 @@ With so many teams paying players big salaries and missing the playoffs, I decid
 
 <img src="images/Win_Loss_Perc_Displot.png" alt="Win_Loss_Perc_Displot" width="500">
 <img src="images/Win_Loss_Perc_Displot_Bfr2020.png" alt="Win_Loss_Perc_Displot_Bfr2020" width="500">
-<img src="images/Win_Loss_Perc_QQPlot.png" alt="Win_Loss_Perc_QQPlot" width="500">
-<img src="images/Win_Loss_Perc_QQPlot_Bfr2020.png" alt="Win_Loss_Perc_QQPlot_Bfr2020" width="500">
+<img src="images/Win_Loss_Perc_QQPlot.png" alt="Win_Loss_Perc_QQPlot" width="650">
+<img src="images/Win_Loss_Perc_QQPlot_Bfr2020.png" alt="Win_Loss_Perc_QQPlot_Bfr2020" width="650">
 
 
 ![WLP_avg_gini_cap_perc_sum_vs_Fitted_2015_2020](images/WLP_avg_gini_cap_perc_sum_vs_Fitted_2015_2020.png)

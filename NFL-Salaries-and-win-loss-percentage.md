@@ -511,7 +511,7 @@ The residual and fitted value plots show the same issue from earlier regressions
 ![fitted_values_predictive_w_salary](images/fitted_values_predictive_w_salary.png)
   
 
-The best predictive model uses salary cap variables of team cap percent and gini coefficient.  It uses prior year team stats of opponent points and offensive turnovers.  No team stats from the 2 year lagged data were found to be significant.  Prior year passing yards and rush yards were not significant either.  Salary data along with defensive strength and preventing turnovers on offense were the factors leading to more wins, and they were able to explain a little less than half the variability in win rate.
+The best predictive model uses salary cap variables of team cap percent and gini coefficient.  It uses prior year team stats of opponent points and offensive turnovers.  No team stats from the 2 year lagged data were found to be significant.  Prior year passing yards and rush yards were not significant either.  Spending more of the salary cap with less income inequality, along with defensive strength and preventing turnovers on offense were the factors leading to more wins, and they were able to explain a little less than half the variability in win rate.
 
 
 

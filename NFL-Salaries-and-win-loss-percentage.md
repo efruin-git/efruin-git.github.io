@@ -370,10 +370,16 @@ The final model used results of current year team performance on offense and def
 ### Machine Learning Polynomial Regression
 
 I used the Sci-kit learn machine learning model for my polynomial regression.  I started with a linear regression model using the same variables as were found significant in the previous statsmodel package linear regression.  I split the data 70/30 for the training and test split.  After fitting a linear regression model I calculated the test data residuals by taking the difference of test data WLP and predicted values.  I calculated Mean Absolute Error and Root Mean Squared Error values of 0.074 and 0.095 respectively.
+  
+![RMSE Screenshot](images/RMSE_Screenshot.png)
+  
 
 The plot of residuals against WLP, the distribution plot of residuals, and the probability plot of residuals show a fairly normal distribution of residuals, but with the mode slightly below zero.
 
-NEED TO ADD GRAPHS HERE
+![ML_Lin_Reg_Residuals](images/ML_Lin_Reg_Residuals.png)
+![Dist_Plot_ML_Lin_Reg_Test_Resids](images/Dist_Plot_ML_Lin_Reg_Test_Resids.png)
+![ML_Lin_Reg_Residuals_Prob_Plot](images/ML_Lin_Reg_Residuals_Prob_Plot.png)
+
 
 
 The coefficients generated in the model are listed below.  They are very similar to the results with the statsmodel package.  The pass yards and rush yards coefficients are small because total pass and rush yards per season reach thousands of yards.
@@ -421,8 +427,9 @@ X_train, X_test, y_train, y_test = train_test_split(poly_features, y, test_size=
 I calculated Mean Absolute Error and Root Mean Squared Error values of 0.089 and 0.117 respectively, both worse than the ML linear regression model.  The test data residuals were no better than the ML linear regression model.  The linear regression model is the better model.
 
 
-ADD POLYNOMIAL REGRESSION MODEL RESIDUAL PLOTS HERE
-
+![polynomial_regression_residuals](images/polynomial_regression_residuals.png)
+![polynomial_regression_residual_distribution](images/polynomial_regression_residual_distribution.png)
+![polynomial_regression_probability_plot](images/polynomial_regression_probability_plot.png)
 
 
 In an attempt to create a model that is more predictive of future performance, I added team stats data lagged one and two years, and continued my regression work using the statsmodel package.  Upon investigating the salary data again, I found that in the presence of the cap percent sum variable, the current year gini coefficient value is more significant than the average of the current and prior year gini coefficient.  I will use the current year gini coefficient variable in the predictive model.
@@ -497,16 +504,15 @@ strong multicollinearity or other numerical problems.
 ```
 
 
-The residual and fitted value plots show the same issue from earlier regressions of fitted values closer to the mean for teams with high and low actual win rates.
+The residual and fitted value plots show the same issue from earlier regressions of fitted values closer to the mean for teams with high and low actual win rates.  Note I updated a visualization parameter to use a more transparent dot color.  Darker colors indicate overlapping points.
 
 
-ADD PLOTS HERE
+![residuals_predictive_w_salary](images/residuals_predictive_w_salary.png)
+![fitted_values_predictive_w_salary](images/fitted_values_predictive_w_salary.png)
   
 
+The best predictive model uses salary cap variables of team cap percent and gini coefficient.  It uses prior year team stats of opponent points and offensive turnovers.  No team stats from the 2 year lagged data were found to be significant.  Prior year passing yards and rush yards were not significant either.  Salary data along with defensive strength and preventing turnovers on offense were the factors leading to more wins, and they were able to explain a little less than half the variability in win rate.
 
-
-
-![RMSE Screenshot](images/RMSE_Screenshot.png)
 
 
 

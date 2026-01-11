@@ -504,7 +504,7 @@ strong multicollinearity or other numerical problems.
 ```
 
 
-The residual and fitted value plots show the same issue from earlier regressions of fitted values closer to the mean for teams with high and low actual win rates.  Note I updated a visualization parameter to use a more transparent dot color.  Darker colors indicate overlapping points.
+The residual and fitted value plots show the same issue from earlier regressions of fitted values closer to the mean for teams with high and low actual win rates.
 
 
 ![residuals_predictive_w_salary](images/residuals_predictive_w_salary.png)

@@ -162,6 +162,7 @@ I performed a series of regression analyses against the win-loss percentage vari
 I used the statsmodel package in Python to analyze salary cap data and WLP.  My initial regression of salary cap hit gini coefficient against WLP resulted in a valid model, but a very low adjested R^2.  Only a small amount of variance in winning can be explained by team income inequality.
 
 ##### Code used
+  
 ```
 import statsmodels.api as sm
 
@@ -174,8 +175,11 @@ model2 = sm.OLS(wlp,x).fit()
 
 print(model2.summary())
 ```
+  
 ##### Review Adj. R-squared for variance explained, Prob (F-statistic) for overall model fit, and P>|t| for individual variables.  F-statistic and p-values below 0.01 indicate a strong evidence of model accuracy and a relationship between the explanatory variables and the outcome variable.  
+  
 ```
+
                             OLS Regression Results                            
 ==============================================================================
 Dep. Variable:          win_loss_perc   R-squared:                       0.052
@@ -202,11 +206,13 @@ Kurtosis:                       2.459   Cond. No.                         34.5
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 ```
+  
 Next I regressed the average of prior year and current year gini coefficient against WLP and got another valid model.  This time the adjusted R^2 was 0.07, a small improvement on the initial model.  In both cases, the coefficient for the variable was around -1 to -1.6, meaning the gini coefficient is inversely related to win rate.  Paying a few players high salaries leaves less money for the rest of the team, and football is a team sport.  It's important to have skilled players at every position.  Still, income inequality only explains a small amount of a team's win rate.
 
 I tried regressing the sum of cap percentage (overall percent of team salary cap used) against WLP and got a better model, with 37% of the variance in winning explained by total cap percentage used.  
-
+  
 ```
+
                             OLS Regression Results                            
 ==============================================================================
 Dep. Variable:          win_loss_perc   R-squared:                       0.379
@@ -233,12 +239,13 @@ Kurtosis:                       3.166   Cond. No.                         428.
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 ```
-  
+    
 There could be a number of reasons why cap percentage used is related to winning.  One reason would be dead cap space.  If a team releases a player they still have to pay that player's salary, and they can't use their full team cap space.  Another reason could be that teams rebuild, save cap space, roll it over each year, then spend more money when they're trying to win in the playoffs.  A team that uses more cap space could be using rolled over cap space on top of their annual allotment, which would mean they're spending more than other teams on their players.  If they spend wisely, they'll have more talented players on their team, assuming more expensive players are better players.  Another consideration is player contracts that award performance.  If players get bonus money for achieving performance milestones, they'll get paid more and use more of the cap space.
 
 I combined average 2-year gini coefficient and total cap percentage in a regression against WLP.  The resulting model was statistically significant and explained 46.5% of the variance in win rate.
-  
-```                            OLS Regression Results                            
+    
+```
+                            OLS Regression Results                            
 ==============================================================================
 Dep. Variable:          win_loss_perc   R-squared:                       0.471
 Model:                            OLS   Adj. R-squared:                  0.465
@@ -267,6 +274,7 @@ Notes:
 [2] The condition number is large, 2.56e+03. This might indicate that there are
 strong multicollinearity or other numerical problems.
 ```
+  
 Next, I plotted residuals from the model and fitted values against WLP to review model performance visually.
 ![WLP_Resid_Fitted_Vals_avg_gini_cap_perc_sum_2015_2020](images/WLP_Resid_Fitted_Vals_avg_gini_cap_perc_sum_2015_2020.png)
 ![WLP_avg_gini_cap_perc_sum_vs_Fitted_2015_2020](images/WLP_avg_gini_cap_perc_sum_vs_Fitted_2015_2020.png)
@@ -281,6 +289,7 @@ I added in the following variables to the multiple linear regression model - num
 There's a high amount of correlation between opponent points and cap percent sum, pass yards and yards per play offense, and pass yards and plays offense.
 
 Here's the initial regression model summary with the new variables:
+  
 ```
  OLS Regression Results
 ==============================================================================
@@ -313,8 +322,9 @@ Skew:                          -0.183   Prob(JB):                        0.532
 Kurtosis:                       3.156   Cond. No.                     7.55e+05
 ==============================================================================
 ```
+  
 After reviewing the p-values for each variable and the correlation matrix, I removed variables and ran the model again.  I did this step a few times before reaching the final model.  I used AIC and BIC to determine the best model.
-
+  
 ```
                             OLS Regression Results
 ==============================================================================
@@ -343,6 +353,7 @@ Skew:                          -0.184   Prob(JB):                        0.551
 Kurtosis:                       3.116   Cond. No.                     6.80e+04
 ==============================================================================
 ```
+  
 A couple notable variables did not make the final model.  Average gini coefficient over 2 years did not make the final model and neither did penalties.  When current season offensive and defensive production are included, income inequality is an insignificant variable.  Cap percent sum is still a significant variable, though.  I was surprised that offensive penalties did not factor into win rate.  Maybe some highly penalized teams are undisciplined, while some are good teams that push the boundary of legal play.
 
 Points opponent summarizes defensive production.  Pass yards, rush yards, and turnovers are key components of offensive production.  Turnovers proved to be a key variable in offensive success.  Teams have to protect the football on offense to win.

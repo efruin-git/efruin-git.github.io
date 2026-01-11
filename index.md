@@ -8,7 +8,9 @@ Emmett
 
 
         
-[Link to NFL Salaries and Team Stats Regression](./NFL-Salaries-and-win-loss-percentage.html).
+[Link to NFL Salaries and Team Stats Regression](./NFL-Salaries-and-win-loss-percentage.html)
+
+  
 
 
 

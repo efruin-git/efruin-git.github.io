@@ -1,6 +1,7 @@
  
 
-## Welcome to My NFL Salaries Regression Project Page (regression work half-way down).
+### Welcome to My NFL Salaries Regression Project Page
+#### (Regression work half-way down)
 
 _1/7/2025_  
 I'm a pro football fan and root for my hometown team, the Chicago Bears.  I'm excited about the team's direction.  We have a great new coach, Ben Johnson, who has led the Bears to offensive production near the top of the NFL.  The Bears made the playoffs this year for the first time since 2020.  They've had a rough last 20 years.  The only other times they've made it to the playoffs since their Super Bowl appearance in 2006 were in 2010 and 2018.  I'm hoping for some better years ahead.

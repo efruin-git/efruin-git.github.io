@@ -13,7 +13,7 @@ _I will list player salaries in order, but multiple players from the same team t
 
 ### Salary and Team Outcome:
 
-##### #1 Dak Prescott (QB) - $60M, Dallas Cowboys, team record: 7-9-1, 2nd NFC East, 12th in NFC
+##### #1 **Dak Prescott (QB) - $60M, Dallas Cowboys**, team record: 7-9-1, 2nd NFC East, 12th in NFC
 - The top salary player in the league did not make the playoffs.
 - _MISSED PLAYOFFS_
 
@@ -47,10 +47,10 @@ _I will list player salaries in order, but multiple players from the same team t
 ##### #15 (tie) **Aidan Hutchinson (DE) $45, Detroit Lions**
 - _MISSED PLAYOFFS_
 
-##### #9 Justin Herbert (QB) $52.5M, Los Angeles Chargers, team record: 11-6, 2nd AFC West, 7 seed in AFC Playoffs
+##### #9 **Justin Herbert (QB) $52.5M, Los Angeles Chargers**, team record: 11-6, 2nd AFC West, 7 seed in AFC Playoffs
 - PLAYOFF TEAM
 
-##### #10 Lamar Jackson (QB) $52M, Baltimore Ravens, team record: 8-9, 9th in AFC
+##### #10 **Lamar Jackson (QB) $52M, Baltimore Ravens**, team record: 8-9, 9th in AFC
 - _MISSED PLAYOFFS_
 
 ##### #11 **Jalen Hurts (QB) $51M, Philadelphia Eagles**, team record: 11-6, 1st NFC East, 3 seed in NFC Playoffs

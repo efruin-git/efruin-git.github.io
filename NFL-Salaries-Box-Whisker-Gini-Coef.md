@@ -2,5 +2,5 @@
 
 
 
-[Back to NFL Salaries Regression](./NFL-Salaries-and-win-loss-percentage.html)
+[Back to NFL Salaries Regression](https://efruin-git.github.io/NFL-Salaries-and-win-loss-percentage.html)
 

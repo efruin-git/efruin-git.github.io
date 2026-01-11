@@ -158,7 +158,7 @@ The data sets I used in my analysis were complete.  The only fields missing valu
 #### Regression Work Outline
 I performed a series of regression analyses against the win-loss percentage variable (win rate).  First I graphed gini coefficient and team total cap percentage data against win-loss percentage.  I added team statistics to those regressions, then performed a machine-learning style polynomial regression.  Lastly I performed a regression using salary data and past season performance to predict WLP.
 
-### Regression: Gini Coefficient and Salary Cap Percentage VS Win-Loss Percentage
+### Regression: Win-Loss Percentage vs. Gini Coefficient and Salary Cap Percentage
 I used the statsmodel package in Python to analyze salary cap data and WLP.  My initial regression of salary cap hit gini coefficient against WLP resulted in a valid model, but a very low adjested R^2.  Only a small amount of variance in winning can be explained by team income inequality.
 
 ##### Code used
@@ -236,6 +236,42 @@ Notes:
   
 There could be a number of reasons why cap percentage used is related to winning.  One reason would be dead cap space.  If a team releases a player they still have to pay that player's salary, and they can't use their full team cap space.  Another reason could be that teams rebuild, save cap space, roll it over each year, then spend more money when they're trying to win in the playoffs.  A team that uses more cap space could be using rolled over cap space on top of their annual allotment, which would mean they're spending more than other teams on their players.  If they spend wisely, they'll have more talented players on their team, assuming more expensive players are better players.  Another consideration is player contracts that award performance.  If players get bonus money for achieving performance milestones, they'll get paid more and use more of the cap space.
 
+I combined average 2-year gini coefficient and total cap percentage in a regression against WLP.  The resulting model was statistically significant and explained 46.5% of the variance in win rate.
+  
+```                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          win_loss_perc   R-squared:                       0.471
+Model:                            OLS   Adj. R-squared:                  0.465
+Method:                 Least Squares   F-statistic:                     84.08
+Date:                Sun, 11 Jan 2026   Prob (F-statistic):           7.58e-27
+Time:                        13:54:17   Log-Likelihood:                 102.68
+No. Observations:                 192   AIC:                            -199.4
+Df Residuals:                     189   BIC:                            -189.6
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+=========================================================================================
+                            coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+const                     0.2849      0.215      1.328      0.186      -0.138       0.708
+avg_gini_coef_2_years    -0.8215      0.315     -2.609      0.010      -1.443      -0.200
+cap_percent_sum           0.0104      0.001     11.887      0.000       0.009       0.012
+==============================================================================
+Omnibus:                        0.786   Durbin-Watson:                   1.617
+Prob(Omnibus):                  0.675   Jarque-Bera (JB):                0.864
+Skew:                          -0.051   Prob(JB):                        0.649
+Kurtosis:                       2.688   Cond. No.                     2.56e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.56e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+```
+Next, I plotted residuals from the model and fitted values against WLP to review model performance visually.
+![WLP_Resid_Fitted_Vals_2015_2020](images/WLP_Resid_Fitted_Vals_2015_2020.png)
+![WLP_vs_Fitted_Vals_2015_2020](images/WLP_vs_Fitted_Vals_2015_2020.png)
+
+
 
 
 Individual regressions against wlp
@@ -254,9 +290,7 @@ Correlation data
 
 ![WLP_avg_gini_cap_perc_sum_vs_Fitted_2015_2020](images/WLP_avg_gini_cap_perc_sum_vs_Fitted_2015_2020.png)
 ![WLP_pred_vars_heatmap_2015_2020](images/WLP_pred_vars_heatmap_2015_2020.png)
-![WLP_Resid_Fitted_Vals_2015_2020](images/WLP_Resid_Fitted_Vals_2015_2020.png)
 ![WLP_Resid_Fitted_Vals_avg_gini_cap_perc_sum_2015_2020](images/WLP_Resid_Fitted_Vals_avg_gini_cap_perc_sum_2015_2020.png)
-![WLP_vs_Fitted_Vals_2015_2020](images/WLP_vs_Fitted_Vals_2015_2020.png)
 ![WLP_w_pred_vars_1col_heatmap_2015_2020](images/WLP_w_pred_vars_1col_heatmap_2015_2020.png)
 
 

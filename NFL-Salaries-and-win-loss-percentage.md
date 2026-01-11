@@ -1,4 +1,4 @@
-
+ 
 
 ## Welcome to My NFL Salaries Regression Project Page (regression work half-way down).
 

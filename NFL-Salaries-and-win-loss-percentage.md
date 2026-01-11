@@ -94,7 +94,14 @@ _I will list player salaries in order, but multiple players from the same team t
 With so many teams paying players big salaries and missing the playoffs, I decided to perform a regression study on player salaries, income inequality, and team records.  Here are several visuals I created in my regression.  They are improperly sized and out of order.  I plan on writing up my regression analysis and fixing the visuals in the next couple days.
 
 
-![Box_Whisker_and_Gini_Coef](images/Box_Whisker_and_Gini_Coef.png)
+
+![Box_Whisker_and_Gini_Coef](images/Box_Whisker_and_Gini_Coef_6teams.png)
+  
+Here's a link to the same graphs with all teams included
+[All Teams](./NFL-Salaries-Box-Whisker-w-Gini-Coefficient.html).
+
+
+
 
 
 ![Cap_Hit_2020_Box_Whisker](images/Cap_Hit_2020_Box_Whisker.png)

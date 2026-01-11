@@ -10,6 +10,4 @@ Emmett
 [Link to another page](./NFL-Salaries-and-win-loss-percentage.html).
 
 
-[Link to formatting page](./formatting_page_1.html).
-
 

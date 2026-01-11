@@ -91,9 +91,42 @@ _I will list player salaries in order, but multiple players from the same team t
   
 20 teams in the NFL paid at least one player a top-25 salary in 2025.  Only 9 of those teams made the playoffs.  It's also interesting to note that the three teams tied in the NFL with the best record at 14-3, the Denver Broncos, New England Patriots, and Seattle Seahawks, did not pay any player on their team a top-25 salary.  In 2023 Brock Purdy led the San Francisco 49ers to the Super Bowl on a rookie contract worth less than $2M/year.  The Denver Broncos and New England Patriots have quarterbacks on rookie contracts worth $5M/year and $9M/year respectively.  The Chicago Bears and Carolina Panthers also made the playoffs, with quarterbacks on rookie contracts earning $9M-$10M/year.  The Houston Texans round out the five teams in the playoffs this year with quarterbacks on rookie contracts.
     
-With so many teams paying players big salaries and missing the playoffs, I decided to perform a regression study on player salaries, income inequality, and team records.  Here are several visuals I created in my regression.  They are improperly sized and out of order.  I plan on writing up my regression analysis and fixing the visuals in the next couple days.
+With so many teams paying players big salaries and missing the playoffs, I decided to perform a regression study on player salaries, income inequality, and team records.
 
+I started with a player salary dataset from Kaggle [Player Salaries](https://www.kaggle.com/datasets/f4k25g/nfl-salaries).  The dataset has player salary cap hit and percent of team cap hit by year for all players on all teams from 2014-2020.  I also downloaded team statistics data for all teams from 2003-2023 [NFL Team Data](https://www.kaggle.com/datasets/nickcantalupa/nfl-team-data-2003-2023).  The team stats data has several offensive productivity measures like yards per play, touchdowns, passing yards, etc. as well as wins, win-loss percentage, and points allowed by defense.
 
+I decided to measure team success with the win-loss percentage variable (win rate).  I created a new variable, salary cap hit gini coefficient (cap_hit_gini_coef) to measure income inequality on each team.  The formula I used for gini coefficient is derived from this summary [Gini Coefficient Explanation and Formulas](https://www.statsdirect.com/help/nonparametric_methods/gini.htm).
+
+I began my regression by testing the win-loss percentage variable for normality.  The Q-Q Plot below seems to indicate a normal distribution, but the values are stepped, because teams play 16 games a season (17 starting in 2020).  There are occassionally ties, but those are rare.  There are a limited number of possible win-loss percentages possible.  The low win rate in the middle of the graph comes from the 2020-2023 seasons when teams started playing an extra game each year.  Since there are fewer seasons with 17 game years, the 8/17 win rate of 0.47 was less common than the 7/16 win rate of 0.4375, and than other bucketed win rates.
+
+<img src="images/Win_Loss_Perc_Displot.png" alt="Win_Loss_Perc_Displot" width="500">
+<img src="images/Win_Loss_Perc_QQPlot.png" alt="Win_Loss_Perc_QQPlot" width="600">
+
+When I removed the 2020-2023 years, the distribution plot appeared more normal, and the Q-Q plot appeared more stepped.  
+
+<img src="images/Win_Loss_Perc_Displot_Bfr2020.png" alt="Win_Loss_Perc_Displot_Bfr2020" width="500">
+<img src="images/Win_Loss_Perc_QQPlot_Bfr2020.png" alt="Win_Loss_Perc_QQPlot_Bfr2020" width="600">
+
+I performed Sharpiro-Wilk, scipy.stats normal test, and Anderson-Darling tests for normality both including the excluding the 2020-2023 seasons.  Each test determined the data is not normally distributed, but the Shapiro-Wilk test statistic of 0.985 was very close to 1, which indicates a normal distribution.  The data is stepped, so it is not truly normally distributed, but it's close enough to a normal distribution that I will assume normality and proceed with the regression.
+
+I calculated the gini coefficient by team and season as well as sum of salary cap hit and cap percentage.  The I added the average of the current and past season gini coefficient.  Here's a sample of the data:
+                      team  season  cap_hit_sum  cap_percent_sum
+0        arizona-cardinals    2014     99264014            73.03
+1        arizona-cardinals    2015    121979201            82.12
+2        arizona-cardinals    2016    111290277            70.00
+3        arizona-cardinals    2017    104474970            60.79
+4        arizona-cardinals    2018    107921249            60.36
+
+                      team  season  cap_hit_gini_coef  avg_gini_coef_2_years
+0        arizona-cardinals    2014           0.597684                    NaN
+1        arizona-cardinals    2015           0.643391               0.620537
+2        arizona-cardinals    2016           0.703863               0.673627
+3        arizona-cardinals    2017           0.632705               0.668284
+4        arizona-cardinals    2018           0.712755               0.672730  
+  
+  
+I graphed box and whisker plots of the salary cap hit data alongside the gini coefficient data.
+  
 
 ![Box_Whisker_and_Gini_Coef](images/Box_Whisker_and_Gini_Coef_6teams.png)
   
@@ -101,8 +134,8 @@ Here's a link to the same box and whisker and gini coefficient graphs with all t
 [All Teams](https://efruin-git.github.io/NFL-Salaries-Box-Whisker-Gini-Coef.html)
 
 
-
-
+  
+  
 
 ![Cap_Hit_2020_Box_Whisker](images/Cap_Hit_2020_Box_Whisker.png)
 
@@ -110,10 +143,6 @@ Here's a link to the same box and whisker and gini coefficient graphs with all t
 
 ![RMSE Screenshot](images/RMSE_Screenshot.png)
 
-<img src="images/Win_Loss_Perc_Displot.png" alt="Win_Loss_Perc_Displot" width="500">
-<img src="images/Win_Loss_Perc_Displot_Bfr2020.png" alt="Win_Loss_Perc_Displot_Bfr2020" width="500">
-<img src="images/Win_Loss_Perc_QQPlot.png" alt="Win_Loss_Perc_QQPlot" width="600">
-<img src="images/Win_Loss_Perc_QQPlot_Bfr2020.png" alt="Win_Loss_Perc_QQPlot_Bfr2020" width="600">
 
 
 ![WLP_avg_gini_cap_perc_sum_vs_Fitted_2015_2020](images/WLP_avg_gini_cap_perc_sum_vs_Fitted_2015_2020.png)

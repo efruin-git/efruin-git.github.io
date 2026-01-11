@@ -347,17 +347,22 @@ A couple notable variables did not make the final model.  Average gini coefficie
 
 Points opponent summarizes defensive production.  Pass yards, rush yards, and turnovers are key components of offensive production.  Turnovers proved to be a key variable in offensive success.  Teams have to protect the football on offense to win.
 
-The final model explained 75% of the variance in win rate and had very low AIC and BIC values.  It  is a very good model, which is confirmed by the residual and fitted value plots below.
+The final model explained 75% of the variance in win rate and had very low AIC and BIC values.  It  is a very good model, which is confirmed by the residual and fitted value plots below.  
+
+  
 ![WLP_Resid_Fitted_Vals_2015_2020](images/WLP_Resid_Fitted_Vals_2015_2020.png)
+  
 ![WLP_vs_Fitted_Vals_2015_2020](images/WLP_vs_Fitted_Vals_2015_2020.png)
 
 The final model used results of current year team performance on offense and defense to predict win rate.  I wanted to see if a polynomial regression would improve the accuracy of the model, and if prior year performance could be used to predict win rate.
 
 ### Machine Learning Polynomial Regression
 
-
+I performed a polynomial regression and will write up the results in the next couple days.
 
 Machine learning, polynomial regression
+
+Will write up this regression in the next couple days.
 Prior year performance with salary data regression against wlp
 
 
@@ -365,10 +370,6 @@ Prior year performance with salary data regression against wlp
 
 
 ![RMSE Screenshot](images/RMSE_Screenshot.png)
-
-
-
-![WLP_w_pred_vars_1col_heatmap_2015_2020](images/WLP_w_pred_vars_1col_heatmap_2015_2020.png)
 
 
 

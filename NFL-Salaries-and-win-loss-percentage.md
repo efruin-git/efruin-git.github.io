@@ -98,7 +98,7 @@ With so many teams paying players big salaries and missing the playoffs, I decid
 ![Box_Whisker_and_Gini_Coef](images/Box_Whisker_and_Gini_Coef_6teams.png)
   
 Here's a link to the same graphs with all teams included
-[All Teams](./NFL-Salaries-Box-Whisker-w-Gini-Coefficient.html).
+[All Teams](./NFL-Salaries-Box-Whisker-Gini-Coefficient.html).
 
 
 

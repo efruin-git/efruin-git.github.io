@@ -369,11 +369,9 @@ The final model used results of current year team performance on offense and def
 
 ### Machine Learning Polynomial Regression
 
-I performed a polynomial regression and will write up the results in the next couple days.
+I performed a polynomial regression and another regression with prior year team stats and will write up the results in the next couple days.
 
 Machine learning, polynomial regression
-
-Will write up this regression in the next couple days.
   
 Prior year performance with salary data regression against wlp
 

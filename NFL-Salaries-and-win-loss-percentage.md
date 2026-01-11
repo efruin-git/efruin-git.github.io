@@ -109,7 +109,7 @@ When I removed the 2020-2023 years, the distribution plot appeared more normal, 
 
 I performed Sharpiro-Wilk, scipy.stats normal test, and Anderson-Darling tests for normality both including the excluding the 2020-2023 seasons.  Each test determined the data is not normally distributed, but the Shapiro-Wilk test statistic of 0.985 was very close to 1, which indicates a normal distribution.  The data is stepped, so it is not truly normally distributed, but it's close enough to a normal distribution that I will assume normality and proceed with the regression.
 
-I calculated the gini coefficient by team and season as well as sum of salary cap hit and cap percentage.  The I added the average of the current and past season gini coefficient.  Here's a sample of the data:
+I calculated the gini coefficient by team and season as well as sum of salary cap hit and cap percentage.  Then I added the average of the current and past season gini coefficient.  Here's a sample of the data:
   
 ```
                       team  season  cap_hit_sum  cap_percent_sum
@@ -127,7 +127,7 @@ I calculated the gini coefficient by team and season as well as sum of salary ca
 4        arizona-cardinals    2018           0.712755               0.672730  
 ```  
   
-I graphed box and whisker plots of the salary cap hit data alongside the gini coefficient data.
+I graphed box and whisker plots of the salary cap hit data alongside the gini coefficient data.  Note the gini coefficient graph x-axis has a range of (0.4, 0.8).  The gini coefficients do not vary as much as they appear in the graph.
   
 
 ![Box_Whisker_and_Gini_Coef](images/Box_Whisker_and_Gini_Coef_6teams.png)
@@ -135,21 +135,37 @@ I graphed box and whisker plots of the salary cap hit data alongside the gini co
 Here's a link to the same box and whisker and gini coefficient graphs with all teams included
 [All Teams](https://efruin-git.github.io/NFL-Salaries-Box-Whisker-Gini-Coef.html)
 
-The league salary cap applies to each team and increases each year, but salary caps can very by team based on factors including unique player contracts, carry-over cap space from prior years, and dead cap space from releasing players with guaranteed money.  My data analysis uses salary cap hit and salary cap percentage from players on each team.  Dead cap space would prevent a team from using all their cap space, and total cap hit percentage would be lower for that team.  Here's more info from pro football network [Pro Football Network](https://www.profootballnetwork.com/nfl-salary-cap-space-by-team):
+In the cap hit and gini coefficient graphs, you'll notice greater median salaries correspond to lower gini coefficients (less salary inequality).  Team salary caps generally increase each year, so a small increase in median cap hit may not translate to a lower gini coefficient that year.  A wider interquartile range or wider whiskers will not necessarily change the gini coefficient.
 
-https://www.profootballnetwork.com/nfl-salary-cap-space-by-team
+More context on the salary cap may be helpful to understand the data.  The league salary cap applies to each team and increases each year, but salary caps can very by team based on factors including unique player contracts, carry-over cap space from prior years, and dead cap space from releasing players with guaranteed money.  My data analysis uses salary cap hit and salary cap percentage from players on each team.  Dead cap space would prevent a team from using all their cap space, and total cap hit percentage would be lower for that team.  
 
->In 2025, the league set the base salary cap for all teams at $279.2 million. Each team then adds on any rolled-over money from the previous season. In >essence, this is money that they did not spend against the previous cap. Some further adjustments based on contractual elements are then made to achieve a >final number for each team.
+Here's more info from pro football network [Pro Football Network](https://www.profootballnetwork.com/nfl-salary-cap-space-by-team):
+>In 2025, the league set the base salary cap for all teams at $279.2 million. Each team then adds on any rolled-over money from the previous season. In essence, this is money that they did not spend against the previous cap. Some further adjustments based on contractual elements are then made to achieve a final number for each team.
 >
->Per-game bonuses and incentives also count against the salary cap. How much they count against the cap in a single year is dependent on various factors. Any >incentives considered “likely to be earned” count against the cap in that year, and if the player does not reach the threshold, the team pays back the >incentives in the form of cap credits as part of cap adjustments.
+>Per-game bonuses and incentives also count against the salary cap. How much they count against the cap in a single year is dependent on various factors. Any incentives considered “likely to be earned” count against the cap in that year, and if the player does not reach the threshold, the team pays back the incentives in the form of cap credits as part of cap adjustments.
 
-
-  
-  
+Player salary distributions can very widely by team.  Below are box and whisker plots of salary cap hit by amount and percent for each team in 2020.
 
 ![Cap_Hit_2020_Box_Whisker](images/Cap_Hit_2020_Box_Whisker.png)
 
 ![Cap_Hit_Percent_2020_Box_Whisker](images/Cap_Hit_Percent_2020_Box_Whisker.png)
+
+The data sets I use in my analysis were complete.  The only fields missing values were ties and "mov", and I didn't use those fields.  Some team names change over time, and some teams move locations.  The team names used in my analysis included both location and team name, so I had to clean that data.  I used the most recent team name and location for each team, and I back-filled team names that changed.  I had to create a team name mapping to join the data sets, because the team names in the data sets had different string values.  I joined the salary cap and team stats data sets on team and season.
+
+I performed a series of regression analyses against the win-loss percentage variable (win rate).  First I graphed gini coefficient and team total cap percentage data against win-loss percentage.  I added team statistics to those regressions, then performed a machine-learning style polynomial regression.  Lastly I performed a regression using salary data and past season performance to predict WLP.
+
+
+
+
+Individual regressions against wlp
+Overall regression against wlp
+Machine learning, polynomial regression
+Prior year performance with salary data regression against wlp
+Correlation data
+
+
+
+
 
 ![RMSE Screenshot](images/RMSE_Screenshot.png)
 

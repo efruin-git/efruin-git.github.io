@@ -11,7 +11,7 @@ I looked up the top salaries in the NFL and found this site.  [Top 25 NFL Salari
 
 _I will list player salaries in order, but multiple players from the same team together._
 
-**Salary and Team Outcome:**
+### Salary and Team Outcome:
 
 #1 **Dak Prescott (QB) - $60M, Dallas Cowboys**, team record: 7-9-1, 2nd NFC East, 12th in NFC
 - The top salary player in the league did not make the playoffs.
@@ -93,6 +93,7 @@ _I will list player salaries in order, but multiple players from the same team t
     
 With so many teams paying players big salaries and missing the playoffs, I decided to perform a regression study on player salaries, income inequality, and team records.
 
+### Data Sets Used
 I started with a player salary dataset from Kaggle [Player Salaries](https://www.kaggle.com/datasets/f4k25g/nfl-salaries).  The dataset has player salary cap hit and percent of team cap hit by year for all players on all teams from 2014-2020.  I also downloaded team statistics data for all teams from 2003-2023 [NFL Team Data](https://www.kaggle.com/datasets/nickcantalupa/nfl-team-data-2003-2023).  The team stats data has several offensive productivity measures like yards per play, touchdowns, passing yards, etc. as well as wins, win-loss percentage, and points allowed by defense.
 
 I decided to measure team success with the win-loss percentage variable (win rate).  I created a new variable, salary cap hit gini coefficient (cap_hit_gini_coef) to measure income inequality on each team.  The formula I used for gini coefficient is derived from this summary [Gini Coefficient Explanation and Formulas](https://www.statsdirect.com/help/nonparametric_methods/gini.htm).
@@ -137,6 +138,7 @@ Here's a link to the same box and whisker and gini coefficient graphs with all t
 
 In the cap hit and gini coefficient graphs, you'll notice greater median salaries correspond to lower gini coefficients (less salary inequality).  Team salary caps generally increase each year, so a small increase in median cap hit may not translate to a lower gini coefficient that year.  A wider interquartile range or wider whiskers will not necessarily change the gini coefficient.
 
+#### Salary Cap Background
 More context on the salary cap may be helpful to understand the data.  The league salary cap applies to each team and increases each year, but salary caps can very by team based on factors including unique player contracts, carry-over cap space from prior years, and dead cap space from releasing players with guaranteed money.  My data analysis uses salary cap hit and salary cap percentage from players on each team.  Dead cap space would prevent a team from using all their cap space, and total cap hit percentage would be lower for that team.  
 
 Here's more info from pro football network [Pro Football Network](https://www.profootballnetwork.com/nfl-salary-cap-space-by-team):
@@ -150,10 +152,89 @@ Player salary distributions can very widely by team.  Below are box and whisker 
 
 ![Cap_Hit_Percent_2020_Box_Whisker](images/Cap_Hit_Percent_2020_Box_Whisker.png)
 
-The data sets I use in my analysis were complete.  The only fields missing values were ties and "mov", and I didn't use those fields.  Some team names change over time, and some teams move locations.  The team names used in my analysis included both location and team name, so I had to clean that data.  I used the most recent team name and location for each team, and I back-filled team names that changed.  I had to create a team name mapping to join the data sets, because the team names in the data sets had different string values.  I joined the salary cap and team stats data sets on team and season.
+#### Data Cleaning
+The data sets I used in my analysis were complete.  The only fields missing values were ties and "mov".  I did not use the "mov" field, and blank rows in the tie field correspond to 0 ties.  Some team names change over time, and some teams move locations.  The team names used in my analysis included both location and team name, so I had to clean that data.  I used the most recent team name and location for each team, and I back-filled team names that changed.  I had to create a team name mapping to join the data sets, because the team names in the data sets had different string values.  I joined the salary cap and team stats data sets on team and season.
 
+#### Regression Work Outline
 I performed a series of regression analyses against the win-loss percentage variable (win rate).  First I graphed gini coefficient and team total cap percentage data against win-loss percentage.  I added team statistics to those regressions, then performed a machine-learning style polynomial regression.  Lastly I performed a regression using salary data and past season performance to predict WLP.
 
+### Regression: Gini Coefficient and Salary Cap Percentage VS Win-Loss Percentage
+I used the statsmodel package in Python to analyze salary cap data and WLP.  My initial regression of salary cap hit gini coefficient against WLP resulted in a valid model, but a very low adjested R^2.  Only a small amount of variance in winning can be explained by team income inequality.
+
+##### Code used
+```
+import statsmodels.api as sm
+
+chgc=df_nfl_combined_2014_2020[['cap_hit_gini_coef']]
+wlp=df_nfl_combined_2014_2020[['win_loss_perc']]
+
+x = sm.add_constant(chgc)
+
+model2 = sm.OLS(wlp,x).fit()
+
+print(model2.summary())
+```
+##### Review Adj. R-squared for variance explained, Prob (F-statistic) for overall model fit, and P>|t| for individual variables.  F-statistic and p-values below 0.01 indicate a strong evidence of model accuracy and a relationship between the explanatory variables and the outcome variable.  
+```
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          win_loss_perc   R-squared:                       0.052
+Model:                            OLS   Adj. R-squared:                  0.047
+Method:                 Least Squares   F-statistic:                     12.06
+Date:                Sun, 11 Jan 2026   Prob (F-statistic):           0.000618
+Time:                        11:53:04   Log-Likelihood:                 54.364
+No. Observations:                 224   AIC:                            -104.7
+Df Residuals:                     222   BIC:                            -97.90
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+const                 1.1803      0.196      6.015      0.000       0.794       1.567
+cap_hit_gini_coef    -1.1114      0.320     -3.473      0.001      -1.742      -0.481
+==============================================================================
+Omnibus:                        5.192   Durbin-Watson:                   1.568
+Prob(Omnibus):                  0.075   Jarque-Bera (JB):                3.525
+Skew:                          -0.146   Prob(JB):                        0.172
+Kurtosis:                       2.459   Cond. No.                         34.5
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+```
+Next I regressed the average of prior year and current year gini coefficient against WLP and got another valid model.  This time the adjusted R^2 was 0.07, a small improvement on the initial model.  In both cases, the coefficient for the variable was around -1 to -1.6, meaning the gini coefficient is inversely related to win rate.  Paying a few players high salaries leaves less money for the rest of the team, and football is a team sport.  It's important to have skilled players at every position.  Still, income inequality only explains a small amount of a team's win rate.
+
+I tried regressing the sum of cap percentage (overall percent of team salary cap used) against WLP and got a better model, with 37% of the variance in winning explained by total cap percentage used.  
+
+```
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          win_loss_perc   R-squared:                       0.379
+Model:                            OLS   Adj. R-squared:                  0.376
+Method:                 Least Squares   F-statistic:                     135.3
+Date:                Sun, 11 Jan 2026   Prob (F-statistic):           9.80e-25
+Time:                        11:53:15   Log-Likelihood:                 101.75
+No. Observations:                 224   AIC:                            -199.5
+Df Residuals:                     222   BIC:                            -192.7
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+===================================================================================
+                      coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------
+const              -0.2109      0.062     -3.402      0.001      -0.333      -0.089
+cap_percent_sum     0.0101      0.001     11.633      0.000       0.008       0.012
+==============================================================================
+Omnibus:                        3.086   Durbin-Watson:                   1.695
+Prob(Omnibus):                  0.214   Jarque-Bera (JB):                2.745
+Skew:                          -0.258   Prob(JB):                        0.253
+Kurtosis:                       3.166   Cond. No.                         428.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+```
+  
+There could be a number of reasons why cap percentage used is related to winning.  One reason would be dead cap space.  If a team releases a player they still have to pay that player's salary, 
 
 
 

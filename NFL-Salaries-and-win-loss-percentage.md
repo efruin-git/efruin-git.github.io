@@ -268,17 +268,97 @@ Notes:
 strong multicollinearity or other numerical problems.
 ```
 Next, I plotted residuals from the model and fitted values against WLP to review model performance visually.
+![WLP_Resid_Fitted_Vals_avg_gini_cap_perc_sum_2015_2020](images/WLP_Resid_Fitted_Vals_avg_gini_cap_perc_sum_2015_2020.png)
+![WLP_avg_gini_cap_perc_sum_vs_Fitted_2015_2020](images/WLP_avg_gini_cap_perc_sum_vs_Fitted_2015_2020.png)
+
+The residuals are evenly distributed but are fairly widely disbursed.  The fitted values are below actual results for high win rates and above actual results for low win rates.  The model is predicting values closer to average for most teams.  The results are decent, though.
+
+### WLP vs. Salary Data & Team Stats
+I added in the following variables to the multiple linear regression model - number of plays on offense, yards per play offense, penalties on offense, pass yards on offense, rush yards on offense, turnovers on offense, and points by opponents.  I selected variables I thought would be useful in predicting win rate without being too directly related to winning and without being redundant.  Instead of using interceptions, fumbles, and turnovers, I just used turnovers.  Instead of using pass net yards per attempt, pass attempts, passing touchdowns, and passing first downs, I used total pass yards.  Here's a heatmap of the correlation matrix with the new variables.
+
+![WLP_pred_vars_heatmap_2015_2020](images/WLP_pred_vars_heatmap_2015_2020.png)
+
+There's a high amount of correlation between opponent points and cap percent sum, pass yards and yards per play offense, and pass yards and plays offense.
+
+Here's the initial regression model summary with the new variables:
+```
+ OLS Regression Results
+==============================================================================
+Dep. Variable:          win_loss_perc   R-squared:                       0.759
+Model:                            OLS   Adj. R-squared:                  0.747
+Method:                 Least Squares   F-statistic:                     63.70
+Date:                Mon, 05 Jan 2026   Prob (F-statistic):           1.48e-51
+Time:                        20:41:07   Log-Likelihood:                 178.20
+No. Observations:                 192   AIC:                            -336.4
+Df Residuals:                     182   BIC:                            -303.8
+Df Model:                           9
+Covariance Type:            nonrobust
+=========================================================================================
+                            coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+const                     1.6572      1.207      1.373      0.171      -0.724       4.038
+cap_percent_sum           0.0043      0.001      5.462      0.000       0.003       0.006
+avg_gini_coef_2_years    -0.2328      0.229     -1.015      0.312      -0.685       0.220
+plays_offense            -0.0013      0.001     -1.083      0.280      -0.004       0.001
+yds_per_play_offense     -0.2104      0.223     -0.942      0.347      -0.651       0.230
+penalties                -0.0004      0.000     -0.743      0.458      -0.001       0.001
+points_opp               -0.0013      0.000     -7.784      0.000      -0.002      -0.001
+pass_yds                  0.0003      0.000      1.409      0.161      -0.000       0.001
+rush_yds                  0.0004      0.000      1.641      0.103   -7.49e-05       0.001
+turnovers                -0.0075      0.001     -5.300      0.000      -0.010      -0.005
+==============================================================================
+Omnibus:                        1.586   Durbin-Watson:                   2.090
+Prob(Omnibus):                  0.452   Jarque-Bera (JB):                1.262
+Skew:                          -0.183   Prob(JB):                        0.532
+Kurtosis:                       3.156   Cond. No.                     7.55e+05
+==============================================================================
+```
+After reviewing the p-values for each variable and the correlation matrix, I removed variables and ran the model again.  I did this step a few times before reaching the final model.  I used AIC and BIC to determine the best model.
+
+```
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:          win_loss_perc   R-squared:                       0.755
+Model:                            OLS   Adj. R-squared:                  0.748
+Method:                 Least Squares   F-statistic:                     114.4
+Date:                Mon, 05 Jan 2026   Prob (F-statistic):           8.30e-55
+Time:                        20:28:50   Log-Likelihood:                 176.44
+No. Observations:                 192   AIC:                            -340.9
+Df Residuals:                     186   BIC:                            -321.3
+Df Model:                           5
+Covariance Type:            nonrobust
+===================================================================================
+                      coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------
+const               0.2242      0.113      1.976      0.050       0.000       0.448
+cap_percent_sum     0.0045      0.001      5.688      0.000       0.003       0.006
+points_opp         -0.0013      0.000     -8.309      0.000      -0.002      -0.001
+pass_yds         9.412e-05   1.55e-05      6.053      0.000    6.34e-05       0.000
+rush_yds            0.0002   2.47e-05      6.255      0.000       0.000       0.000
+turnovers          -0.0077      0.001     -5.732      0.000      -0.010      -0.005
+==============================================================================
+Omnibus:                        1.473   Durbin-Watson:                   2.113
+Prob(Omnibus):                  0.479   Jarque-Bera (JB):                1.193
+Skew:                          -0.184   Prob(JB):                        0.551
+Kurtosis:                       3.116   Cond. No.                     6.80e+04
+==============================================================================
+```
+A couple notable variables did not make the final model.  Average gini coefficient over 2 years did not make the final model and neither did penalties.  When current season offensive and defensive production are included, income inequality is an insignificant variables.  Cap percent sum is still a significant variable, though.  I was surprised that offensive penalties did not factor into win rate.  Maybe some highly penalized teams are undisciplined, while some are good teams that push the boundary of legal play.
+
+Points opponent summarizes defensive production.  Pass yards, rush yards, and turnovers are key components of offensive production.  Turnovers proved to be a key variable in offensive success.  Teams have to protect the football on offense to win.
+
+The final model explained 75% of the variance in win rate and had very low AIC and BIC values.  It  is a very good model, which is confirmed by the residual and fitted value plots below.
 ![WLP_Resid_Fitted_Vals_2015_2020](images/WLP_Resid_Fitted_Vals_2015_2020.png)
 ![WLP_vs_Fitted_Vals_2015_2020](images/WLP_vs_Fitted_Vals_2015_2020.png)
 
+The final model used results of current year team performance on offense and defense to predict win rate.  I wanted to see if a polynomial regression would improve the accuracy of the model, and if prior year performance could be used to predict win rate.
+
+### Machine Learning Polynomial Regression
 
 
 
-Individual regressions against wlp
-Overall regression against wlp
 Machine learning, polynomial regression
 Prior year performance with salary data regression against wlp
-Correlation data
 
 
 
@@ -288,9 +368,6 @@ Correlation data
 
 
 
-![WLP_avg_gini_cap_perc_sum_vs_Fitted_2015_2020](images/WLP_avg_gini_cap_perc_sum_vs_Fitted_2015_2020.png)
-![WLP_pred_vars_heatmap_2015_2020](images/WLP_pred_vars_heatmap_2015_2020.png)
-![WLP_Resid_Fitted_Vals_avg_gini_cap_perc_sum_2015_2020](images/WLP_Resid_Fitted_Vals_avg_gini_cap_perc_sum_2015_2020.png)
 ![WLP_w_pred_vars_1col_heatmap_2015_2020](images/WLP_w_pred_vars_1col_heatmap_2015_2020.png)
 
 

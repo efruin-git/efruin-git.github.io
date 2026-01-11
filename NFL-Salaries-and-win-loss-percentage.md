@@ -369,12 +369,139 @@ The final model used results of current year team performance on offense and def
 
 ### Machine Learning Polynomial Regression
 
-I performed a polynomial regression and another regression with prior year team stats and will write up the results in the next couple days.
+I used the Sci-kit learn machine learning model for my polynomial regression.  I started with a linear regression model using the same variables as were found significant in the previous statsmodel package linear regression.  I split the data 70/30 for the training and test split.  After fitting a linear regression model I calculated the test data residuals by taking the difference of test data WLP and predicted values.  I calculated Mean Absolute Error and Root Mean Squared Error values of 0.074 and 0.095 respectively.
 
-Machine learning, polynomial regression
+The plot of residuals against WLP, the distribution plot of residuals, and the probability plot of residuals show a fairly normal distribution of residuals, but with the mode slightly below zero.
+
+NEED TO ADD GRAPHS HERE
+
+
+The coefficients generated in the model are listed below.  They are very similar to the results with the statsmodel package.  The pass yards and rush yards coefficients are small because total pass and rush yards per season reach thousands of yards.
   
-Prior year performance with salary data regression against wlp
+```
+                  Coefficient
+cap_percent_sum	  0.004549
+cap_hit_gini_coef	-0.436590
+points_opp	      -0.001346
+pass_yds	        0.000086
+rush_yds	        0.000151
+turnovers	        -0.007203
+```
 
+I multiplied the mean values for each variable by each coefficient and got this result, with each product having a similar magnitude, indicating each variable has an influence in the final model.
+  
+```
+cap_percent_sum      0.313549
+cap_hit_gini_coef   -0.268306
+points_opp          -0.496119
+pass_yds             0.327860
+rush_yds             0.272121
+turnovers           -0.158455
+```
+
+After the machine learning linear regression I performed a polynomial regression with the goal of finding a model that can estimate win rate at the high and low ends more accurately.  Here's the code I used to create my polynomial model.
+  
+```
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.model_selection import train_test_split
+
+polynomial_converter = PolynomialFeatures(degree=2,include_bias=False)
+
+df_nfl_combined_modeling_vars_wtarget = df_nfl_combined_2014_2020[df_nfl_combined_2014_2020['season']>2014][['win_loss_perc','cap_percent_sum','cap_hit_gini_coef','points_opp','pass_yds','rush_yds','turnovers']]
+
+X = df_nfl_combined_modeling_vars_wtarget.drop('win_loss_perc',axis=1)
+y = df_nfl_combined_modeling_vars_wtarget['win_loss_perc']
+
+poly_features = polynomial_converter.fit_transform(X)
+
+X_train, X_test, y_train, y_test = train_test_split(poly_features, y, test_size=0.3, random_state=101)
+
+```
+  
+I calculated Mean Absolute Error and Root Mean Squared Error values of 0.089 and 0.117 respectively, both worse than the ML linear regression model.  The test data residuals were no better than the ML linear regression model.  The linear regression model is the better model.
+
+
+ADD POLYNOMIAL REGRESSION MODEL RESIDUAL PLOTS HERE
+
+
+
+In an attempt to create a model that is more predictive of future performance, I added team stats data lagged one and two years, and continued my regression work using the statsmodel package.  Upon investigating the salary data again, I found that in the presence of the cap percent sum variable, the current year gini coefficient value is more significant than the average of the current and prior year gini coefficient.  I will use the current year gini coefficient variable in the predictive model.
+  
+```
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          win_loss_perc   R-squared:                       0.477
+Model:                            OLS   Adj. R-squared:                  0.469
+Method:                 Least Squares   F-statistic:                     57.14
+Date:                Sat, 10 Jan 2026   Prob (F-statistic):           2.66e-26
+Time:                        13:44:01   Log-Likelihood:                 103.80
+No. Observations:                 192   AIC:                            -199.6
+Df Residuals:                     188   BIC:                            -186.6
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+=========================================================================================
+                            coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+const                     0.2683      0.214      1.253      0.212      -0.154       0.691
+avg_gini_coef_2_years    -0.0964      0.581     -0.166      0.868      -1.242       1.050
+cap_hit_gini_coef        -0.7136      0.481     -1.483      0.140      -1.663       0.235
+cap_percent_sum           0.0106      0.001     12.015      0.000       0.009       0.012
+==============================================================================
+Omnibus:                        0.238   Durbin-Watson:                   1.592
+Prob(Omnibus):                  0.888   Jarque-Bera (JB):                0.393
+Skew:                          -0.030   Prob(JB):                        0.822
+Kurtosis:                       2.787   Cond. No.                     4.97e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 4.97e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+```
+
+  
+To check whether the predictive model would perform better without salary data I regressed WLP against 1 and 2 year lagged opponent points, pass yards, rush yards, and turnovers.  The best model I could fit with those team stats explained ~16.5% of the variance in win rate.  With salary cap data added back into the model I was able to explain ~44.5% of the variance in win rate.  
+
+  
+```
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          win_loss_perc   R-squared:                       0.457
+Model:                            OLS   Adj. R-squared:                  0.447
+Method:                 Least Squares   F-statistic:                     46.10
+Date:                Sat, 10 Jan 2026   Prob (F-statistic):           4.55e-28
+Time:                        15:01:28   Log-Likelihood:                 116.86
+No. Observations:                 224   AIC:                            -223.7
+Df Residuals:                     219   BIC:                            -206.7
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+const                 0.5765      0.186      3.096      0.002       0.210       0.943
+cap_hit_gini_coef    -0.7639      0.246     -3.103      0.002      -1.249      -0.279
+cap_percent_sum       0.0093      0.001     11.054      0.000       0.008       0.011
+points_opp_y1        -0.0004      0.000     -2.045      0.042      -0.001   -1.49e-05
+turnovers_y1         -0.0048      0.002     -2.648      0.009      -0.008      -0.001
+==============================================================================
+Omnibus:                        1.948   Durbin-Watson:                   2.019
+Prob(Omnibus):                  0.378   Jarque-Bera (JB):                1.651
+Skew:                          -0.199   Prob(JB):                        0.438
+Kurtosis:                       3.135   Cond. No.                     1.16e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.16e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+```
+
+
+The residual and fitted value plots show the same issue from earlier regressions of fitted values closer to the mean for teams with high and low actual win rates.
+
+
+ADD PLOTS HERE
+  
 
 
 

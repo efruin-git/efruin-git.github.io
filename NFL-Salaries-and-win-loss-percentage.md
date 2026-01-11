@@ -110,6 +110,8 @@ When I removed the 2020-2023 years, the distribution plot appeared more normal, 
 I performed Sharpiro-Wilk, scipy.stats normal test, and Anderson-Darling tests for normality both including the excluding the 2020-2023 seasons.  Each test determined the data is not normally distributed, but the Shapiro-Wilk test statistic of 0.985 was very close to 1, which indicates a normal distribution.  The data is stepped, so it is not truly normally distributed, but it's close enough to a normal distribution that I will assume normality and proceed with the regression.
 
 I calculated the gini coefficient by team and season as well as sum of salary cap hit and cap percentage.  The I added the average of the current and past season gini coefficient.  Here's a sample of the data:
+  
+```
                       team  season  cap_hit_sum  cap_percent_sum
 0        arizona-cardinals    2014     99264014            73.03
 1        arizona-cardinals    2015    121979201            82.12
@@ -123,7 +125,7 @@ I calculated the gini coefficient by team and season as well as sum of salary ca
 2        arizona-cardinals    2016           0.703863               0.673627
 3        arizona-cardinals    2017           0.632705               0.668284
 4        arizona-cardinals    2018           0.712755               0.672730  
-  
+```  
   
 I graphed box and whisker plots of the salary cap hit data alongside the gini coefficient data.
   

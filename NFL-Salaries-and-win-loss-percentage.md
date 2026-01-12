@@ -3,7 +3,8 @@
 ### Welcome to My NFL Salaries Regression Project Page
 #### (Regression work half-way down)
 
-![NFL_Teams](images/nfl_teams.jpg)
+
+<img src="images/nfl_teams.jpg" alt="NFL_Teams" width="300">
 
 
 _1/7/2025_  

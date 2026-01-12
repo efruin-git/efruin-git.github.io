@@ -103,7 +103,7 @@ I started with a player salary dataset from Kaggle [Player Salaries](https://www
 
 I decided to measure team success with the win-loss percentage variable (win rate).  I created a new variable, salary cap hit gini coefficient (cap_hit_gini_coef) to measure income inequality on each team.  The formula I used for gini coefficient is derived from this summary [Gini Coefficient Explanation and Formulas](https://www.statsdirect.com/help/nonparametric_methods/gini.htm).
 
-I began my regression by testing the win-loss percentage variable for normality.  The Q-Q Plot below seems to indicate a normal distribution, but the values are stepped, because teams play 16 games a season (17 starting in 2020).  There are occassionally ties, but those are rare.  There are a limited number of possible win-loss percentages possible.  The low win rate in the middle of the graph comes from the 2020-2023 seasons when teams started playing an extra game each year.  Since there are fewer seasons with 17 game years, the 8/17 win rate of 0.47 was less common than the 7/16 win rate of 0.4375, and than other bucketed win rates.
+I began my regression by testing the win-loss percentage variable for normality.  The Q-Q Plot below seems to indicate a normal distribution, but the values are stepped, because teams play 16 games a season (17 starting in 2020).  There are occasionally ties, but those are rare.  There are a limited number of possible win-loss percentages possible.  The low win rate in the middle of the graph comes from the 2020-2023 seasons when teams started playing an extra game each year.  Since there are fewer seasons with 17 game years, the 8/17 win rate of 0.47 was less common than the 7/16 win rate of 0.4375, and than other bucketed win rates.
 
 <img src="images/Win_Loss_Perc_Displot.png" alt="Win_Loss_Perc_Displot" width="500">
 <img src="images/Win_Loss_Perc_QQPlot.png" alt="Win_Loss_Perc_QQPlot" width="600">
@@ -164,7 +164,7 @@ The data sets I used in my analysis were complete.  The only fields missing valu
 I performed a series of regression analyses against the win-loss percentage variable (win rate).  First I graphed gini coefficient and team total cap percentage data against win-loss percentage.  I added team statistics to those regressions, then performed a machine-learning style polynomial regression.  Lastly I performed a regression using salary data and past season performance to predict WLP.
 
 ### Regression: Win-Loss Percentage vs. Gini Coefficient and Salary Cap Percentage
-I used the statsmodel package in Python to analyze salary cap data and WLP.  My initial regression of salary cap hit gini coefficient against WLP resulted in a valid model, but a very low adjested R^2.  Only a small amount of variance in winning can be explained by team income inequality.
+I used the statsmodel package in Python to analyze salary cap data and WLP.  My initial regression of salary cap hit gini coefficient against WLP resulted in a valid model, but a very low adjusted R^2.  Only a small amount of variance in winning can be explained by team income inequality.
 
 ##### Code used
   

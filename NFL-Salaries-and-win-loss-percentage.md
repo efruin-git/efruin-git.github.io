@@ -74,7 +74,7 @@ _I will list player salaries in order, but multiple players from the same team t
 - _MISSED PLAYOFFS_
 
 ##### #15 (tie) **Kirk Cousins (QB) $45M, Atlanta Falcons**, team record: 8-9, 11th in NFC
-- Cousins signed a big contract in 2024 and played most games that season.  He was replaced by the #8 pick rookie quarterback Michael Penix Jr. at the end of the season.  Cousins didn't play much this season until Penix Jr. got injured, and Cousin's ended the season with a 5-2 record.
+- Cousins signed a big contract in 2024 and played most games that season.  He was replaced by the #8 pick rookie quarterback Michael Penix Jr. at the end of the season.  Cousins didn't play much this season until Penix Jr. got injured, and Cousins ended the season with a 5-2 record.
 - _MISSED PLAYOFFS_
 
 ##### #18 **T.J. Watt (OLB) $41M, Pittsburgh Steelers**, team record: 10-7, 1st AFC North, 4 seed in AFC Playoffs

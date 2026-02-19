@@ -141,8 +141,12 @@ I graphed box and whisker plots of the salary cap hit data alongside the gini co
 
 ![Box_Whisker_and_Gini_Coef](images/Box_Whisker_and_Gini_Coef_6teams.png)
   
-Here's a link to the same box and whisker and gini coefficient graphs with all teams included *PLUS* a Power BI report to explore salaries further.  In the Power BI report you can view individual player salaries by team for each season.
-[All Teams](https://efruin-git.github.io/NFL-Salaries-Box-Whisker-Gini-Coef.html)
+Here's a link to the same box and whisker and gini coefficient graphs with all teams included and a link to a Power BI report to explore salaries further.  In the Power BI report you can view individual player salaries by team for each season.
+
+[Gini Coefficient Graphs](https://efruin-git.github.io/NFL-Salaries-Box-Whisker-Gini-Coef.html)
+
+[Power BI Report - Explore NFL Salaries and Gini Coefficient](https://app.powerbi.com/reportEmbed?reportId=0f594af5-af16-4110-b72d-8e4e536b44fc&autoAuth=true&ctid=87f457b7-df9f-4c5a-a1fa-7eb5150a5541)
+
 
 In the cap hit and gini coefficient graphs, you'll notice greater median salaries correspond to lower gini coefficients (less salary inequality).  Team salary caps generally increase each year, so a small increase in median cap hit may not translate to a lower gini coefficient that year.  A wider interquartile range or wider whiskers will not necessarily change the gini coefficient.
 

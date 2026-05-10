@@ -96,7 +96,7 @@ _I will list player salaries in order, but multiple players from the same team t
   
 20 teams in the NFL paid at least one player a top-25 salary in 2025.  Only 9 of those teams made the playoffs.  It's also interesting to note that the three teams tied in the NFL with the best record at 14-3, the Denver Broncos, New England Patriots, and Seattle Seahawks, did not pay any player on their team a top-25 salary.  In 2023 Brock Purdy led the San Francisco 49ers to the Super Bowl on a rookie contract worth less than $2M/year.  The Denver Broncos and New England Patriots have quarterbacks on rookie contracts worth $5M/year and $9M/year respectively.  The Chicago Bears and Carolina Panthers also made the playoffs, with quarterbacks on rookie contracts earning $9M-$10M/year, and no players with top-25 salaries.  The Houston Texans round out the five teams in the playoffs this year with quarterbacks on rookie contracts.
 
-_2/16/2025 update_
+_2/16/2026 update_
 >The conference championship games featured the Denver Broncos versus the New England Patriots, and the Seattle Seahawks versus the Los Angeles Rams.  The highest paid player from those teams was Matthew Stafford, QB of the Rams.  The Seattle Seahawks and New England Patriots went on to the Super Bowl, where the Seahawks were victorious with their stifling defense.
     
 With so many teams paying players big salaries and missing the playoffs, I decided to perform a regression study on player salaries, income inequality, and team records.

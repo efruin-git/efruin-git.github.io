@@ -12,7 +12,7 @@ Emmett
 [Link to NFL Salaries and Team Stats Regression](./NFL-Salaries-and-win-loss-percentage.html)
 
 
-[Link to NFL Salaries and Gini Coefficient Power BI Report](./NFL Salaries and Gini Coefficient PowerBI Report.html)
+[Link to NFL Salaries and Gini Coefficient Power BI Report](./NFL_Salaries_and_Gini_Coefficient_PowerBI_Report.html)
 
 
 

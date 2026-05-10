@@ -6,20 +6,16 @@
 The Power BI report may require viewers to login to their Microsoft or Power BI account.  I've provided screenshots of each tab so viewers can review the dashboard wihtout having to login.  The dashboard has additional interactive features.  
 <br>
 <br>
-<br>
 
 <img src="images/Cap_Hit_by_Player_and_Team.png" alt="Cap Hit by Player and Team">  
 <br>
-<br>  
-<br>  
+<br>    
 
 <img src="images/Cap_Hit_Team_Comparison.png" alt="Cap Hit Team Comparison">  
 <br>
 <br>
-<br>  
 
 <img src="images/Gini_Coefficient_1.png" alt="Gini Coefficient Viz 1">  
-<br>
 <br>
 <br>
 

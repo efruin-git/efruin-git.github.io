@@ -446,9 +446,7 @@ I calculated Mean Absolute Error and Root Mean Squared Error values of 0.089 and
 ### WLP vs. Salary Data & Team Stats Predictive Model
 
   
-In an attempt to create a model that is more predictive of future performance, I added team stats data lagged one and two years, and continued my regression work using the statsmodel package.  I started with the same initial variables as the original regression, but with team stats lagged.  
-
-Upon investigating the salary data again, I found that in the presence of the cap percent sum variable, the current year gini coefficient variable is more significant than the average of the current and prior year gini coefficient.  I will use the current year gini coefficient variable in the predictive model.
+In an attempt to create a model that is more predictive of future performance, I added team stats data lagged one and two years, and continued my regression work using the statsmodel package.  I re-evaluated the salary cap and gini coefficient data.  Upon investigating the salary data again, I found that in the presence of the cap percent sum variable, the current year gini coefficient variable is more significant than the average of the current and prior year gini coefficient.  I will use the current year gini coefficient variable in the predictive model.
   
 ```
                             OLS Regression Results                            
@@ -483,7 +481,7 @@ strong multicollinearity or other numerical problems.
 ```
 
   
-To check whether the predictive model would perform better without salary data I regressed WLP against 1 and 2 year lagged opponent points, pass yards, rush yards, and turnovers.  The best model I could fit with those team stats explained ~16.5% of the variance in win rate.  With salary cap data added back into the model I was able to explain ~44.5% of the variance in win rate.  
+To check whether the predictive model would perform better without salary data I regressed WLP against 1 and 2 year lagged pass yards, rush yards, turnovers, and opponent points.  The best model I could fit with those team stats explained ~16.5% of the variance in win rate.  With salary cap data added back into the model I was able to explain ~44.5% of the variance in win rate.  
 
   
 ```
@@ -520,7 +518,7 @@ strong multicollinearity or other numerical problems.
 ```
 
 
-The residual and fitted value plots show the same issue from earlier regressions of fitted values closer to the mean for teams with high and low actual win rates.
+The residual and fitted value plots show the same issue from earlier regressions of fitted values closer to .500 for teams with high and low actual win rates.
 
 
 ![residuals_predictive_w_salary](images/residuals_predictive_w_salary.png)

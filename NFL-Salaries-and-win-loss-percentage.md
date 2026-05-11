@@ -293,7 +293,7 @@ Next, I plotted residuals from the model and fitted values against WLP to review
 The residuals are evenly distributed but are fairly widely disbursed.  The fitted values are below actual results for high win rates and above actual results for low win rates.  The model is predicting values closer to average for most teams.  The results are decent, though.
 
 ### WLP vs. Salary Data & Team Stats
-I added in the following variables to the multiple linear regression model - number of plays on offense, yards per play offense, penalties on offense, pass yards on offense, rush yards on offense, turnovers on offense, and points by opponents.  I selected variables I thought would be useful in predicting win rate without being too directly related to winning and without being redundant.  Instead of using interceptions, fumbles, and turnovers, I just used turnovers.  Instead of using pass net yards per attempt, pass attempts, passing touchdowns, and passing first downs, I used total pass yards.  Here's a heatmap of the correlation matrix with the new variables.
+I added in the following variables to the multiple linear regression model - number of plays on offense, yards per play offense, penalties on offense, pass yards on offense, rush yards on offense, turnovers on offense, and points by opponents.  I selected variables I thought would be useful in predicting win rate without being redundant.  Instead of using interceptions, fumbles, and turnovers, I just used turnovers.  Instead of using pass net yards per attempt, pass attempts, passing touchdowns, and passing first downs, I used total pass yards.  Here's a heatmap of the correlation matrix with the new variables.
 
 ![WLP_pred_vars_heatmap_2015_2020](images/WLP_pred_vars_heatmap_2015_2020.png)
 

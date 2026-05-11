@@ -446,7 +446,9 @@ I calculated Mean Absolute Error and Root Mean Squared Error values of 0.089 and
 ### WLP vs. Salary Data & Team Stats Predictive Model
 
   
-In an attempt to create a model that is more predictive of future performance, I added team stats data lagged one and two years, and continued my regression work using the statsmodel package.  I started with the same initial variables as the original regression.  Upon investigating the salary data again, I found that in the presence of the cap percent sum variable, the current year gini coefficient value is more significant than the average of the current and prior year gini coefficient.  I will use the current year gini coefficient variable in the predictive model.
+In an attempt to create a model that is more predictive of future performance, I added team stats data lagged one and two years, and continued my regression work using the statsmodel package.  I started with the same initial variables as the original regression, but with the team stats lagged.  
+
+Upon investigating the salary data again, I found that in the presence of the cap percent sum variable, the current year gini coefficient variable is more significant than the average of the current and prior year gini coefficient.  I will use the current year gini coefficient variable in the predictive model.
   
 ```
                             OLS Regression Results                            

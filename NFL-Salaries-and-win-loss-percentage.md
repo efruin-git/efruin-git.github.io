@@ -483,6 +483,8 @@ strong multicollinearity or other numerical problems.
   
 To check whether the predictive model would perform better without salary data I regressed WLP against 1 and 2 year lagged pass yards, rush yards, turnovers, and opponent points.  The best model I could fit with those team stats explained ~16.5% of the variance in win rate.  With salary cap data added back into the model I was able to explain ~44.5% of the variance in win rate.  
 
+The best predictive model uses salary cap variables of team cap percent and gini coefficient.  It uses prior year team stats of opponent points and offensive turnovers.  No team stats from the 2 year lagged data were found to be significant.  Prior year passing yards and rush yards were not significant either.  
+
   
 ```
                             OLS Regression Results                            
@@ -525,7 +527,7 @@ The residual and fitted value plots show the same issue from earlier regressions
 ![fitted_values_predictive_w_salary](images/fitted_values_predictive_w_salary.png)
   
 
-The best predictive model uses salary cap variables of team cap percent and gini coefficient.  It uses prior year team stats of opponent points and offensive turnovers.  No team stats from the 2 year lagged data were found to be significant.  Prior year passing yards and rush yards were not significant either.  Spending more of the salary cap with less income inequality, along with defensive strength and preventing turnovers on offense were the factors leading to more wins, and they were able to explain a little less than half the variability in win rate.
+Spending more of the salary cap with less income inequality, along with defensive strength and preventing turnovers on offense were the factors leading to more wins, and they were able to explain a little less than half the variability in win rate.
 
 
 

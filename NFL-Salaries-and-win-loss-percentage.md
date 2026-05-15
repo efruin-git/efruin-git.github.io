@@ -398,12 +398,12 @@ The plot of residuals against WLP, the distribution plot of residuals, and the p
 The coefficients generated in the model are listed below.  They are very similar to the results with the statsmodel package.  The pass yards and rush yards coefficients are small because total pass and rush yards per season reach thousands of yards.
   
 ```
-                  Coefficient
-cap_percent_sum	  0.004549
+                   Coefficient
+cap_percent_sum	     0.004549
 cap_hit_gini_coef	-0.436590
-points_opp	      -0.001346
-pass_yds	        0.000086
-rush_yds	        0.000151
+points_opp	        -0.001346
+pass_yds	         0.000086
+rush_yds	         0.000151
 turnovers	        -0.007203
 ```
 

@@ -106,7 +106,7 @@ I started with a player salary dataset from Kaggle [Player Salaries](https://www
 
 I decided to measure team success with the win-loss percentage variable (win rate).  I created a new variable, salary cap hit gini coefficient (cap_hit_gini_coef) to measure income inequality on each team.  The formula I used for gini coefficient is derived from this summary [Gini Coefficient Explanation and Formulas](https://www.statsdirect.com/help/nonparametric_methods/gini.htm).
 
-#### Tests for Normality
+### Tests for Normality
 I began my regression by testing the win-loss percentage variable for normality.  The Q-Q Plot below seems to indicate a normal distribution, but the values are stepped, because teams play 16 games a season (17 starting in 2020).  There are occasionally ties, but those are rare.  There are a limited number of possible win-loss percentages possible.  The low win rate in the middle of the graph comes from the 2020-2023 seasons when teams started playing an extra game each year.  Since there are fewer seasons with 17 game years, the 8/17 win rate of 0.47 was less common than the 7/16 win rate of 0.4375, and than other bucketed win rates.
 
 <img src="images/Win_Loss_Perc_Displot.png" alt="Win_Loss_Perc_Displot" width="500">
@@ -119,7 +119,7 @@ When I removed the 2020-2023 years, the distribution plot appeared more normal, 
 
 I performed Sharpiro-Wilk, scipy.stats normal test, and Anderson-Darling tests for normality both including and excluding the 2020-2023 seasons.  Each test determined the data is not normally distributed, but the Shapiro-Wilk test statistic of 0.985 was very close to 1, and a test statistic near 1 indicates a normal distribution.  The data is stepped, so it is not truly normally distributed, but it's close enough to a normal distribution that I will assume normality and proceed with the regression.
 
-#### Fields Added
+### Fields Added
 I calculated the gini coefficient by team and season as well as sum of salary cap hit and cap percentage.  Then I added the average of the current and past season gini coefficient.  Here's a sample of the data:
   
 ```
@@ -151,7 +151,7 @@ Here's a link to the same box and whisker and gini coefficient graphs with all t
 
 In the cap hit and gini coefficient graphs, you'll notice greater median salaries correspond to lower gini coefficients (less salary inequality).  Team salary caps generally increase each year, so a small increase in median cap hit may not translate to a lower gini coefficient that year.  A wider interquartile range or wider whiskers will not necessarily change the gini coefficient.
 
-#### Salary Cap Background
+### Salary Cap Background
 More context on the salary cap may be helpful to understand the data.  The league salary cap applies to each team and increases each year, but salary caps can very by team based on factors including unique player contracts, carry-over cap space from prior years, and dead cap space from releasing players with guaranteed money.  My data analysis uses salary cap hit and salary cap percentage from players on each team.  Dead cap space would prevent a team from using all their cap space, and total cap hit percentage would be lower for that team.  
 
 Here's more info from Pro Football Network [Salary Cap](https://www.profootballnetwork.com/nfl-salary-cap-space-by-team):
@@ -165,7 +165,7 @@ Player salary distributions can very widely by team.  Below are box and whisker 
 
 ![Cap_Hit_Percent_2020_Box_Whisker](images/Cap_Hit_Percent_2020_Box_Whisker.png)
 
-#### Data Cleaning
+### Data Cleaning
 The data sets I used in my analysis were complete.  The only fields missing values were ties and "mov".  I did not use the "mov" field, and blank rows in the tie field correspond to 0 ties.  Some team names change over time, and some teams move locations.  The team names used in my analysis included both location and team name, so I had to clean that data.  I used the most recent team name and location for each team, and I back-filled team names that changed.  I had to create a team name mapping to join the data sets because the team names in the data sets used different naming conventions (dashes and location/name order - "chicago bears" vs "bears-chicago").  I joined the salary cap and team stats data sets on team and season.
 
 ### Regression Work Outline

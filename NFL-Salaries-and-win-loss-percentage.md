@@ -166,7 +166,9 @@ Player salary distributions can very widely by team.  Below are box and whisker 
 ![Cap_Hit_Percent_2020_Box_Whisker](images/Cap_Hit_Percent_2020_Box_Whisker.png)
 
 ### Data Cleaning
-The data sets I used in my analysis were complete.  The only fields missing values were ties and "mov".  I did not use the "mov" field, and blank rows in the tie field correspond to 0 ties.  Some team names change over time, and some teams move locations.  The team names used in my analysis included both location and team name, so I had to clean that data.  I used the most recent team name and location for each team, and I back-filled team names that changed.  I had to create a team name mapping to join the data sets because the team names in the data sets used different naming conventions (dashes and location/name order - "chicago bears" vs "bears-chicago").  I joined the salary cap and team stats data sets on team and season.
+The data sets I used in my analysis were complete.  The only fields missing values were ties and "mov".  I did not use the "mov" field, and blank rows in the tie field correspond to 0 ties.  
+
+Some team names change over time, and some teams move locations.  The team names from my analysis included both location and team name, so I had to clean that data.  I used the most recent team name and location for each team, and I updated team names that had changed.  In addition, team names in the two data sets used different naming conventions (dashes and location/name order - "chicago bears" vs "bears-chicago"), so I had to create a team name mapping to join the data sets.  I joined the salary cap and team stats data sets on team name and season.
 
 ### Regression Work Outline
 I performed a series of regression analyses against the win-loss percentage variable (win rate).  First I regressed gini coefficient and team total cap percentage data against win-loss percentage.  I added team statistics to the salary data and regressed against win-loss percentage, then performed a machine-learning style polynomial regression.  Lastly I performed a regression using salary data and past season performance to predict WLP.

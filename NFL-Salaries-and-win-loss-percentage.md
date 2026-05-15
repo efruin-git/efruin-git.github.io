@@ -138,7 +138,7 @@ I calculated the gini coefficient by team and season as well as sum of salary ca
 4        arizona-cardinals    2018           0.712755               0.672730  
 ```  
   
-I graphed box and whisker plots of the salary cap hit data alongside the gini coefficient data.  Note the gini coefficient graph x-axis has a range of (0.4, 0.8).  The gini coefficients do not vary as much as they appear in the graph.
+I graphed box and whisker plots of the salary cap hit data alongside the gini coefficient data.  Note the gini coefficient graph x-axis has a range of (0.4, 0.8) - the gini coefficients do not vary as much as they appear in the graph.
   
 
 ![Box_Whisker_and_Gini_Coef](images/Box_Whisker_and_Gini_Coef_6teams.png)

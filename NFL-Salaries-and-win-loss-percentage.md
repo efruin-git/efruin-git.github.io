@@ -106,6 +106,7 @@ I started with a player salary dataset from Kaggle [Player Salaries](https://www
 
 I decided to measure team success with the win-loss percentage variable (win rate).  I created a new variable, salary cap hit gini coefficient (cap_hit_gini_coef) to measure income inequality on each team.  The formula I used for gini coefficient is derived from this summary [Gini Coefficient Explanation and Formulas](https://www.statsdirect.com/help/nonparametric_methods/gini.htm).
 
+#### Tests for Normality
 I began my regression by testing the win-loss percentage variable for normality.  The Q-Q Plot below seems to indicate a normal distribution, but the values are stepped, because teams play 16 games a season (17 starting in 2020).  There are occasionally ties, but those are rare.  There are a limited number of possible win-loss percentages possible.  The low win rate in the middle of the graph comes from the 2020-2023 seasons when teams started playing an extra game each year.  Since there are fewer seasons with 17 game years, the 8/17 win rate of 0.47 was less common than the 7/16 win rate of 0.4375, and than other bucketed win rates.
 
 <img src="images/Win_Loss_Perc_Displot.png" alt="Win_Loss_Perc_Displot" width="500">
@@ -118,6 +119,7 @@ When I removed the 2020-2023 years, the distribution plot appeared more normal, 
 
 I performed Sharpiro-Wilk, scipy.stats normal test, and Anderson-Darling tests for normality both including and excluding the 2020-2023 seasons.  Each test determined the data is not normally distributed, but the Shapiro-Wilk test statistic of 0.985 was very close to 1, and a test statistic near 1 indicates a normal distribution.  The data is stepped, so it is not truly normally distributed, but it's close enough to a normal distribution that I will assume normality and proceed with the regression.
 
+#### Fields Added
 I calculated the gini coefficient by team and season as well as sum of salary cap hit and cap percentage.  Then I added the average of the current and past season gini coefficient.  Here's a sample of the data:
   
 ```
@@ -166,7 +168,7 @@ Player salary distributions can very widely by team.  Below are box and whisker 
 #### Data Cleaning
 The data sets I used in my analysis were complete.  The only fields missing values were ties and "mov".  I did not use the "mov" field, and blank rows in the tie field correspond to 0 ties.  Some team names change over time, and some teams move locations.  The team names used in my analysis included both location and team name, so I had to clean that data.  I used the most recent team name and location for each team, and I back-filled team names that changed.  I had to create a team name mapping to join the data sets because the team names in the data sets used different naming conventions (dashes and location/name order - "chicago bears" vs "bears-chicago").  I joined the salary cap and team stats data sets on team and season.
 
-#### Regression Work Outline
+### Regression Work Outline
 I performed a series of regression analyses against the win-loss percentage variable (win rate).  First I regressed gini coefficient and team total cap percentage data against win-loss percentage.  I added team statistics to those regressions, then performed a machine-learning style polynomial regression.  Lastly I performed a regression using salary data and past season performance to predict WLP.
 
 ### Regression: Win-Loss Percentage vs. Gini Coefficient and Salary Cap Percentage

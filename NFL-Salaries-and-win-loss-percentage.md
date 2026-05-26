@@ -8,7 +8,7 @@
 
 
 _1/7/2026_  
-I'm a pro football fan and root for my hometown team, the Chicago Bears.  I'm excited about the team's direction.  We have a great new coach, Ben Johnson, who has led the Bears to offensive production near the top of the NFL.  The Bears made the playoffs this year for the first time since 2020.  They've had a rough go-of-it over the last 20 years.  Before this season they only made the playoffs three times since their Super Bowl appearance in 2006.  I'm hoping for some better years ahead.
+I'm a pro football fan and root for my hometown team, the Chicago Bears.  I'm excited about the team's direction.  We have a great new coach, Ben Johnson, who has led the Bears to offensive production near the top of the NFL.  The Bears made the playoffs this year for the first time since 2020.  They've had a rough go-of-it over the last 20 years.  Not counting this season, they only made the playoffs three times since their Super Bowl appearance in 2006.  I'm hoping for some better years ahead.
 
 A big topic of conversation in professional sports is salaries.  I hear a lot of people say so-and-so deserves to get paid, they deserve their money!  When players do get paid, sometimes they play well and sometimes they don't.  Sometimes they get injured and their salary is wasted.  With the playoffs upon us, I thought it would be interesting to see who's getting paid the big bucks and whether their teams are in the playoffs.  Are the big money players worth it?  How much do they influence a team's performance?
 

@@ -373,7 +373,9 @@ A couple notable variables did not make the final model.  Average gini coefficie
 
 I was surprised that offensive penalties did not factor into win rate.  Maybe some highly penalized teams are undisciplined, while some are good teams that push the boundary of legal play.
 
-The points opponent variable indicates defensive strength.  Pass yards, rush yards, and turnovers are key components of offensive production.  Turnovers proved to be a key variable in offensive success.  Teams have to protect the football on offense to win.
+Cap percent sum, points opponent, pass yards, rush yards, and turnovers made the final model.  The points opponent variable indicates defensive strength.  Pass yards, rush yards, and turnovers are key components of offensive production.  
+
+Turnovers proved to be a key variable in offensive success.  Teams have to protect the football on offense to win.
 
 The final model explained 75% of the variance in win rate and had very low AIC and BIC values.  It  is a very good model, which is confirmed by the residual and fitted value plots below.  
 

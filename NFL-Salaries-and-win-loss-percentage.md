@@ -255,7 +255,7 @@ Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 ```
     
-There could be a number of reasons why cap percentage used is related to winning.  One reason would be dead cap space.  If a team releases a player they still have to pay that player's salary, and they can't use their full team cap space.  Another reason could be that teams rebuild, save cap space, roll it over each year, then spend more money when they're making a push for the Super Bowl.  A team that uses more cap space could be using rolled over cap space on top of their annual allotment, which would mean they're spending more than other teams on their players.  If they spend wisely, they'll have more talented players on their team, assuming more expensive players are better players.  Another consideration is player contracts that award performance.  If players get bonus money for achieving performance milestones, they'll get paid more and use more of the cap space.
+There could be a number of reasons why cap percentage used is related to winning.  One reason would be dead cap space.  If a team releases a player they still have to pay that player's salary, and they can't use their full team cap space.  Another reason could be that teams rebuild, save cap space, roll it over each year, then spend more money when they're making a push for the Super Bowl.  A team that uses more cap space could be using rolled over cap space on top of their annual allotment, which would mean they're spending more than other teams on their players.  If they spend wisely, they'll have more talented players on their team.  Another consideration is player contracts that award performance.  If players get bonus money for achieving performance milestones, they'll get paid more and use more of the cap space.
 
 I combined average 2-year gini coefficient and total cap percentage in a regression against WLP.  The resulting model was statistically significant and explained 46.5% of the variance in win rate.
     
@@ -290,7 +290,7 @@ Notes:
 strong multicollinearity or other numerical problems.
 ```
   
-Next, I plotted residuals from the model and fitted values against WLP to review model performance visually.
+Next, I plotted residuals from the model vs fitted values and fitted values against WLP to review model performance visually.
 ![WLP_Resid_Fitted_Vals_avg_gini_cap_perc_sum_2015_2020](images/WLP_Resid_Fitted_Vals_avg_gini_cap_perc_sum_2015_2020.png)
 ![WLP_avg_gini_cap_perc_sum_vs_Fitted_2015_2020](images/WLP_avg_gini_cap_perc_sum_vs_Fitted_2015_2020.png)
 

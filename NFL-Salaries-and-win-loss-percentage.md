@@ -117,7 +117,7 @@ When I removed the 2020-2023 years, the distribution plot appeared more normal, 
 <img src="images/Win_Loss_Perc_Displot_Bfr2020.png" alt="Win_Loss_Perc_Displot_Bfr2020" width="500">
 <img src="images/Win_Loss_Perc_QQPlot_Bfr2020.png" alt="Win_Loss_Perc_QQPlot_Bfr2020" width="600">
 
-I performed Sharpiro-Wilk, scipy.stats normal test, and Anderson-Darling tests for normality both including and excluding the 2020-2023 seasons.  Each test determined the data is not normally distributed, but the Shapiro-Wilk test statistic of 0.985 was very close to 1, and a test statistic near 1 indicates a normal distribution.  The data is stepped, so it is not truly normally distributed, but it's close enough to a normal distribution that I will assume normality and proceed with the regression.
+I performed Sharpiro-Wilk, scipy.stats normal test, and Anderson-Darling tests for normality both including and excluding the 2020-2023 seasons.  Each test determined the data is not normally distributed, but the Shapiro-Wilk test statistic of 0.985 with the 2020-2023 seasons excluded was very close to 1, and a test statistic near 1 indicates a normal distribution.  The data is stepped, so it is not truly normally distributed, but it's close enough to a normal distribution that I will assume normality and proceed with the regression.
 
 ### Fields Added
 I calculated the gini coefficient by team and season as well as sum of salary cap hit and cap percentage.  Then I added the average of the current and past season gini coefficient.  Here's a sample of the data:

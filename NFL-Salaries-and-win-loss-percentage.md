@@ -369,7 +369,9 @@ Kurtosis:                       3.116   Cond. No.                     6.80e+04
 ==============================================================================
 ```
   
-A couple notable variables did not make the final model.  Average gini coefficient over 2 years did not make the final model and neither did penalties.  When current season offensive and defensive production are included, income inequality is an insignificant variable.  Cap percent sum is still a significant variable, though.  I was surprised that offensive penalties did not factor into win rate.  Maybe some highly penalized teams are undisciplined, while some are good teams that push the boundary of legal play.
+A couple notable variables did not make the final model.  Average gini coefficient over 2 years did not make the final model and neither did penalties.  When current season offensive and defensive production are included, income inequality is an insignificant variable.  Cap percent sum is still a significant variable, though.  
+
+I was surprised that offensive penalties did not factor into win rate.  Maybe some highly penalized teams are undisciplined, while some are good teams that push the boundary of legal play.
 
 The points opponent variable indicates defensive strength.  Pass yards, rush yards, and turnovers are key components of offensive production.  Turnovers proved to be a key variable in offensive success.  Teams have to protect the football on offense to win.
 

@@ -452,7 +452,7 @@ I calculated Mean Absolute Error and Root Mean Squared Error values of 0.089 and
   
 In an attempt to create a model that is more predictive of future performance, I added team stats data lagged one and two years, and continued my regression work using the statsmodel package.  
 
-I re-evaluated the salary cap and gini coefficient data.  Upon investigating the salary data again, I found that in the presence of the cap percent sum variable, the current year gini coefficient variable is more significant than the average of the current and prior year gini coefficient.  I used the current year gini coefficient variable in the predictive model.
+I re-evaluated the salary cap and gini coefficient data.  Upon investigating the salary data again, I found that in the presence of the cap percent sum variable, the current year gini coefficient variable is more significant than the average of the current and prior year gini coefficient (see below).  I used the current year gini coefficient variable in the predictive model.
   
 ```
                             OLS Regression Results                            

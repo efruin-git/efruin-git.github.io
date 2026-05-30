@@ -539,8 +539,24 @@ The residual and fitted value plots show the same issue from earlier regressions
 
 Spending more of the salary cap with less income inequality, along with defensive strength and preventing turnovers on offense were the factors leading to more wins, and they were able to explain a little less than half the variability in win rate.
 
+### Sources:
+NFL Productions LLC (2026).  Ranking the NFL's Biggest Contracts for 2025.  nfl.com.  https://www.nfl.com/photos/ranking-the-nfl-s-biggest-contracts-for-2025
 
+Hudec, Jon (2026).  How Quickly did 31 QBs Earn Purdy's $870K?.  Espn.com.
+https://www.espn.com/espn/feature/story/_/id/38512080/nfl-quarterbacks-earn-san-francisco-49ers-brock-purdy-salary
 
+Buchan, Iain E. (2025).  Gini Coefficient of Inequality.  Statsdirect.com.  
+https://www.statsdirect.com/help/nonparametric_methods/gini.htm
+
+PFSN (2026).  NFL Salary Cap Tracker by Team.  Profootballnetwork.com.
+https://www.profootballnetwork.com/nfl-hq/salary-cap-tracker/
+
+f4K25g (2020).  NFL Salaries.  [2014-thru-2020-cap-tables.csv].  Kaggle.  https://www.kaggle.com/datasets/f4k25g/nfl-salaries
+
+Cantalupa, Nick (2024).  NFL Team Data 2003-2023.  [team_stats_2003_2023.csv].  Kaggle.  https://www.kaggle.com/datasets/nickcantalupa/nfl-team-data-2003-2023
+
+### Disclaimer:
+I used AI to research and produce some of the code used in my statistical models.  I did not use AI to edit or write any of the analysis.
 
 
 [back](./)

@@ -26,6 +26,8 @@ The Power BI report may require viewers to login to their Microsoft or Power BI 
 * * *
 <img src="images/Gini_Coefficient_Notes.png" alt="Gini Coefficient Notes">
 
+## Disclaimer:
+I used AI to research and produce some of the code used in this report.  I did not use AI to edit or write any of the analysis.
 
 
 [back](./)

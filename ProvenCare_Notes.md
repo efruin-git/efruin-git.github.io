@@ -1,6 +1,6 @@
-ProvenCare Book Review
+#### Source
+Glenn D. Steele Jr., MD, David T. Feinberg, MD (2018).  *ProvenCare: How to Deliver Value-Based Healthcare the Geisinger Way*.  Geisinger Health Foundation
 
-Publishing copyright 2018 by Geisinger Health Foundation
 
 Background
 
@@ -251,10 +251,6 @@ Geisinger created a program to improve patient experience.
 
 
 
-
-**Sources**:
-Glenn D. Steele Jr., MD, David T. Feinberg, MD (2018).  ProvenCare: How to Deliver Value-Based Healthcare the Geisinger Way.  Geisinger Health Foundation
-
-
+[back](./)
 
 

@@ -4,18 +4,22 @@
 Background
 
 ProvenCare is a book about healthcare quality improvement at Geisinger Hospital in Pennsylvania, written by Glenn D. Steele Jr., MD, president and CEO from 2001 to 2015 and current CEO David T. Feinberg, MD, who started in May 2015.  The quality improvement initiatives documented in the book started in 2004-2005 after a failed merger with Penn State Hershey Medical Center that lasted three years.  Geisinger was rebuilding and looking for ways to improve its finances and outcomes.
+
 The authors tout the many advances Geisinger made in patient care, while being careful to acknowledge the leaders found themselves in a situation ripe for innovation.  The majority of Geisinger’s patients lived in central Pennsylvania and were “older, sicker, and poorer than just about any demography in the United States outside the Deep South” (page 7).  The patients had traditional values and were trusting of Geisinger leaders and employees.  The patient population was also very stable.  
+
 Geisinger is a health system and also an insurer.  Geisinger Health Plan was started in the 1970s.  Partnership between the insurer and the hospital helped in implementing value-based care initiatives.  Reimbursement rates were structured so providers would be rewarded for more efficient care.
+
 Geisinger implemented their EPIC EHR in ambulatory care sites in 1995 and now Geisinger uses EPIC and Cerner across their facilities.  The increased adoption of EHR systems also made innovation possible.  The EHR was used to implement best practice alerts, workflow programming, automate processes, store clinical information, and as a patient portal so patients could communicate with providers and review their clinical and lab results.
+
 Motivation and Quality Improvement Fundamentals
 
-Dr. Steele was motivated by an experience in his youth when his father (underwent surgery?)
-Review and cite his father’s experience of care – he waited with other families for their number to be called
+Dr. Steele was motivated by an experience when his father underwent CABG surgery.  He waited with other families for their number to be called
+
 He was also motivated by a couple meaningful research articles from the early 2000s.  a RAND study published in the New England Journal of Medicine found that 45% of care was “suboptimal, split evenly between too much, too little, and the wrong care” (page 20).  The other research was performed by Arnold Milstein, cofounder of the Leapfrog Group and the Consumer-Purchaser Disclosure Project.  Milstein found there was “no relationship between the cost of care and quality-of-care outcomes in the United States” (page 20).
+
 Page 20 “Two critical factors drove much of Geisinger’s commitment to innovate: a RAND study published in the New England Journal of Medicine in 2003 and the data from Arnold Milstein, cofounder of The Leapfrog Group and the Consumer-Purchaser Disclosure Project in the 1980s and ‘90s, demonstrating that there was no relationship between the cost of care and quality-of-care outcomes in the United States.”  The findings were fundamental insights that motivated Dr. Steele as his team worked to reengineer healthcare processes and outcomes at Geisinger.  NEJM mentioned above found that 45 percent of care was “suboptimal, evenly split between too much, too little, and the wrong care.”
+
 Patients with worst outcomes often have the highest cost
-
-
 
 
 Geisinger patient population – Central Pennsylvania, “older, sicker, and poorer than just about any demography in the United States outside the Deep South” (page 7).  They have traditional values and are trusting of Geisinger leaders and employees.  The patient population is also very stable.  Those characteristics made implementing innovation efforts easier.
@@ -65,18 +69,31 @@ In 2009, President Obama cited Geisinger in an address to congress as an example
 Geisinger also lauded in TIME magazine, U.S. News & World Report, and other major publications. (page 11)
 
 Chapters:
+
 1 Why Geisinger?
+
 2 The Problem
+
 3 The Fix
+
 4 Effective Governance
+
 5 Getting Started
+
 6 Enabling Change
+
 7 ProvenCare Acute: Taking It to the Next Step
+
 8 ProvenCare Chronic
+
 9 ProvenHealth Navigator: Geisinger’s Advanced Medical Home
+
 10 Leading and Managing a Successful Practice Transformation
+
 11 ProvenCare Biologics
+
 12 ProvenExperience
+
 13 Future Vision
 
 Geisinger had a merger that lasted three years with Penn State Hershey Medical Center.  The new organization did not function well, leading to the quick separation of the two entities.  Geisinger began a process of rebuilding.

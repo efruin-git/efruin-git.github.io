@@ -1,5 +1,4 @@
-#### Source
-Glenn D. Steele Jr., MD, David T. Feinberg, MD (2018).  *ProvenCare: How to Deliver Value-Based Healthcare the Geisinger Way*.  Geisinger Health Foundation
+**Source** - Glenn D. Steele Jr., MD, David T. Feinberg, MD (2018).  *ProvenCare: How to Deliver Value-Based Healthcare the Geisinger Way*.  Geisinger Health Foundation
 
 
 Background
@@ -32,23 +31,6 @@ ProvenCare is a formalized process initiated to:
 -	reliably deliver default best practices by redesign of complex clinical systems that embeds new behaviors into everyday patient flow
 -	activate patients and their families and engage them in the care processes as symmetrical partners with caregivers
 -	provide a packaged “warrant” that transfers the risk for the financial effects of preventable complications to the caregiver.
-
-Outline:
-Intro/Background
--	hospital info, provencare definition, patient population
-ProvenCare Heart CABG
--	Reason for choosing CABG
--	Processes
--	Outcomes
--	Other provencare acute programs
-ProvenCare Diabetes
--	Reason for choosing diabetes
--	Processes
--	Outcomes
--	Mention other provencare chronic programs
-Provencare Navigator 
-ProvenCare Biologics
-ProvenCare Impacts on Pop Health and Value Based Care
 
 
 

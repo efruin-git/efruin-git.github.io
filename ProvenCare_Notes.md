@@ -181,6 +181,7 @@ Chapter 12 – ProvenExperience
 Geisinger created a program to improve patient experience.
 
 
+------------------------------------------------------
 
 
 The authors tout the many advances Geisinger made in patient care, while being careful to acknowledge the leaders found themselves in a situation ripe for innovation.  The majority of Geisinger’s patients lived in central Pennsylvania and were “older, sicker, and poorer than just about any demography in the United States outside the Deep South” (page 7).  The patients had traditional values and were trusting of Geisinger leaders and employees.  The patient population was also very stable.  

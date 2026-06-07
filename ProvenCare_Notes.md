@@ -1,73 +1,6 @@
 **Source** - Glenn D. Steele Jr., MD, David T. Feinberg, MD (2018).  *ProvenCare: How to Deliver Value-Based Healthcare the Geisinger Way*.  Geisinger Health Foundation
 
 
-Background
-
-ProvenCare is a book about healthcare quality improvement at Geisinger Hospital in Pennsylvania, written by Glenn D. Steele Jr., MD, president and CEO from 2001 to 2015 and current CEO David T. Feinberg, MD, who started in May 2015.  The quality improvement initiatives documented in the book started in 2004-2005 after a failed merger with Penn State Hershey Medical Center that lasted three years.  Geisinger was rebuilding and looking for ways to improve its finances and outcomes.
-
-The authors tout the many advances Geisinger made in patient care, while being careful to acknowledge the leaders found themselves in a situation ripe for innovation.  The majority of Geisinger’s patients lived in central Pennsylvania and were “older, sicker, and poorer than just about any demography in the United States outside the Deep South” (page 7).  The patients had traditional values and were trusting of Geisinger leaders and employees.  The patient population was also very stable.  
-
-Geisinger is a health system and also an insurer.  Geisinger Health Plan was started in the 1970s.  Partnership between the insurer and the hospital helped in implementing value-based care initiatives.  Reimbursement rates were structured so providers would be rewarded for more efficient care.
-
-Geisinger implemented their EPIC EHR in ambulatory care sites in 1995 and now Geisinger uses EPIC and Cerner across their facilities.  The increased adoption of EHR systems also made innovation possible.  The EHR was used to implement best practice alerts, workflow programming, automate processes, store clinical information, and as a patient portal so patients could communicate with providers and review their clinical and lab results.
-
-Motivation and Quality Improvement Fundamentals
-
-Dr. Steele was motivated by an experience when his father underwent CABG surgery.  He waited with other families for their number to be called
-
-He was also motivated by a couple meaningful research articles from the early 2000s.  a RAND study published in the New England Journal of Medicine found that 45% of care was “suboptimal, split evenly between too much, too little, and the wrong care” (page 20).  The other research was performed by Arnold Milstein, cofounder of the Leapfrog Group and the Consumer-Purchaser Disclosure Project.  Milstein found there was “no relationship between the cost of care and quality-of-care outcomes in the United States” (page 20).
-
-Page 20 “Two critical factors drove much of Geisinger’s commitment to innovate: a RAND study published in the New England Journal of Medicine in 2003 and the data from Arnold Milstein, cofounder of The Leapfrog Group and the Consumer-Purchaser Disclosure Project in the 1980s and ‘90s, demonstrating that there was no relationship between the cost of care and quality-of-care outcomes in the United States.”  The findings were fundamental insights that motivated Dr. Steele as his team worked to reengineer healthcare processes and outcomes at Geisinger.  NEJM mentioned above found that 45 percent of care was “suboptimal, evenly split between too much, too little, and the wrong care.”
-
-Patients with worst outcomes often have the highest cost
-
-
-Geisinger patient population – Central Pennsylvania, “older, sicker, and poorer than just about any demography in the United States outside the Deep South” (page 7).  They have traditional values and are trusting of Geisinger leaders and employees.  The patient population is also very stable.  Those characteristics made implementing innovation efforts easier.
-
-Geisinger Hospital was founded in 1915 and has grown to a healthcare system with 30,000 employees, 13 hospital campuses, two research centers, a 583,000-member health plan, and Geisinger Commonwealth School of Medicine.  Between 2003 and 2018 Geisinger grew from 7,000 to 30,000 employees.  
-
-
-
-P 82, 83 – 
-ProvenCare is a formalized process initiated to:
--	document appropriateness of care
--	establish evidence- or consensus-based best practices for all high-frequency services
--	reliably deliver default best practices by redesign of complex clinical systems that embeds new behaviors into everyday patient flow
--	activate patients and their families and engage them in the care processes as symmetrical partners with caregivers
--	provide a packaged “warrant” that transfers the risk for the financial effects of preventable complications to the caregiver.
-
-
-
-Page 2 – “For 10 ProvenCare acute and chronic services, we charge a flat fee that in essence includes a commitment or “warranty” to cover complications and readmissions for 90 days.”
-Page 3 – “Other achievements of ProvenCare include:
--	For coronary artery bypass graft surgery (CABG), a 67 percent decrease in mortality, a 4.8 percent decrease in cost per case, and a 17.6 percent increase in contribution margin
--	With ProvenCare Perinatal, a decrease in C-section rates from 28 to 20 percent and a reduction in neonatal intensive care unit admissions from 9.4 percent to 5.9 percent
--	With ProvenCare Knee, a reduction in average acute and rehabilitation time from 16 to 9.9 days
-
-Geisinger Hospital was founded in 1915 and has grown to a healthcare system with 30,000 employees, 13 hospital campuses, two research centers, a 583,000-member health plan, and Geisinger Commonwealth School of Medicine. (page 3)
-
-Over the past 15 years Geisinger has grown from 7,000 to 30,000 employees (page 38).
-
-Geisinger implemented their EPIC EHR in ambulatory care sites in 1995 and now uses EPIC and Cerner across their facilities.  
-
-EHR benefits – best practice alerts, workflow programming, patient portal to communicate with providers and review clinical and lab results.
-
-Geisinger patient population – Central Pennsylvania, “older, sicker, and poorer than just about any demography in the United States outside the Deep South” (page 7).  They have traditional values and are trusting of Geisinger leaders and employees.  The patient population is also very stable.  Those characteristics made implementing innovation efforts easier.
-
-Geisinger Health Plan was started in the 1970s.  Partnership between the insurer and the hospital helped in implementing value-based care initiatives.  Reimbursement rates were structured so providers would be rewarded for more efficient care.  One of the unique innovations at Geisinger is the guarantee they implemented for surgeries and chronic disease treatment.  Patients pay a flat fee for the surgery or bundle of care.  If any complications arise, they are treated for free.
-
-Partnership with the health plan resulted in tens of millions of dollars in savings and better care.  Hospitalizations and rehospitalizations from inadequately treated chronic diseases decreased (page 9).  Some of the savings to the insurance company from decreased costs were transferred to the providers and specialists.
-
-Chronic diseases with improved outcomes: diabetes, congestive heart failure, chronic obstructive pulmonary disease.  For diabetes patients – prevented heart attacks, strokes, and cases of retinopathy.
-
-The Commonwealth Fund is a private foundation focused on healthcare quality, access, and efficiency.  They touted Geisinger as an example of high quality and low-cost care. (page 11).
-
-In 2007, the NYT featured Geisinger’s approach to CABG surgery as a major story. (page 11)
-
-In 2009, President Obama cited Geisinger in an address to congress as an example of high-quality, low-cost care. (page 11)
-
-Geisinger also lauded in TIME magazine, U.S. News & World Report, and other major publications. (page 11)
-
 Chapters:
 
 1 Why Geisinger?
@@ -245,8 +178,79 @@ ProvenCare Biologics was also implemented for patients with cancer, psoriasis, h
 
 Chapter 12 – ProvenExperience
 
-
 Geisinger created a program to improve patient experience.
+
+
+
+Background
+
+ProvenCare is a book about healthcare quality improvement at Geisinger Hospital in Pennsylvania, written by Glenn D. Steele Jr., MD, president and CEO from 2001 to 2015 and current CEO David T. Feinberg, MD, who started in May 2015.  The quality improvement initiatives documented in the book started in 2004-2005 after a failed merger with Penn State Hershey Medical Center that lasted three years.  Geisinger was rebuilding and looking for ways to improve its finances and outcomes.
+
+The authors tout the many advances Geisinger made in patient care, while being careful to acknowledge the leaders found themselves in a situation ripe for innovation.  The majority of Geisinger’s patients lived in central Pennsylvania and were “older, sicker, and poorer than just about any demography in the United States outside the Deep South” (page 7).  The patients had traditional values and were trusting of Geisinger leaders and employees.  The patient population was also very stable.  
+
+Geisinger is a health system and also an insurer.  Geisinger Health Plan was started in the 1970s.  Partnership between the insurer and the hospital helped in implementing value-based care initiatives.  Reimbursement rates were structured so providers would be rewarded for more efficient care.
+
+Geisinger implemented their EPIC EHR in ambulatory care sites in 1995 and now Geisinger uses EPIC and Cerner across their facilities.  The increased adoption of EHR systems also made innovation possible.  The EHR was used to implement best practice alerts, workflow programming, automate processes, store clinical information, and as a patient portal so patients could communicate with providers and review their clinical and lab results.
+
+Motivation and Quality Improvement Fundamentals
+
+Dr. Steele was motivated by an experience when his father underwent CABG surgery.  He waited with other families for their number to be called
+
+He was also motivated by a couple meaningful research articles from the early 2000s.  a RAND study published in the New England Journal of Medicine found that 45% of care was “suboptimal, split evenly between too much, too little, and the wrong care” (page 20).  The other research was performed by Arnold Milstein, cofounder of the Leapfrog Group and the Consumer-Purchaser Disclosure Project.  Milstein found there was “no relationship between the cost of care and quality-of-care outcomes in the United States” (page 20).
+
+Page 20 “Two critical factors drove much of Geisinger’s commitment to innovate: a RAND study published in the New England Journal of Medicine in 2003 and the data from Arnold Milstein, cofounder of The Leapfrog Group and the Consumer-Purchaser Disclosure Project in the 1980s and ‘90s, demonstrating that there was no relationship between the cost of care and quality-of-care outcomes in the United States.”  The findings were fundamental insights that motivated Dr. Steele as his team worked to reengineer healthcare processes and outcomes at Geisinger.  NEJM mentioned above found that 45 percent of care was “suboptimal, evenly split between too much, too little, and the wrong care.”
+
+Patients with worst outcomes often have the highest cost
+
+
+Geisinger patient population – Central Pennsylvania, “older, sicker, and poorer than just about any demography in the United States outside the Deep South” (page 7).  They have traditional values and are trusting of Geisinger leaders and employees.  The patient population is also very stable.  Those characteristics made implementing innovation efforts easier.
+
+Geisinger Hospital was founded in 1915 and has grown to a healthcare system with 30,000 employees, 13 hospital campuses, two research centers, a 583,000-member health plan, and Geisinger Commonwealth School of Medicine.  Between 2003 and 2018 Geisinger grew from 7,000 to 30,000 employees.  
+
+
+
+P 82, 83 – 
+ProvenCare is a formalized process initiated to:
+-	document appropriateness of care
+-	establish evidence- or consensus-based best practices for all high-frequency services
+-	reliably deliver default best practices by redesign of complex clinical systems that embeds new behaviors into everyday patient flow
+-	activate patients and their families and engage them in the care processes as symmetrical partners with caregivers
+-	provide a packaged “warrant” that transfers the risk for the financial effects of preventable complications to the caregiver.
+
+
+
+Page 2 – “For 10 ProvenCare acute and chronic services, we charge a flat fee that in essence includes a commitment or “warranty” to cover complications and readmissions for 90 days.”
+Page 3 – “Other achievements of ProvenCare include:
+-	For coronary artery bypass graft surgery (CABG), a 67 percent decrease in mortality, a 4.8 percent decrease in cost per case, and a 17.6 percent increase in contribution margin
+-	With ProvenCare Perinatal, a decrease in C-section rates from 28 to 20 percent and a reduction in neonatal intensive care unit admissions from 9.4 percent to 5.9 percent
+-	With ProvenCare Knee, a reduction in average acute and rehabilitation time from 16 to 9.9 days
+
+Geisinger Hospital was founded in 1915 and has grown to a healthcare system with 30,000 employees, 13 hospital campuses, two research centers, a 583,000-member health plan, and Geisinger Commonwealth School of Medicine. (page 3)
+
+Over the past 15 years Geisinger has grown from 7,000 to 30,000 employees (page 38).
+
+Geisinger implemented their EPIC EHR in ambulatory care sites in 1995 and now uses EPIC and Cerner across their facilities.  
+
+EHR benefits – best practice alerts, workflow programming, patient portal to communicate with providers and review clinical and lab results.
+
+Geisinger patient population – Central Pennsylvania, “older, sicker, and poorer than just about any demography in the United States outside the Deep South” (page 7).  They have traditional values and are trusting of Geisinger leaders and employees.  The patient population is also very stable.  Those characteristics made implementing innovation efforts easier.
+
+Geisinger Health Plan was started in the 1970s.  Partnership between the insurer and the hospital helped in implementing value-based care initiatives.  Reimbursement rates were structured so providers would be rewarded for more efficient care.  One of the unique innovations at Geisinger is the guarantee they implemented for surgeries and chronic disease treatment.  Patients pay a flat fee for the surgery or bundle of care.  If any complications arise, they are treated for free.
+
+Partnership with the health plan resulted in tens of millions of dollars in savings and better care.  Hospitalizations and rehospitalizations from inadequately treated chronic diseases decreased (page 9).  Some of the savings to the insurance company from decreased costs were transferred to the providers and specialists.
+
+Chronic diseases with improved outcomes: diabetes, congestive heart failure, chronic obstructive pulmonary disease.  For diabetes patients – prevented heart attacks, strokes, and cases of retinopathy.
+
+The Commonwealth Fund is a private foundation focused on healthcare quality, access, and efficiency.  They touted Geisinger as an example of high quality and low-cost care. (page 11).
+
+In 2007, the NYT featured Geisinger’s approach to CABG surgery as a major story. (page 11)
+
+In 2009, President Obama cited Geisinger in an address to congress as an example of high-quality, low-cost care. (page 11)
+
+Geisinger also lauded in TIME magazine, U.S. News & World Report, and other major publications. (page 11)
+
+
+
 
 
 

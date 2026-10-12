@@ -16,3 +16,6 @@ Emmett
 
 
 [Geisinger Hospital ProvenCare Book Summary and Review](./ProvenCare-Summary-Book-Review.html)
+
+
+[Global Health and Income Inequality Power BI Report](./Global_Health.html)

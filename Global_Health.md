@@ -3,7 +3,38 @@
 
 The Power BI report may require viewers to login to their Microsoft or Power BI account.  I've provided screenshots of each tab so viewers can review the dashboard without having to login.  The dashboard has additional interactive features.  
 <br>
+I plan to add more analysis to this page.
+<br>
 
-<img src="images/Cap_Hit_by_Player_and_Team.png" alt="Cap Hit by Player and Team">  
+
+
+<img src="images/Global_Health_Data_Sources.png" alt="Data Sources">  
 <br>
 <br>    
+
+
+<img src="images/Global_Health_Notes_Analysis.png" alt="Notes and Analysis">  
+<br>
+<br>    
+
+
+<img src="images/Global_Health_Societal_Outcomes.png" alt="Societal Outcomes">  
+Users can choose which parameters to view, which year, and which income levels.
+<br>    
+<br>
+
+
+<img src="images/Global_Health_Death_Alcohol.png" alt="Death and Alcohol Measures">  
+<br>
+<br>    
+
+
+<img src="images/Global_Health_Pollution_Life_Exp.png" alt="Pollution and Life Expectancy">  
+<br>
+<br>    
+
+
+<img src="images/Global_Health_Gini_Coef_GDP.png" alt="Gini Coefficient vs GDP">  
+<br>
+<br>    
+

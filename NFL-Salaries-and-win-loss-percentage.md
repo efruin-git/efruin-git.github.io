@@ -1,7 +1,7 @@
  
 
 ### Welcome to My NFL Salaries Regression Project Page
-#### (Regression work half-way down)
+#### (Regression work halfway down)
 
 
 <img src="images/nfl_teams.jpg" alt="NFL_Teams" width="300">

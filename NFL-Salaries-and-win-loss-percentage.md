@@ -541,7 +541,7 @@ Spending more of the salary cap with less income inequality, along with defensiv
 
 ### Further Consideration
 
-Salary cap spending includes incentives earned by players for reaching performance targets.  I don't have data on earned incentives.  The team cap percent variable may be correlated with winning because it's highly correlated with earned incentives.  I would like to have more specific salary cap data so I could refine my results.
+Salary cap spending includes incentives earned by players for reaching performance targets.  I don't have data on earned incentives.  The team cap percent variable may be correlated with winning because it's correlated with earned incentives.  I would like to have more specific salary cap data so I could refine my results.
 
 ### Sources:
 NFL Productions LLC (2026).  Ranking the NFL's Biggest Contracts for 2025.  nfl.com.  https://www.nfl.com/photos/ranking-the-nfl-s-biggest-contracts-for-2025

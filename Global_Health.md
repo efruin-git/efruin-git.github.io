@@ -55,21 +55,31 @@ Homicide, Infant Mortality, Life Expectancy, and Teenage Birth Rate (births amon
 
 ### Death and Alcohol Tab
 <br>
+In 2004, the results for Death Rate and Homicide Rate are pretty good.  There's convincing evidence of a relationship between the Gini coefficient and each of those measures.
 <img src="images/Death_Alcohol_Upper_2004_1016.png" alt="Death and Alcohol Measures">  
 <br>
 <br>    
+In 2005, Death Rate, Suicide Rate, and Homicide Rate have low p-values.  The p-value for Alcohol Abuse Rate is decent, but not convincing of a statistical relationship with the Gini coefficient.  The p-value for Infant Mortality Rate is large, indicating no statistical relationship between Infant Mortality and the Gini coefficient.
 <img src="images/Death_Alcohol_Upper_2005_1016.png" alt="Death and Alcohol Measures">  
 <br>
 <br>    
+In 2006, Death Rate has a low p-value again.  The other p-values do not indicate a statistical relationship.
 <img src="images/Death_Alcohol_Upper_2006_1016.png" alt="Death and Alcohol Measures">  
 <br>
 <br>    
+In 2009, the p-value for Death Rate is ok, but not indicative of a statistical relationship with the Gini coefficient.
 <img src="images/Death_Alcohol_Upper_2008_1016.png" alt="Death and Alcohol Measures">  
 <br>
 <br>    
+In 2010, the only measure with a p-value indicating statistical significance is Alcohol Abuse Rate.  Four of the five measures had data for 80% of countries meeting the criteria for inclusion, and the other measure had data for 74% of countries.  Data is most complete for upper income countries in 2010.
+<br>
+
+Homicide Rate and Infant Mortality Rate are measures from "The Spirit Level" included on this tab.  They had high p-values indicating no statistical evidence of a relationship between them at the Gini coefficient.  The authors of "The Spirit Level" used a different data source and a different time frame than me.  I'm curious whether the results from their data source are consistent each year, or whether they focused on a period when the relationships between their selected measures and the Gini coefficient were stronger.
+
 <img src="images/Death_Alcohol_Upper_2010_1016.png" alt="Death and Alcohol Measures">  
 <br>
 <br>    
+There was evidence of a statistically significant relationship between Death Rate and the Gini coefficient in 2004 - 2006, but in other years the p-values are above 0.05 and there's no evidence of a relationship.  Likewise, the p-value for Suicide Rate was low in 2005, but not in 2010 or 2015.
 <img src="images/Death_Alcohol_Upper_2011_1016.png" alt="Death and Alcohol Measures">  
 <br>
 <br>    
@@ -86,7 +96,7 @@ When an outlier like Panama is included, the p-values can be very low, and the R
 <br>
 <br>    
 
-When Panama is excluded, the p-values grow and the R^2 values decreases.  In the Homicide Rate graph, the p-value is still very small with Panama excluded, and the R^2 value is still fairly large.  In the Infant Mortality Rate graph, the p-value balloons from 0.0001 to 0.958, and the R^2 value drops from 0.489 to 0.
+When Panama is excluded, the p-values grow and the R^2 values decrease.  In the Homicide Rate graph, the p-value is still very small with Panama excluded, and the R^2 value is still fairly large.  In the Infant Mortality Rate graph, the p-value balloons from 0.0001 to 0.958, and the R^2 value drops from 0.489 to 0.
 <br>
      
 One of the criticisms people have of "The Spirit Level" is that the United States is an outlier and it creates statistically significant results, when there would be no statistical significance if it were excluded.  The United States is a unique country.  I understand the debate.  Many of the findings in "The Spirit Level" are dependent on where the upper income threshold is set and which countries are included in the analysis.

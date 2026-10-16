@@ -8,31 +8,32 @@ I plan to add more analysis to this page.
 
 
 
-<img src="images/Data_Sources_1012.png" alt="Data Sources">  
+<img src="images/Data_Sources_1016.png" alt="Data Sources">  
 <br>
 <br>    
 
-<img src="images/Notes_Analysis_1012.png" alt="Notes and Analysis">  
+<img src="images/Notes_analysis_1016.png" alt="Notes and Analysis">  
 <br>
 <br>    
 
-<img src="images/Societal_Outcomes_1012.png" alt="Societal Outcomes">  
+<img src="images/Societal_Outcomes_Gini_Life_Exp_1016.png" alt="Societal Outcomes 1">  
+<img src="images/Societal_Outcomes_Gini_Life_Exp_All_1016.png" alt="Societal Outcomes 2">  
 Users can choose which parameters to view, which year, and which income levels.
 <br>    
 <br>
 
-<img src="images/Death_Alcohol_1012.png" alt="Death and Alcohol Measures">  
+<img src="images/Death_Alcohol_All_2015_1016.png" alt="Death and Alcohol Measures">  
 <br>
 <br>    
 
-<img src="images/Pollution_Life_Exp_1012.png" alt="Pollution and Life Expectancy">  
+<img src="images/Pollution_Life_Exp_All_2005_1016.png" alt="Pollution and Life Expectancy">  
 <br>
 <br>    
 
-<img src="images/Gini_Coef_vs_GNI_1012.png" alt="Gini Coefficient and GNI">  
+<img src="images/Gini_v_GNI_All_2005_1016.png" alt="Gini Coefficient and GNI">  
 <br>
 <br>    
 
-<img src="images/Per_Capita_Poll_w_GNI_Levels.png" alt="Per Capita CO2 Pollution Against Gini Coefficient for Different Income Levels">  
+<img src="images/Per_Capita_Poll_wGNI_3M_2015_1016.png" alt="Per Capita CO2 Pollution Against Gini Coefficient for Different Income Levels">  
 <br>
 <br>    

@@ -54,7 +54,6 @@ In "The Spirit Level," the authors focus on upper income countries with over 3 m
 Homicide, Infant Mortality, Life Expectancy, and Teenage Birth Rate (births among women aged 15-19) are measures included in the "Spirit Level" analysis that I also included in my dashboard.  I only found consistent, statistically significant results for Teenage Birth Rate.  The original study in "The Spirit Level" uses data from the years 1998-2004 for most of the measures.  Homicide data comes from the years 1990-2000.    
 
 ### Death and Alcohol Tab
-<br>
 In 2004, the results for Death Rate and Homicide Rate are pretty good.  There's convincing evidence of a relationship between the Gini coefficient and each of those measures.
 <img src="images/Death_Alcohol_Upper_2004_1016.png" alt="Death and Alcohol Measures">  
 <br>

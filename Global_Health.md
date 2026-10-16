@@ -7,22 +7,28 @@ I plan to add more analysis to this page.
 <br>
 
 
+### Dashboard Overview
 
+#### Data Sources
 <img src="images/Data_Sources_1016.png" alt="Data Sources">  
 <br>
 <br>    
 
+#### Notes and Analysis
 <img src="images/Notes_analysis_1016.png" alt="Notes and Analysis">  
 <br>
 <br>    
 
+### Societal Outcomes tab
+#### Users can choose which parameters to view, which year, and which income levels.
 <img src="images/Societal_Outcomes_Gini_Life_Exp_1016.png" alt="Societal Outcomes 1">  
 <br>
 <img src="images/Societal_Outcomes_GNI_Life_Exp_All_1016.png" alt="Societal Outcomes 2">  
-Users can choose which parameters to view, which year, and which income levels.
 <br>    
 <br>
 
+### Statistical Results for All Countries
+When all countries were included, the p-values for measures on the next two tabs (Death and Alcohol, Pollution and Life Expectancy) were under 0.06; only two measures had a p-value greater than 0.06 between 2003 and 2017, and those measures only had high p-values for 1 year each.
 <img src="images/Death_Alcohol_All_2015_1016.png" alt="Death and Alcohol Measures">  
 <br>
 <br>    
@@ -31,10 +37,54 @@ Users can choose which parameters to view, which year, and which income levels.
 <br>
 <br>    
 
+### Gini Coefficient vs GNI
 <img src="images/Gini_v_GNI_All_2005_1016.png" alt="Gini Coefficient and GNI">  
 <br>
 <br>    
 
+### Relationships between measures and the gini coefficient change with income levels
 <img src="images/Per_Capita_Poll_wGNI_3M_2015_1016.png" alt="Per Capita CO2 Pollution Against Gini Coefficient for Different Income Levels">  
 <br>
 <br>    
+
+### Statistical Results for Upper Income Countries
+In "The Spirit Level," the authors focus on upper income countries with over 3 million people.  When only those countries are included, p-values are not consistent from year to year.  Most measures had high p-values for at least a few years.  Alcohol Abuse and Adolescent Birth Rate were the only exceptions.  Data for the alcohol abuse measure was only available every 5 years.  For 2005, the p-value was 0.062.  For 2010 and 2015, the p-values were both 0.02.  So alcohol abuse had decent p-values for all years with data.  Adolescent birth rate had the most consistent and strong p-values.  The p-values for adolescent birth rate (births among women aged 15-19) were 0.05 or below every year.
+<br>
+#### 
+Homicide, Infant Mortality, Life Expectancy, and Teenage Birth Rate (births among women aged 15-19) are measures included in the "Spirit Level" analysis that I also included in my dashboard.  I only found consistent, statistically significant results for Teenage Birth Rate.  The original study in "The Spirit Level" uses data from the years 1998-2004 for most of the measures.  Homicide data comes from the years 1990-2000.    
+
+### Death and Alcohol Tab
+<br>
+<img src="images/Death_Alcohol_Upper_2004_1016.png" alt="Death and Alcohol Measures">  
+<br>
+<br>    
+<img src="images/Death_Alcohol_Upper_2005_1016.png" alt="Death and Alcohol Measures">  
+<br>
+<br>    
+<img src="images/Death_Alcohol_Upper_2006_1016.png" alt="Death and Alcohol Measures">  
+<br>
+<br>    
+<img src="images/Death_Alcohol_Upper_2008_1016.png" alt="Death and Alcohol Measures">  
+<br>
+<br>    
+<img src="images/Death_Alcohol_Upper_2010_1016.png" alt="Death and Alcohol Measures">  
+<br>
+<br>    
+<img src="images/Death_Alcohol_Upper_2011_1016.png" alt="Death and Alcohol Measures">  
+<br>
+<br>    
+<img src="images/Death_Alcohol_Upper_2013_1016.png" alt="Death and Alcohol Measures">  
+<br>
+<br>    
+<img src="images/Death_Alcohol_Upper_2015_1016.png" alt="Death and Alcohol Measures">  
+<br>
+<br>    
+<img src="images/Death_Alcohol_Upper_2016_wPanama_1016.png" alt="Death and Alcohol Measures">  
+<br>
+<br>    
+<img src="images/Death_Alcohol_Upper_2016_woPanama_1016.png" alt="Death and Alcohol Measures">  
+<br>
+<br>    
+
+
+

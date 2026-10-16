@@ -80,7 +80,7 @@ Homicide, Infant Mortality, Life Expectancy, and Teenage Birth Rate (births amon
 <br>
 <br>    
 
-When an outlier like Panama is included, the p-values can be very low, and the R^2 value very large.  The R^2 values for Homicide Rate and Infant Mortality Rate are 0.575 and 0.489, respectively, in 2016.  The Homicide Rate and Infant Mortality Rate for Panama are large and far to the right of the other values.
+When an outlier like Panama is included, the p-values can be very low, and the R^2 value very large.  The R^2 values for Homicide Rate and Infant Mortality Rate are 0.575 and 0.489, respectively, in 2016.  The Homicide and Infant Mortality rates for Panama are large and far to the right of the other values.
 
 <img src="images/Death_Alcohol_Upper_2016_wPanama_1016.png" alt="Death and Alcohol Measures">  
 <br>

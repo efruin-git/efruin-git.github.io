@@ -73,7 +73,7 @@ In 2009, the p-value for Death Rate is ok, but not indicative of a statistical r
 <br>    
 In 2010, the only measure with a p-value indicating statistical significance is Alcohol Abuse Rate.  Four of the five measures had data for 80% of countries meeting the criteria for inclusion, and the other measure had data for 74% of countries.  Data is most complete for upper income countries in 2010.
 <br>
-
+ 
 Homicide Rate and Infant Mortality Rate are measures from "The Spirit Level" included on this tab.  They had high p-values indicating no statistical evidence of a relationship between them at the Gini coefficient.  The authors of "The Spirit Level" used a different data source and a different time frame than me.  I'm curious whether the results from their data source are consistent each year, or whether they focused on a period when the relationships between their selected measures and the Gini coefficient were stronger.
 
 <img src="images/Death_Alcohol_Upper_2010_1016.png" alt="Death and Alcohol Measures">  

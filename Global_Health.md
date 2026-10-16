@@ -17,7 +17,8 @@ I plan to add more analysis to this page.
 <br>    
 
 <img src="images/Societal_Outcomes_Gini_Life_Exp_1016.png" alt="Societal Outcomes 1">  
-<img src="images/Societal_Outcomes_Gini_Life_Exp_All_1016.png" alt="Societal Outcomes 2">  
+<br>
+<img src="images/Societal_Outcomes_GNI_Life_Exp_All_1016.png" alt="Societal Outcomes 2">  
 Users can choose which parameters to view, which year, and which income levels.
 <br>    
 <br>

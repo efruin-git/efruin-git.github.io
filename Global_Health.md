@@ -79,9 +79,18 @@ Homicide, Infant Mortality, Life Expectancy, and Teenage Birth Rate (births amon
 <img src="images/Death_Alcohol_Upper_2015_1016.png" alt="Death and Alcohol Measures">  
 <br>
 <br>    
+
+When an outlier like Panama is included, the p-values can be very low, and the R^2 value very large.  The R^2 values for Homicide Rate and Infant Mortality Rate are 0.575 and 0.489, respectively, in 2016.  The Homicide Rate and Infant Mortality Rate for Panama are large and far to the right of the other values.
+
 <img src="images/Death_Alcohol_Upper_2016_wPanama_1016.png" alt="Death and Alcohol Measures">  
 <br>
 <br>    
+
+When Panama is excluded, the p-values grow and the R^2 value decreases.  In the Homicide Rate graph, the p-value is still very small with Panama excluded, and the R^2 value is still fairly large.  In the Infant Mortality graph, the p-value balloons from 0.0001 to 0.958, and the R^2 value drops from 0.489 to 0.
+<br>
+     
+One of the criticisms people have of "The Spirit Level" is that the United States is an outlier and it creates statistically significant results, when there would be no statistical significance if it were excluded.  The United States is a unique country.  I understand the debate.  Many of the findings in "The Spirit Level" are dependent on where the upper income threshold is set and which countries are included in the analysis.
+
 <img src="images/Death_Alcohol_Upper_2016_woPanama_1016.png" alt="Death and Alcohol Measures">  
 <br>
 <br>    

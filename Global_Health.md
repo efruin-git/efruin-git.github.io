@@ -33,7 +33,7 @@ When all countries were included, the p-values for measures on the next two tabs
 <br>
 <br>    
 
-<img src="images/Pollution_Life_Exp_All_2005_1016.png" alt="Pollution and Life Expectancy">  
+<img src="images/Pollution_Life_Exp_All_v2_2005_1016.png" alt="Pollution and Life Expectancy">  
 <br>
 <br>    
 
@@ -108,19 +108,19 @@ One of the criticisms people have of "The Spirit Level" is that the United State
 ### Pollution and Life Expectancy Tab
 Adolescent Birth Rate shows a statistically significant relationship with the Gini coefficient each year.  The other measures do not show evidence of a relationship with the Gini coefficient.  Life Expectancy decreases as a function of the Gini coefficient some years, but increases in other years.  The same is true of the rate of Doctors.  CO2 Pollution increases or is flat each year, but there does not appear to be a strong relationship between CO2 Pollution and the Gini coefficient, based on the spread and scattering of values in the graphs.  Regression statistics were unavailable due to the nature of the connections between tables in the data model.  I might work on creating a separate data model in order to produce regression stats for CO2 Pollution.
 
-<img src="images/Pollution_Life_Exp_Upper_2003_1016.png" alt="Pollution_Life_Expectancy">  
+<img src="images/Pollution_Life_Exp_Upper_v2_2003_1016.png" alt="Pollution_Life_Expectancy">  
 <br>
 <br>    
-<img src="images/Pollution_Life_Exp_Upper_2004_1016.png" alt="Pollution_Life_Expectancy">  
+<img src="images/Pollution_Life_Exp_Upper_v2_2004_1016.png" alt="Pollution_Life_Expectancy">  
 <br>
 <br>    
-<img src="images/Pollution_Life_Exp_Upper_2005_1016.png" alt="Pollution_Life_Expectancy">  
+<img src="images/Pollution_Life_Exp_Upper_v2_2005_1016.png" alt="Pollution_Life_Expectancy">  
 <br>
 <br>    
-<img src="images/Pollution_Life_Exp_Upper_2010_1016.png" alt="Pollution_Life_Expectancy">  
+<img src="images/Pollution_Life_Exp_Upper_v2_2010_1016.png" alt="Pollution_Life_Expectancy">  
 <br>
 <br>    
-<img src="images/Pollution_Life_Exp_Upper_2015_1016.png" alt="Pollution_Life_Expectancy">  
+<img src="images/Pollution_Life_Exp_Upper_v2_2015_1016.png" alt="Pollution_Life_Expectancy">  
 <br>
 <br>    
 

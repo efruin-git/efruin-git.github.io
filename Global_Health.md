@@ -58,22 +58,22 @@ In 2004, the results for Death Rate and Homicide Rate are pretty good.  There's 
 <img src="images/Death_Alcohol_Upper_2004_1016.png" alt="Death and Alcohol Measures">  
 <br>
 <br>    
-In 2005, Death Rate, Suicide Rate, and Homicide Rate have low p-values.  The p-value for Alcohol Abuse Rate is decent, but not convincing of a statistical relationship with the Gini coefficient.  The p-value for Infant Mortality Rate is large, indicating no statistical relationship between Infant Mortality and the Gini coefficient.
+In 2005, Death Rate, Suicide Rate, and Homicide Rate have low p-values.  The p-value for Alcohol Abuse Rate is decent, but not convincing of a relationship between Alcohol Abuse and the Gini coefficient.  The p-value for Infant Mortality Rate is large, indicating no relationship between Infant Mortality and the Gini coefficient.
 <img src="images/Death_Alcohol_Upper_2005_1016.png" alt="Death and Alcohol Measures">  
 <br>
 <br>    
-In 2006, Death Rate has a low p-value again.  The other p-values do not indicate a statistical relationship.
+In 2006, Death Rate has a low p-value again.  The other p-values do not indicate a relationship between the respective measures and the Gini coefficient.
 <img src="images/Death_Alcohol_Upper_2006_1016.png" alt="Death and Alcohol Measures">  
 <br>
 <br>    
-In 2009, the p-value for Death Rate is ok, but not indicative of a statistical relationship with the Gini coefficient.
+In 2009, the p-value for Death Rate is ok, but not indicative of a relationship between Death Rate and the Gini coefficient.
 <img src="images/Death_Alcohol_Upper_2008_1016.png" alt="Death and Alcohol Measures">  
 <br>
 <br>    
 In 2010, the only measure with a p-value indicating statistical significance is Alcohol Abuse Rate.  Four of the five measures had data for 80% of countries meeting the criteria for inclusion, and the other measure had data for 74% of countries.  Data is most complete for upper income countries in 2010.
 <br>
  
-Homicide Rate and Infant Mortality Rate are measures from "The Spirit Level" included on this tab.  They had high p-values indicating no statistical evidence of a relationship between them at the Gini coefficient.  The authors of "The Spirit Level" used a different data source and a different time frame than me.  I'm curious whether the results from their data source are consistent each year, or whether they focused on a period when the relationships between their selected measures and the Gini coefficient were stronger.
+Homicide Rate and Infant Mortality Rate are measures from "The Spirit Level" included on this tab.  They had high p-values indicating no statistical evidence of a relationship between them and the Gini coefficient.  The authors of "The Spirit Level" used a different data source and a different time frame than me.  I'm curious whether the results from their data source are consistent each year, or whether they focused on a period when the relationships between their selected measures and the Gini coefficient were stronger.
 
 <img src="images/Death_Alcohol_Upper_2010_1016.png" alt="Death and Alcohol Measures">  
 <br>

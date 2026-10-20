@@ -15,7 +15,7 @@ I plan to add more analysis to this page.
 <br>    
 
 #### Notes and Analysis
-<img src="images/Notes_analysis_1016.png" alt="Notes and Analysis">  
+<img src="images/Notes_analysis_1020.png" alt="Notes and Analysis">  
 <br>
 <br>    
 

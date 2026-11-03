@@ -1,3 +1,8 @@
+## Cancer Risk Factors - Machine Learning Classification
+
+##### Risk Factors Graph
+<img src="images/BMI_MammoRes_PDP.png" alt="Cancer Risk Factors" width="300">
+
 ### Overview
 I wanted to practice some machine learning techniques.  I spent a lot of time in my previous job working on imaging and mammography data, so I thought a user friendly dataset on Kaggle with breast cancer risk factors would be a great source.  I performed multiple machine learning classification procedures, found the best model, and graphed results to interpret the model, using Scikit Learn, pandas, numpy, and matplotlib packages in Python.  The classification methods I used were K-Nearest Neighbors, Support Vector, and Random Forest.
 

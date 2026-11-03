@@ -195,7 +195,7 @@ The 2D partial density plot on the right side shows the combined effect of Age a
 print("Means:", sc.mean_)
 print("Variances:", sc.var_)
 ```
->Means: [5.21232000e+01 2.70290052e+01 3.03066667e-01 2.54933333e-01
+> Means: [5.21232000e+01 2.70290052e+01 3.03066667e-01 2.54933333e-01
 >
 > 8.99066667e-01 1.48666667e-01 2.63107035e+00 2.02933333e-01
 >
@@ -203,7 +203,7 @@ print("Variances:", sc.var_)
 >
 > 8.55866667e-01 8.23092333e+04]
 >
->Variances: [3.54022955e+02 1.98689073e+01 2.11217262e-01 1.89942329e-01
+> Variances: [3.54022955e+02 1.98689073e+01 2.11217262e-01 1.89942329e-01
 >
 > 6.38479129e-01 1.26564889e-01 2.52307180e+00 1.61751396e-01
 >
@@ -241,10 +241,14 @@ print("Variances:", sc.var_)
 > 
 >     'Annual_Income_USD'
 
+![Tumor Size and BMI PDP](images/TumorSize_BMI_PDP.png)
+In the above 2D partial density plot, the viewer can see the risk of cancer increases from 0.12 to above 0.47 when both BMI and Tumor Size are elevated.  There's an increased risk at 0.7 standard deviations above the BMI mean, or around a BMI of 30.  
+
+
 ```
-features_to_plot = ["Age","Tumor_Size_cm",("Age", "Tumor_Size_cm")]
-# 4. Plot the partial dependence
-fig, ax = plt.subplots(figsize=(8, 6))
+features_to_plot = ["BMI","Mammogram_Result","Smoking","Family_History","Lymph_Node_Involvement",("Mammogram_Result", "BMI")]
+# Plot the partial dependence
+fig, ax = plt.subplots(figsize=(12, 8))
 display = PartialDependenceDisplay.from_estimator(
     classifier,
     X_train,
@@ -252,9 +256,19 @@ display = PartialDependenceDisplay.from_estimator(
     grid_resolution=50,  # Number of points to evaluate along each axis
     ax=ax,
 )
-# plt.title("2D Partial Dependence Plot")
 plt.show()
 ```
+![BMI_Categorical_Variables_PDP](images/BMI_MammoRes_Smoking_etc_PDP.png)
+In the partial density plot above, viewers can see a comparison between BMI, a continuous variable of high importance, and categorical variables of moderate to high importance.  In the mammogram result graph, -0.5 standard deviations below the mean corresponds to a mammogram  of Normal.  A value of 0.7 standard deviations above the mean corresponds to a result of Suspicious.  A value of 2 standard deviations above the mean corresponds to a result of Abnormal.
+
+![Top_Feature_Importances_PDP](images/TumorSize_BMI_Age_MammoRes_etc_PDP.png)
+The features with the greatest importance in the Random Forest model are shown above.  Each feature increases the partial dependence of cancer risk significantly.
+
+![Moderate_and_Low_Importance PDP](images/LymphNode_GeneticMut_AnnInc_etc_PDP.png)
+Features with moderate to low importance are shown above.  The Lymph Node and Genetic Mutation plots show a big increase in cancer risk with an increase in feature value, while the rest of the variables have little influence on cancer risk.
+
+![Low_Importance PDP](images/AnnInc_Chol_BloodPress_etc_PDP.png)
+When features of low importance are graphed together, viewers can see the variation in partial dependence of cancer risk, but the scale is very small.  The variation in cancer risk from the low importance features seems pretty random.
 
 
 

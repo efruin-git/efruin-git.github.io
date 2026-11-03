@@ -21,6 +21,38 @@ I performed a few key steps to prepare the data for modeling - encoding categori
 
 Several fields contained categorical data - gender, family history of breast cancer, smoking indicator, alcohol consumption indicator, etc.  The classification models require numerical variables to run.  I used the ordinal encoder from the Scikit Learn and mapped unknown or missing values to -1, so the categorical variables were transformed into ordinal integers ranging from -1 to 5.  Most encoded variables had only two categories and no missing values, so they were encoded as 0's and 1's.
 
+```
+from sklearn.preprocessing import OrdinalEncoder
+
+Gender_Order =  ['Male', 'Female']
+Family_History_Order =  ['No', 'Yes']
+Smoking_Order = ['No', 'Yes']
+Alcohol_Consumption_Order =  ['No', 'Yes']
+Physical_Activity_Order =  ['Low', 'Moderate', 'High']
+Hormone_Therapy_Order =  ['No', 'Yes']
+Menopause_Status_Order = ['Pre', 'Post']
+Genetic_Mutation_Order = ['Negative', 'Positive']
+Lymph_Node_Involvement_Order = ['No', 'Yes']
+Mammogram_Result_Order = ['Normal', 'Suspicious', 'Abnormal']
+Biopsy_Result_Order = ['Benign', 'Malignant']
+Cancer_Stage_Order = ['No Cancer', 'Stage I', 'Stage II', 'Stage III', 'Stage IV']
+Diabetes_Order = ['No', 'Yes']
+Breastfeeding_History_Order = ['No', 'Yes', 'Not Applicable']
+
+encoder = OrdinalEncoder(categories=[Gender_Order,Family_History_Order,Smoking_Order,Alcohol_Consumption_Order,
+Physical_Activity_Order,Hormone_Therapy_Order,Menopause_Status_Order,Genetic_Mutation_Order,
+Lymph_Node_Involvement_Order,Mammogram_Result_Order,Biopsy_Result_Order,Cancer_Stage_Order,
+Diabetes_Order,Breastfeeding_History_Order],handle_unknown='use_encoded_value',unknown_value=-1,encoded_missing_value=-1)
+
+df_bc_pred[['Gender','Family_History','Smoking','Alcohol_Consumption',
+'Physical_Activity','Hormone_Therapy','Menopause_Status','Genetic_Mutation',
+'Lymph_Node_Involvement','Mammogram_Result','Biopsy_Result','Cancer_Stage',
+'Diabetes','Breastfeeding_History']] = encoder.fit_transform(df_bc_pred[['Gender','Family_History','Smoking','Alcohol_Consumption',
+'Physical_Activity','Hormone_Therapy','Menopause_Status','Genetic_Mutation',
+'Lymph_Node_Involvement','Mammogram_Result','Biopsy_Result','Cancer_Stage',
+'Diabetes','Breastfeeding_History']])
+```
+
 The BMI (body mass index) and tumor size variables were missing some values so I imputed the average from each field.  The K-Nearest Neighbors and Support Vector models required imputed values in order to run.  I tried the Random Forest model both with and without imputed values and got similar results.
 
 After splitting the dataset into training and test sets I scaled the features using the Scikit Learn standard scaler.  There are a few different reasons why feature scaling matters.  One of the big reasons is that it prevents one feature from dominating the others because of larger values.  The feature of BMI generally has values in the 20's, while Age can range from 1 to 100.  Gender, family history of breast cancer, smoking indicator, and other categorical variables were encoded to integers near 0, so BMI and Age would have had disproportionate influence in the model if all the features were not scaled.
@@ -29,7 +61,60 @@ The original dataset contained 19 risk factor variables, a patient identificatio
 
 
 ### Model Results
-I fit classification models of K-Nearest Neighbors, Support Vector, and Random Forest.  I used the 19 risk factor variables as the X variables, and the cancer indicator variable as the Y variable.  The dataset had 10,000 rows.  I split it 75%/25% between training and testing data.
+I fit classification models of K-Nearest Neighbors, Support Vector, and Random Forest.  I used the 19 risk factor variables as the X variables, and the cancer indicator variable as the Y variable.  The dataset had 10,000 rows.  I split it 75%/25% between training and test data.
+
+```
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+
+if orig_variables == 'Original':
+    X = pd.DataFrame(df_bc_pred[['Age',
+     'Gender',
+     'BMI',
+     'Family_History',
+     'Smoking',
+     'Alcohol_Consumption',
+     'Physical_Activity',
+     'Hormone_Therapy',
+     'Menopause_Status',
+     'Genetic_Mutation',
+     'Tumor_Size_cm',
+     'Lymph_Node_Involvement',
+     'Mammogram_Result',
+     'Blood_Pressure',
+     'Cholesterol',
+     'Diabetes',
+     'Exercise_Days_Per_Week',
+     'Breastfeeding_History',
+     'Annual_Income_USD']])
+    y = df_bc_pred[['Cancer']]
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 0)
+
+sc = StandardScaler().set_output(transform="pandas")
+X_train = sc.fit_transform(X_train)
+X_test = sc.transform(X_test)
+
+y_train = y_train.values.ravel()
+y_test = y_test.values.ravel()
+
+if model_type == 'RandomForest':
+    from sklearn.ensemble import RandomForestClassifier
+    classifier = RandomForestClassifier(n_estimators = 100, criterion = 'entropy', random_state = 0)
+    classifier.fit(X_train, y_train)
+
+if model_type == 'KNN':
+    from sklearn.neighbors import KNeighborsClassifier
+    classifier = KNeighborsClassifier(n_neighbors = 12, metric = 'minkowski', p = 2)
+    classifier.fit(X_train, y_train)
+
+if model_type == 'SVC':
+    from sklearn.svm import SVC
+    classifier = SVC(kernel = 'rbf', random_state = 0)
+    # classifier = SVC(kernel = 'poly', random_state = 0)
+    # classifier = SVC(kernel = 'sigmoid', random_state = 0)
+    classifier.fit(X_train, y_train)
+```
 
 With the K-Nearest Neighbors model I got a best model accuracy near 88%, when using 5, 7, 9, and 11 neighbors, and lower accuracy with other numbers of neighbors.  My best result for the Support Vector Classification model was 93% accuracy with the rbf kernel.  I got 92% accuracy with the polynomial kernel, and 88% accuracy with the sigmoid kernel.  When fitting the Random Forest model, I got 95% accuracy with 10 trees and 98% accuracy with 100 trees.  The Random Forest model proved superior for this dataset.
 

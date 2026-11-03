@@ -33,7 +33,7 @@ I fit classification models of K-Nearest Neighbors, Support Vector, and Random F
 
 With the K-Nearest Neighbors model I got a best model accuracy near 88%, when using 5, 7, 9, and 11 neighbors, and lower accuracy with other numbers of neighbors.  My best result for the Support Vector Classification model was 93% accuracy with the rbf kernel.  I got 92% accuracy with the polynomial kernel, and 88% accuracy with the sigmoid kernel.  When fitting the Random Forest model, I got 95% accuracy with 10 trees and 98% accuracy with 100 trees.  The Random Forest model proved superior for this dataset.
 
-After fitting the initial Random Forest models, I removed some variables with low feature importances and reran the model.  I got very similar results to the initial model.  Tumor size, BMI, Age, and Mammogram Result were the features with greatest importance.
+After fitting the initial Random Forest models, I removed some variables with low feature importances and reran the model.  I got very similar results to the initial model, just slightly improved.  Tumor size, BMI, Age, and Mammogram Result were the features with greatest importance.
 
 ```
                    Feature  Importance

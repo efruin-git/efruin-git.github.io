@@ -188,7 +188,7 @@ plt.show()
 ```
 AGE TUMOR SIZE (AGE, TUMOR SIZE) IMAGE
 
-
+ 
 
 
 

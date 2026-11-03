@@ -217,31 +217,31 @@ print("Variances:", sc.var_)
 
 > Variable Order:
 > 
->     'Age',
+>     'Age'
 > 
->     'BMI',
+>     'BMI'
 > 
->     'Family_History',
+>     'Family_History'
 > 
->     'Smoking',
+>     'Smoking'
 > 
->     'Physical_Activity',
+>     'Physical_Activity'
 > 
->     'Genetic_Mutation',
+>     'Genetic_Mutation'
 > 
->     'Tumor_Size_cm',
+>     'Tumor_Size_cm'
 > 
->     'Lymph_Node_Involvement',
+>     'Lymph_Node_Involvement'
 > 
->     'Mammogram_Result',
+>     'Mammogram_Result'
 > 
->     'Blood_Pressure',
+>     'Blood_Pressure'
 > 
->     'Cholesterol',
+>     'Cholesterol'
 > 
->     'Exercise_Days_Per_Week',
+>     'Exercise_Days_Per_Week'
 > 
->     'Breastfeeding_History',
+>     'Breastfeeding_History'
 > 
 >     'Annual_Income_USD'
 

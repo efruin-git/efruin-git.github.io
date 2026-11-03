@@ -28,7 +28,7 @@ After splitting the dataset into training and test sets I scaled the features us
 The original dataset contained 19 risk factor variables, a patient identification field, biopsy result, cancer stage, and cancer indicator fields.  The biopsy result and cancer stage fields contained categories that indicated cancer directly, so I left them out of my models.  
 
 
-### Data Preparation
+### Model Results
 I fit classification models of K-Nearest Neighbors, Support Vector, and Random Forest.  I used the 19 risk factor variables as the X variables, and the cancer indicator variable as the Y variable.  The dataset had 10,000 rows.  I split it 75%/25% between training and testing data.
 
 With the K-Nearest Neighbors model I got a best model accuracy near 88%, when using 5, 7, 9, and 11 neighbors, and lower accuracy with other numbers of neighbors.  My best result for the Support Vector Classification model was 93% accuracy with the rbf kernel.  I got 92% accuracy with the polynomial kernel, and 88% accuracy with the sigmoid kernel.  When fitting the Random Forest model, I got 95% accuracy with 10 trees and 98% accuracy with 100 trees.  The Random Forest model proved superior for this dataset.
@@ -62,7 +62,6 @@ After fitting the initial Random Forest models, I removed some variables with lo
 
 
 Describe model fitting and results
-Fit training models using sklearn classification models
 Determined model accuracy using test set
 	- Predicted values using x_test, compared to y_test data
 	- Created confusion matrix

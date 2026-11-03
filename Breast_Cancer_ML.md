@@ -169,8 +169,71 @@ print(cm)
 ```
 
 
+### Visualizing the Results
+
+```
+from sklearn.inspection import PartialDependenceDisplay
+
+features_to_plot = ["Age","Tumor_Size_cm",("Age", "Tumor_Size_cm")]
+# 4. Plot the partial dependence
+fig, ax = plt.subplots(figsize=(18, 6))
+display = PartialDependenceDisplay.from_estimator(
+    classifier,
+    X_train,
+    features=features_to_plot,
+    grid_resolution=50,  # Number of points to evaluate along each axis
+    ax=ax,
+)
+plt.show()
+```
+AGE TUMOR SIZE (AGE, TUMOR SIZE) IMAGE
 
 
+
+
+
+```
+print("Means:", sc.mean_)
+print("Variances:", sc.var_)
+```
+>Means: [5.21232000e+01 2.70290052e+01 3.03066667e-01 2.54933333e-01
+> 8.99066667e-01 1.48666667e-01 2.63107035e+00 2.02933333e-01
+> 4.96266667e-01 1.34577600e+02 2.13878400e+02 3.55760000e+00
+> 8.55866667e-01 8.23092333e+04]
+>Variances: [3.54022955e+02 1.98689073e+01 2.11217262e-01 1.89942329e-01
+> 6.38479129e-01 1.26564889e-01 2.52307180e+00 1.61751396e-01
+> 5.49186062e-01 6.85070112e+02 2.42216681e+03 5.23441557e+00
+> 5.30025582e-01 1.52589488e+09]
+
+> Variable Order: 'Age',
+>     'BMI',
+>     'Family_History',
+>     'Smoking',
+>     'Physical_Activity',
+>     'Genetic_Mutation',
+>     'Tumor_Size_cm',
+>     'Lymph_Node_Involvement',
+>     'Mammogram_Result',
+>     'Blood_Pressure',
+>     'Cholesterol',
+>     'Exercise_Days_Per_Week',
+>     'Breastfeeding_History',
+>     'Annual_Income_USD'
+
+```
+features_to_plot = ["Age","Tumor_Size_cm",("Age", "Tumor_Size_cm")]
+# 4. Plot the partial dependence
+fig, ax = plt.subplots(figsize=(8, 6))
+display = PartialDependenceDisplay.from_estimator(
+    classifier,
+    X_train,
+    features=features_to_plot,
+    grid_resolution=50,  # Number of points to evaluate along each axis
+    ax=ax,
+)
+# plt.title("2D Partial Dependence Plot")
+plt.show()
+```
 
 
 

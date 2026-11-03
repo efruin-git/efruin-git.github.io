@@ -55,6 +55,12 @@ df_bc_pred[['Gender','Family_History','Smoking','Alcohol_Consumption',
 
 The BMI (body mass index) and tumor size variables were missing some values so I imputed the average from each field.  The K-Nearest Neighbors and Support Vector models required imputed values in order to run.  I tried the Random Forest model both with and without imputed values and got similar results.
 
+```
+if mean_fill == 'Fill':
+    df_bc_pred['BMI'] = df_bc_pred['BMI'].fillna(df_bc_pred['BMI'].mean())
+    df_bc_pred['Tumor_Size_cm'] = df_bc_pred['Tumor_Size_cm'].fillna(df_bc_pred['Tumor_Size_cm'].mean())
+```
+
 After splitting the dataset into training and test sets I scaled the features using the Scikit Learn standard scaler.  There are a few different reasons why feature scaling matters.  One of the big reasons is that it prevents one feature from dominating the others because of larger values.  The feature of BMI generally has values in the 20's, while Age can range from 1 to 100.  Gender, family history of breast cancer, smoking indicator, and other categorical variables were encoded to integers near 0, so BMI and Age would have had disproportionate influence in the model if all the features were not scaled.
 
 The original dataset contained 19 risk factor variables, a patient identification field, biopsy result, cancer stage, and cancer indicator fields.  The biopsy result and cancer stage fields contained categories that indicated cancer directly, so I left them out of my models.  
@@ -119,6 +125,30 @@ if model_type == 'SVC':
 With the K-Nearest Neighbors model I got a best model accuracy near 88%, when using 5, 7, 9, and 11 neighbors, and lower accuracy with other numbers of neighbors.  My best result for the Support Vector Classification model was 93% accuracy with the rbf kernel.  I got 92% accuracy with the polynomial kernel, and 88% accuracy with the sigmoid kernel.  When fitting the Random Forest model, I got 95% accuracy with 10 trees and 98% accuracy with 100 trees.  The Random Forest model proved superior for this dataset.
 
 After fitting the initial Random Forest models, I removed some variables with low feature importances and reran the model.  I got very similar results to the initial model, just slightly improved.  Tumor size, BMI, Age, and Mammogram Result were the features with greatest importance.
+
+```
+predictions = classifier.predict(X_test)
+accuracy = accuracy_score(y_test, predictions)
+
+print(f"Model Accuracy: {accuracy * 100:.2f}%")
+```
+> Model Accuracy: 98.84%
+
+```
+from sklearn.metrics import confusion_matrix, accuracy_score
+
+y_pred = classifier.predict(X_test)
+# print(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_test),1)),1))
+
+cm = confusion_matrix(y_test, y_pred)
+print(cm)
+```
+>[[2017    1]
+>
+> [  28  454]]
+>
+> 1 False Positive, 28 False Negatives, 2017 True Negatives, 454 True Positives
+>
 
 ```
                    Feature  Importance

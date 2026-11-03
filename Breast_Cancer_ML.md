@@ -171,6 +171,9 @@ print(cm)
 
 ### Visualizing the Results
 
+I created partial density and ICE plots to evaluate how each feature affected the incidence of cancer.  Partial dependence plots are explained on the Scikit Learn website - [Partial_Dependence_Plots_Scikit-Learn](https://scikit-learn.org/stable/modules/partial_dependence.html)
+>Partial dependence plots (PDP) show the dependence between the target response and a set of input features of interest, marginalizing over the values of all other input features (the ‘complement’ features). **Intuitively, we can interpret the partial dependence as the expected target response as a function of the input features of interest.**
+
 ```
 from sklearn.inspection import PartialDependenceDisplay
 
@@ -187,7 +190,8 @@ display = PartialDependenceDisplay.from_estimator(
 plt.show()
 ```
 ![Age, Tumor Size and Both PDP](images/Age_TumorSize_and_Both_PDPs.png)
-I created partial density and ICE plots to evaluate how each feature affected the incidence of cancer.  The Age, Tumor Size, and Tumor Size vs Age partial density plots above show that there's an increased risk of cancer at certain ages and tumor sizes.  The data is scaled with a mean of 0 and each unit equal to 1 standard deviation from the mean.  The risk of cancer increases right at the mean of Age, which is 52, as can be seen below in the Means and Variances model stats.  For Tumor Size, there's a sharp increase in cancer risk around 0.25 standard deviations above the mean.
+
+The Age, Tumor Size, and Tumor Size vs Age partial density plots above show that there's an increased risk of cancer at certain ages and tumor sizes.  The data is scaled with a mean of 0 and each unit equal to 1 standard deviation from the mean.  The risk of cancer increases right at the mean of Age, which is 52, as can be seen below in the Means and Variances model stats.  For Tumor Size, there's a sharp increase in cancer risk around 0.25 standard deviations above the mean.
 
 The 2D partial density plot on the right side shows the combined effect of Age and Tumor Size on cancer risk.  The partial dependence increases from 0.10 to above 0.38 for greater values of Age and Tumor Size.
 
@@ -242,7 +246,7 @@ print("Variances:", sc.var_)
 >     'Annual_Income_USD'
 
 ![Tumor Size and BMI PDP](images/TumorSize_BMI_PDP.png)
-In the above 2D partial density plot, the viewer can see the risk of cancer increases from 0.12 to above 0.47 when both BMI and Tumor Size are elevated.  There's an increased risk at 0.7 standard deviations above the BMI mean, or around a BMI of 30.  
+In the above 2D partial density plot, the viewer can see the partial dependence of cancer risk increases from 0.12 to above 0.47 when both BMI and Tumor Size are elevated.  There's an increased risk at 0.7 standard deviations above the BMI mean, or around a BMI of 30.  
 
 
 ```

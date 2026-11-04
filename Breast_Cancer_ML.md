@@ -249,6 +249,7 @@ print("Variances:", sc.var_)
 >     'Annual_Income_USD'
 
 ![Tumor Size and BMI PDP](images/TumorSize_BMI_PDP.png)
+
 In the above 2D partial density plot, the viewer can see the partial dependence of cancer risk increases from 0.12 to above 0.47 when both BMI and Tumor Size are elevated.  There's an increased risk at 0.7 standard deviations above the BMI mean, or around a BMI of 30.  
 
 
@@ -266,15 +267,19 @@ display = PartialDependenceDisplay.from_estimator(
 plt.show()
 ```
 ![BMI_Categorical_Variables_PDP](images/BMI_MammoRes_Smoking_etc_PDP.png)
+
 In the partial density plot above, viewers can see a comparison between BMI, a continuous variable of high importance, and categorical variables of moderate to high importance.  In the mammogram result graph, -0.5 standard deviations below the mean corresponds to a mammogram  of Normal.  A value of 0.7 standard deviations above the mean corresponds to a result of Suspicious.  A value of 2 standard deviations above the mean corresponds to a result of Abnormal.
 
 ![Top_Feature_Importances_PDP](images/TumorSize_BMI_Age_MammoRes_etc_PDP.png)
+
 The features with the greatest importance in the Random Forest model are shown above.  Each feature increases the partial dependence of cancer risk significantly.
 
 ![Moderate_and_Low_Importance PDP](images/LymphNode_GeneticMut_AnnInc_etc_PDP.png)
+
 Features with moderate to low importance are shown above.  The Lymph Node and Genetic Mutation plots show a big increase in cancer risk with an increase in feature value, while the rest of the variables have little influence on cancer risk.
 
 ![Low_Importance PDP](images/AnnInc_Chol_BloodPress_etc_PDP.png)
+
 When features of low importance are graphed together, viewers can see the variation in partial dependence of cancer risk, but the scale is very small.  The variation in cancer risk from the low importance features seems pretty random.
 
 #### ICE Plots
@@ -290,10 +295,12 @@ ICE plots can show interactions with other variables, but don't explain which ot
 
 
 ![MammoRes_ICE](images/MammoRes_ICE.png)
+
 The same situation is present in the BMI and Mammogram Result graphs - where there is a gap near the average partial dependence.  There are more lines below the gap, indicating cancer is unlikely, but there are also lines above the gap that show a significant increase in cancer risk.  Those gaps show an interaction with other variables, which make cancer either significantly more likely, or less likely.  In the BMI graph, there's an interaction that causes cancer to be more likely for some patients regardless of BMI - there are lines near the top of the graph that are fairly flat an only slightly affected by BMI.
 
 
 ![Age_ICE](images/Age_ICE.png)
+
 In the Age ICE plot we see the same interaction effect, but it is less pronounced.
 
 From the 2D partial density plots above, it's evident that the interactions must involve some of the features with higher importance.  In the 2D plots, there's an increased risk of cancer when Tumor Size, BMI, Age, and Mammogram Result are elevated, but when any of those variables are low, the partial dependence cancer risk remains fairly low, below ~0.25.  We can conclude the features with highest importance - Tumor Size, BMI, Age, and Mammogram Result - interact to significantly increase or reduce the risk of cancer.

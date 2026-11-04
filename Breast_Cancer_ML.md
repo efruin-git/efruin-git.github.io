@@ -174,7 +174,7 @@ print(cm)
 
 ### Visualizing the Results
 
-I created partial density and ICE plots to evaluate how each feature affected the incidence of cancer.  Partial dependence plots are explained on the Scikit Learn website - [Partial Dependence Plots Scikit-Learn](https://scikit-learn.org/stable/modules/partial_dependence.html)
+I created partial dependence and ICE (individual conditional expectation) plots to evaluate how each feature affected the incidence of cancer.  Partial dependence plots are explained on the Scikit Learn website - [Partial Dependence Plots Scikit-Learn](https://scikit-learn.org/stable/modules/partial_dependence.html)
 >Partial dependence plots (PDP) show the dependence between the target response and a set of input features of interest, marginalizing over the values of all other input features (the ‘complement’ features). **Intuitively, we can interpret the partial dependence as the expected target response as a function of the input features of interest.**
 
 ```

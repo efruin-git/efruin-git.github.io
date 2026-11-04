@@ -285,7 +285,7 @@ The dataset I used was synthetic and contained only patients with biopsy results
 
 It's worth noting that only 0.5-1% of breast cancers occur in men, according to the World Health Organization - [WHO Breast Cancer](https://www.who.int/news-room/fact-sheets/detail/breast-cancer).
 
-The top risk factors in the model make sense, but it's hard to know which factors increase cancer risk the most, since the dataset was synthetic.
+The top risk factors in the model seemed reasonable, but it's hard to know which factors increase cancer risk the most, since the dataset was synthetic.
 
 
 ### Sources:

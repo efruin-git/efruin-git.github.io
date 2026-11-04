@@ -3,6 +3,8 @@ Hello, welcome to my website!  I'll be posting data projects and commentary on h
 
 Emmett
 
+<img src="images/Profile_Tahoe.JPEG" alt="Profile" width="100">
+
 
 
 * * *

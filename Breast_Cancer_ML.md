@@ -279,7 +279,7 @@ From the 2D partial dependence plots above, it's evident that the interactions m
 ### Concluding Remarks
 I tried multiple methods and was able to create an accurate classifier with the Random Forest machine learning model.  In the partial dependence and ICE plots, it was evident that interactions between risk factors had the potential to increase cancer risk significantly.  
 
-The dataset I used was synthetic and had a major flaw.  Gender was the least important feature, according to the results of the Random Forest model with all variables included, but gender is the top risk factor for breast cancer.  According to the World Health Organization - [WHO Breast Cancer](https://www.who.int/news-room/fact-sheets/detail/breast-cancer), only 0.5-1% of breast cancers occur in men.  The other top risk factors make sense, but it's hard to know which factors increase cancer risk the most, since the dataset was synthetic.
+The dataset I used was synthetic and had a major flaw.  Gender was the least important feature, according to the results of the Random Forest model with all variables included, but gender is the top risk factor for breast cancer.  According to the World Health Organization - [WHO Breast Cancer](https://www.who.int/news-room/fact-sheets/detail/breast-cancer), only 0.5-1% of breast cancers occur in men.  The other top risk factors in the model make sense, but it's hard to know which factors increase cancer risk the most, since the dataset was synthetic.
 
 
 ### Sources:

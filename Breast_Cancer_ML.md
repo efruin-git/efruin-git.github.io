@@ -7,7 +7,7 @@
 In this project I used machine learning techniques to classify risk factors for breast cancer.  I found a user friendly dataset on Kaggle that only required a little cleaning.  I performed multiple machine learning classification procedures, determined the best model, and graphed results to interpret the model.  The classification methods I used were K-Nearest Neighbors, Support Vector, and Random Forest, and I implemented them with the Scikit Learn, pandas, numpy, and matplotlib packages in Python.
 
 ### Dataset
-I used a synthetic dataset from Kaggle - [Breast Cancer Prediction Dataset](https://www.kaggle.com/datasets/mobeenfatimah/breast-cancer-prediction-dataset-10000-patient).  The dataset has demographic and health measures that can be used to predict whether a patient has breast cancer and the stage of the cancer.  It contains only patients with a mammogram and a biopsy result.  Most patients in the dataset have a tumor size populated, but 300 patients do not.
+I used a synthetic dataset from Kaggle - [Breast Cancer Prediction Dataset](https://www.kaggle.com/datasets/mobeenfatimah/breast-cancer-prediction-dataset-10000-patient).  The dataset has demographic and health measures relevant to predicting whether a patient has breast cancer and the stage of the cancer.  It contains only patients with a mammogram and a biopsy result.  Most patients in the dataset have a tumor size populated, but 300 patients do not.
 
 _From the source page:_
 

@@ -7,7 +7,7 @@
 In this project I used machine learning techniques to classify risk factors for breast cancer.  I found a user friendly dataset on Kaggle that only required a little cleaning.  I performed multiple machine learning classification procedures, determined the best model, and graphed results to interpret the model, using Scikit Learn, pandas, numpy, and matplotlib packages in Python.  The classification methods I used were K-Nearest Neighbors, Support Vector, and Random Forest.
 
 ### Data Sets Used
-I used a synthetic dataset from Kaggle - [Breast Cancer Prediction Dataset](https://www.kaggle.com/datasets/mobeenfatimah/breast-cancer-prediction-dataset-10000-patient).  The dataset has demographic and health measures that can be used to predict whether a patient has breast cancer and the stage of the cancer.  The dataset was created for research purposes.
+I used a synthetic dataset from Kaggle - [Breast Cancer Prediction Dataset](https://www.kaggle.com/datasets/mobeenfatimah/breast-cancer-prediction-dataset-10000-patient).  The dataset has demographic and health measures that can be used to predict whether a patient has breast cancer and the stage of the cancer.  It contains only patients with a mammogram and biopsy result.  Most patients had a tumor size populated, but 300 patients did not.
 
 _From the source page:_
 
@@ -281,7 +281,11 @@ From the 2D partial dependence plots above, it's evident that the interactions m
 ### Concluding Remarks
 I tried multiple methods and was able to create an accurate classifier with the Random Forest machine learning model.  In the partial dependence and ICE plots, it was evident that interactions between risk factors had the potential to increase cancer risk significantly.  
 
-The dataset I used was synthetic and had a major flaw.  Gender was the least important feature, according to the results of the Random Forest model with all variables included, but gender is the top risk factor for breast cancer.  According to the World Health Organization - [WHO Breast Cancer](https://www.who.int/news-room/fact-sheets/detail/breast-cancer), only 0.5-1% of breast cancers occur in men.  The other top risk factors in the model make sense, but it's hard to know which factors increase cancer risk the most, since the dataset was synthetic.
+The dataset I used was synthetic and contained only patients with biopsy results.  Gender was the least important feature in my initial Random Forest model, indicating gender didn't affect cancer risk when a patient had a tumor and/or biopsy.
+
+It's worth noting that only 0.5-1% of breast cancers occur in men, according to the World Health Organization - [WHO Breast Cancer](https://www.who.int/news-room/fact-sheets/detail/breast-cancer).
+
+The other top risk factors in the model make sense, but it's hard to know which factors increase cancer risk the most, since the dataset was synthetic.
 
 
 ### Sources:

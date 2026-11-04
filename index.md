@@ -5,7 +5,7 @@ Emmett
 
 <img src="images/Profile_Tahoe.png" alt="Profile" width="100">
 
- 
+
 
 * * *
   

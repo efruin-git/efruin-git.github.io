@@ -267,7 +267,9 @@ ICE plots can show interactions with other variables, but don't explain which ot
 
 ![MammoRes_ICE](images/MammoRes_ICE.png)
 
-The same situation is present in the BMI and Mammogram Result graphs - there is a gap near the average partial dependence.  There are more lines below the gap, indicating cancer is unlikely, but there are also lines above the gap that show a significant increase in cancer risk.  Those gaps show an interaction with other variables, which make cancer either significantly more likely, or less likely.  In the BMI graph, there's an interaction that causes cancer to be more likely for some patients regardless of BMI - there are lines near the top of the graph that are fairly flat and only slightly affected by BMI.
+The same situation is present in the BMI and Mammogram Result graphs - there is a gap near the average partial dependence.  There are more lines below the gap, indicating cancer is unlikely, but there are also lines above the gap that show a significant increase in cancer risk.  Those gaps show an interaction with other variables, which make cancer either significantly more likely, or less likely.  
+
+In the BMI graph, there's an interaction that causes cancer to be more likely for some patients regardless of BMI - there are lines near the top of the graph that are fairly flat and only slightly affected by BMI.
 
 
 ![Age_ICE](images/Age_ICE.png)

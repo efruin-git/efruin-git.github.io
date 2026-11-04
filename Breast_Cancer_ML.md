@@ -277,28 +277,29 @@ Features with moderate to low importance are shown above.  The Lymph Node and Ge
 ![Low_Importance PDP](images/AnnInc_Chol_BloodPress_etc_PDP.png)
 When features of low importance are graphed together, viewers can see the variation in partial dependence of cancer risk, but the scale is very small.  The variation in cancer risk from the low importance features seems pretty random.
 
+#### ICE Plots
+ICE plots are explained on the Scikit Learn website - [ICE_Plots_Scikit-Learn](https://scikit-learn.org/stable/modules/partial_dependence.html)
+>Similar to a PDP, an individual conditional expectation (ICE) plot shows the dependence between the target function and an input feature of interest. However, unlike a PDP, which shows the average effect of the input feature, **an ICE plot visualizes the dependence of the prediction on a feature for _each sample_ separately with one line per sample... When interactions are present the ICE plot will provide many more insights.**
+
+![Tumor_Size_ICE](images/Tumor_Size_ICE.png)
+
+ICE plots can show interactions with other variables, but don't explain which other variables are connected.  For example, in the Tumor Size ICE plot, the viewer can see a gap between lines near the top of the graph and lines near the bottom.  The gap is especially pronounced for tumors with size greater than 0.3 standard deviations above the mean.  There are other variable(s) that make cancer much more likely, or pretty unlikely when the tumor size is above that 0.3 SD threshold.
 
 
+![BMI_ICE](images/BMI_ICE.png)
 
 
-Describe model fitting and results
-Determined model accuracy using test set
-	- Predicted values using x_test, compared to y_test data
-	- Created confusion matrix
-For random forest model, refined fields to include and reran classification
-	- Explain reasons to remove fields
-	- Similar results as before
+![MammoRes_ICE](images/MammoRes_ICE.png)
+The same situation is present in the BMI and Mammogram Result graphs - where there is a gap near the average partial dependence.  There are more lines below the gap, indicating cancer is unlikely, but there are also lines above the gap that show a significant increase in cancer risk.  Those gaps show an interaction with other variables, which make cancer either significantly more likely, or less likely.  In the BMI graph, there's an interaction that causes cancer to be more likely for some patients regardless of BMI - there are lines near the top of the graph that are fairly flat an only slightly affected by BMI.
 
 
+![Age_ICE](images/Age_ICE.png)
+In the Age ICE plot we see the same interaction effect, but it is less pronounced.
 
+From the 2D partial density plots above, it's evident that the interactions must involve some of the features with higher importance.  In the 2D plots, there's an increased risk of cancer when Tumor Size, BMI, Age, and Mammogram Result are elevated, but when any of those variables are low, the partial dependence cancer risk remains fairly low, below ~0.25.  We can conclude the features with highest importance - Tumor Size, BMI, Age, and Mammogram Result - interact to significantly increase or reduce the risk of cancer.
 
-
-
-
-
-
-
-
+### Concluding Remarks
+I tried multiple methods and was able to create an accurate classifier with the Random Forest machine learning model.  In the partial density and ICE plots, it was evident that interactions between risk factors had the potential to increase cancer risk significantly.  The dataset I used was synthetic and had a major flaw.  Gender was the least important feature, according to the results of the Random Forest model with all variables included, but gender is the top risk factor for breast cancer.  According to the World Health Organization - [WHO Breast Cancer](https://www.who.int/news-room/fact-sheets/detail/breast-cancer), only 0.5-1% of breast cancers occur in men.  The other top risk factors make sense, but it's hard to know which factors increase cancer risk the most, since the dataset was synthetic.
 
 
 ### Sources:

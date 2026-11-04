@@ -1,6 +1,6 @@
 ## Cancer Risk Factors - Machine Learning Classification
 
-##### Risk Factors Graph
+###### Risk Factors Graph
 <img src="images/BMI_MammoRes_PDP.png" alt="Cancer Risk Factors" width="300">
 
 ### Overview

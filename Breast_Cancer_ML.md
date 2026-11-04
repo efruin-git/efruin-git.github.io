@@ -274,7 +274,7 @@ The same situation is present in the BMI and Mammogram Result graphs - where the
 
 In the Age ICE plot we see the same interaction effect, but it is less pronounced.
 
-From the 2D partial dependence plots above, it's evident that the interactions must involve some of the features with higher importance.  In the 2D plots, there's an increased risk of cancer when Tumor Size, BMI, Age, and Mammogram Result are elevated, but when any of those variables are low, the partial dependence cancer risk remains fairly low, below ~0.25.  We can conclude the features with highest importance - Tumor Size, BMI, Age, and Mammogram Result - interact to significantly increase or reduce the risk of cancer.
+From the 2D partial dependence plots above, it's evident that the interactions must involve some of the features with higher importance.  In the 2D plots, there's an increased risk of cancer when Tumor Size, BMI, Age, and Mammogram Result are elevated, but when any of those variables are low, the partial dependence cancer risk remains fairly low, below ~0.25.  We can conclude the features with highest importance - Tumor Size, BMI, Age, and Mammogram Result, interact to significantly increase or reduce the risk of cancer.
 
 ### Concluding Remarks
 I tried multiple methods and was able to create an accurate classifier with the Random Forest machine learning model.  In the partial dependence and ICE plots, it was evident that interactions between risk factors had the potential to increase cancer risk significantly.  

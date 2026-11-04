@@ -224,13 +224,13 @@ print("Variances:", sc.var_)
 
 > Variable Order:
 > 
-> 'Age', 'BMI', 'Family_History', 'Smoking',
+> Age, BMI, Family_History, Smoking,
 > 
-> 'Physical_Activity', 'Genetic_Mutation', 'Tumor_Size_cm', 'Lymph_Node_Involvement',
+> Physical_Activity, Genetic_Mutation, Tumor_Size_cm, Lymph_Node_Involvement,
 > 
-> 'Mammogram_Result', 'Blood_Pressure', 'Cholesterol', 'Exercise_Days_Per_Week',
+> Mammogram_Result, Blood_Pressure, Cholesterol, Exercise_Days_Per_Week,
 >
-> 'Breastfeeding_History', 'Annual_Income_USD'
+> Breastfeeding_History, Annual_Income_USD
 
 ![Tumor Size and BMI PDP](images/TumorSize_BMI_PDP.png)
 

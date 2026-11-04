@@ -4,8 +4,6 @@ Hello, welcome to my website!  I'll be posting data projects and commentary on h
 Emmett
 
 
-<img src="images/Profile_Tahoe_Smaller.png" alt="Profile" width="100">
-
 
 
 * * *

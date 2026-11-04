@@ -239,7 +239,7 @@ In the above 2D partial dependence plot, the viewer can see the partial dependen
 
 ![BMI_Categorical_Variables_PDP](images/BMI_MammoRes_Smoking_etc_PDP.png)
 
-In the partial dependence plot above, viewers can see a comparison between BMI, a continuous variable of high importance, and categorical variables of moderate to high importance.  In the mammogram result graph, -0.5 standard deviations below the mean corresponds to a mammogram  of Normal.  A value of 0.7 standard deviations above the mean corresponds to a result of Suspicious.  A value of 2 standard deviations above the mean corresponds to a result of Abnormal.
+In the partial dependence plot above, viewers can see a comparison between BMI, a continuous variable of high importance, and categorical variables of moderate to high importance.  In the mammogram result graph, 0.5 standard deviations below the mean corresponds to a mammogram  of Normal.  A value of 0.7 standard deviations above the mean corresponds to a result of Suspicious.  A value of 2 standard deviations above the mean corresponds to a result of Abnormal.
 
 ![Top_Feature_Importances_PDP](images/TumorSize_BMI_Age_MammoRes_etc_PDP.png)
 
@@ -254,7 +254,7 @@ Features with moderate to low importance are shown above.  The Lymph Node and Ge
 When features of low importance are graphed together, viewers can see the variation in partial dependence of cancer risk, but the scale is very small.  The variation in cancer risk from the low importance features seems pretty random.
 
 #### ICE Plots
-ICE plots are explained on the Scikit Learn website - [ICE_Plots_Scikit-Learn](https://scikit-learn.org/stable/modules/partial_dependence.html)
+ICE plots are explained on the Scikit Learn website - [ICE Plots Scikit-Learn](https://scikit-learn.org/stable/modules/partial_dependence.html)
 >Similar to a PDP, an individual conditional expectation (ICE) plot shows the dependence between the target function and an input feature of interest. However, unlike a PDP, which shows the average effect of the input feature, **an ICE plot visualizes the dependence of the prediction on a feature for _each sample_ separately with one line per sample... When interactions are present the ICE plot will provide many more insights.**
 
 ![Tumor_Size_ICE](images/TumorSize_ICE.png)

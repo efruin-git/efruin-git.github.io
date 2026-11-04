@@ -259,7 +259,7 @@ ICE plots are explained on the Scikit Learn website - [ICE Plots Scikit-Learn](h
 
 ![Tumor_Size_ICE](images/TumorSize_ICE.png)
 
-ICE plots can show interactions with other variables, but don't explain which other variables are connected.  For example, in the Tumor Size ICE plot, the viewer can see a gap between lines near the top of the graph and lines near the bottom.  The gap is especially pronounced for tumors with size greater than 0.3 standard deviations above the mean.  There are other variable(s) that make cancer much more likely, or pretty unlikely when the tumor size is above that 0.3 SD threshold.
+ICE plots can show interactions with other variables, but don't explain which other variables are involved.  For example, in the Tumor Size ICE plot, the viewer can see a gap between lines near the top of the graph and lines near the bottom.  The gap is especially pronounced for tumors with size greater than 0.3 standard deviations above the mean.  There are other variable(s) that either make cancer much more likely, or make cancer unlikely when the tumor size is above that 0.3 SD threshold.
 
 
 ![BMI_ICE](images/BMI_ICE.png)

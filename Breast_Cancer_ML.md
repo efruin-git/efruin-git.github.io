@@ -196,7 +196,7 @@ plt.show()
 
 The Age, Tumor Size, and Tumor Size vs Age partial dependence plots above show that there's an increased risk of cancer at certain ages and tumor sizes.  The data is scaled with a mean of 0 and each unit equal to 1 standard deviation.  The risk of cancer increases right at the mean of Age, which is 52, as can be seen below in the Means and Variances model stats.  For Tumor Size, there's a sharp increase in cancer risk around 0.25 standard deviations above the mean.
 
-The 2D partial density plot on the right side shows the combined effect of Age and Tumor Size on cancer risk.  The partial dependence increases from 0.10 to above 0.38 for greater values of Age and Tumor Size.
+The 2D partial dependence plot on the right side shows the combined effect of Age and Tumor Size on cancer risk.  The partial dependence increases from 0.10 to above 0.38 for greater values of Age and Tumor Size.
 
 ```
 print("Means:", sc.mean_)

@@ -202,7 +202,9 @@ The 2D partial density plot on the right side shows the combined effect of Age a
 print("Means:", sc.mean_)
 print("Variances:", sc.var_)
 ```
-> Means: [5.21232000e+01, 2.70290052e+01, 3.03066667e-01, 2.54933333e-01,
+> Means:
+>
+> [5.21232000e+01, 2.70290052e+01, 3.03066667e-01, 2.54933333e-01,
 >
 > 8.99066667e-01, 1.48666667e-01, 2.63107035e+00, 2.02933333e-01,
 >
@@ -210,7 +212,9 @@ print("Variances:", sc.var_)
 >
 > 8.55866667e-01, 8.23092333e+04]
 >
-> Variances: [3.54022955e+02, 1.98689073e+01, 2.11217262e-01, 1.89942329e-01,
+> Variances:
+>
+> [3.54022955e+02, 1.98689073e+01, 2.11217262e-01, 1.89942329e-01,
 >
 > 6.38479129e-01, 1.26564889e-01, 2.52307180e+00, 1.61751396e-01,
 >
@@ -286,7 +290,7 @@ When features of low importance are graphed together, viewers can see the variat
 ICE plots are explained on the Scikit Learn website - [ICE_Plots_Scikit-Learn](https://scikit-learn.org/stable/modules/partial_dependence.html)
 >Similar to a PDP, an individual conditional expectation (ICE) plot shows the dependence between the target function and an input feature of interest. However, unlike a PDP, which shows the average effect of the input feature, **an ICE plot visualizes the dependence of the prediction on a feature for _each sample_ separately with one line per sample... When interactions are present the ICE plot will provide many more insights.**
 
-![Tumor_Size_ICE](images/Tumor_Size_ICE.png)
+![Tumor_Size_ICE](images/TumorSize_ICE.png)
 
 ICE plots can show interactions with other variables, but don't explain which other variables are connected.  For example, in the Tumor Size ICE plot, the viewer can see a gap between lines near the top of the graph and lines near the bottom.  The gap is especially pronounced for tumors with size greater than 0.3 standard deviations above the mean.  There are other variable(s) that make cancer much more likely, or pretty unlikely when the tumor size is above that 0.3 SD threshold.
 

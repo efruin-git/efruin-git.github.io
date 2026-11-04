@@ -237,19 +237,6 @@ print("Variances:", sc.var_)
 In the above 2D partial dependence plot, the viewer can see the partial dependence of cancer risk increases from 0.12 to above 0.47 when both BMI and Tumor Size are elevated.  There's an increased risk at 0.7 standard deviations above the BMI mean, or around a BMI of 30.  
 
 
-```
-features_to_plot = ["BMI","Mammogram_Result","Smoking","Family_History","Lymph_Node_Involvement",("Mammogram_Result", "BMI")]
-# Plot the partial dependence
-fig, ax = plt.subplots(figsize=(12, 8))
-display = PartialDependenceDisplay.from_estimator(
-    classifier,
-    X_train,
-    features=features_to_plot,
-    grid_resolution=50,  # Number of points to evaluate along each axis
-    ax=ax,
-)
-plt.show()
-```
 ![BMI_Categorical_Variables_PDP](images/BMI_MammoRes_Smoking_etc_PDP.png)
 
 In the partial dependence plot above, viewers can see a comparison between BMI, a continuous variable of high importance, and categorical variables of moderate to high importance.  In the mammogram result graph, -0.5 standard deviations below the mean corresponds to a mammogram  of Normal.  A value of 0.7 standard deviations above the mean corresponds to a result of Suspicious.  A value of 2 standard deviations above the mean corresponds to a result of Abnormal.

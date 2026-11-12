@@ -13,14 +13,14 @@ I plan to add more analysis to this page.
 <img src="images/Data_Sources_1016.png" alt="Data Sources">  
 <br>
 <br>    
-<img src="images/Data_Sources_2_1109.png" alt="Data Sources 2">  
+<img src="images/Data_Sources_2_1112.png" alt="Data Sources 2">  
 <br>
 <br>    
 
 
 
 #### Notes and Analysis
-<img src="images/Notes_analysis_1109.png" alt="Notes and Analysis">  
+<img src="images/Notes_analysis_1112.png" alt="Notes and Analysis">  
 <br>
 <br>    
 
@@ -131,3 +131,107 @@ Adolescent Birth Rate shows a statistically significant relationship with the Gi
 
 
 
+### Further Analysis
+I reviewed a few critiques of The Spirit Level - an article on the interaction between income inequality and poverty by Simone Rambotti, and two books that thoroughly reviewed the evidence presented in The Spirit Level.  Peter Saunders wrote a book called, _Beware False Prophets - Equality, the Good Society and The Spirit Level_, and Christopher Snowden wrote a book called _The Spirit Level Delusion - Fact-Checking the Left's New Theory of Everything_.
+
+One article I found supported Wilkinson and Pickett's research, but added a level of nuance.  Simone Rambotti published an article in the _Social Science and Medicine_ journal titled, "Recalibrating the spirit level: An analysis of the interaction of income inequality and poverty and its effect on health."  She looked into the effect of poverty on life expectancy and on the "index of health and social problems" variable from The Spirit Level.  She found that Wilkinson and Pickett failed to include poverty as a confounding variable, but that it influenced those outcomes in concert with income inequality.  Among wealthy nations, Rambotti found poverty to interact with inequality and explain more of the variation in health outcomes than inequality alone.  Among US states, Rambotti found that poverty alone better explained the variation in outcomes, compared to inequality or even an interaction between poverty and inequality.
+
+Next I reviewed _Beware False Prophets_.  The Saunders book presented poor evidence against Wilkinson and Pickett's claims, so I initially thought my dashboard was simply missing data and that the relationship between poor societal outcomes and inequality was strong.  Next I read the Snowden book, _The Spirit Level Delusion_, which presented much more sophisticated arguments, and **now conclude the evidence is only moderate that societal outcomes are related to inequality.**
+
+Saunders frequently uses the same datasets as Wilkinson and Pickett.  Some of his criticisms are legitimate, but some seem immature and not scientifically sound.  He removes outliers to test whether relationships hold without single countries, which is reasonable, but he also removes whole groups of countries, like the Scandinavian countries and the Anglophone countries (US, UK, Australia, Canada, New Zealand, Ireland).  Saunders adds his own datasets to his analysis.  Sometimes they support Wilkinson and Pickett's claims and sometimes they don't.
+
+Snowden's critique is much more sophisticated and legitimate.  He uses his own dataset with additional countries.  He includes Hungary, Slovenia, the Czech Republic, Hong Kong, and South Korea in his dataset.  They are absent from _The Spirit Level_, but they all meet the upper income threshold by 2006.  Slovenia has only 2 million people.  The rest of the countries meet the 3 million population threshold.  By adding Korea and Hong Kong, Snowden is able to paint a more complete picture of Asian outcomes.  The four Asian nations have very different levels of inequality, but often similar outcomes.
+
+Some of the Snowden's additional countries are excluded from _The Spirit Level_ due to missing data.  Snowden includes the countries by adding in data from other sources where it is lacking in the World Bank or other dataset.
+
+For many of the measures used in _The Spirit Level_, Snowden produces graphs and regressions that show there's no relationship between income inequality and the outcome.  He also produces a few graphs that show a contrary relationship - better outcomes among more unequal nations.
+
+I created a summary of Wilkinson and Pickett's international outcomes measures.  Only 4 of the 14 measures withstood the criticisms of Saunders and Snowden.
+
+**Summary of Wilkinson and Pickett's Statistical Claims - International Data Only**
+
+Homicide
+	- **No evidence of a relationship**
+	- The relationship should hold with 1 country (US) removed and it does not
+	- In "Response to Policy Exchange," Wilkinson and Pickett claim that 50 studies show a link between inequality and violence.  There may indeed be a link, but I don't consider the evidence to be sufficient in their data.
+	- Snowden shows there's no evidence of a relationship.  He includes Hong Kong and R^2 = 0.0897.  When the USA is removed, the R^2 value is 0.0068.
+
+Childhood Conflict
+	- **Relationship is valid**
+	- Snowden does not address this measure
+
+Women's status
+	- **No evidence of a relationship**
+	- Snowden addresses this issue on his blog using a UN index of gender empowerment
+	- https://spiritleveldelusion.blogspot.com/2010/05/womens-empowerment.html
+	- There's no evidence of a relationship when the Czech Republic, Slovenia, Hungary, and South Korea are included
+
+Foreign Aid
+	- **No evidence of a relationship**
+	- Relationship is valid at the government spending level, but Saunders and Snowden have a valid counterpoint
+	- Some less equal nations donate more on an individual bases to charity
+	- When charity is factored in, total % GNI given to developing nations is not related to inequality
+	
+Trust 
+	- **No evidence of a relationship**
+	- When per capita GDP is included in a multivariate analysis, inequality ceases to have statistical significance.
+	- 1 question should not be used to determine whether a societal outcome is related to inequality
+	- Saunders and Snowden - membership in a community organization is positively correlated with inequality
+	- Community membership is evidence of trust.  Results from the World Values Survey question on trust can be explained by per capita GDP.  Together, the evidence shows there's no relationship between overall trust and inequality.
+
+Infant mortality
+	- **Relationship is valid**
+	- Saunders agrees.  He uses multiple tests, including one with his own dataset of 39 countries, and finds the relationship to be robust.
+	- Snowden includes Hungary and Hong Kong.  Hungary could rightly be left out of the data, and the statistical relationship would likely be valid.
+
+Life expectancy
+	- **No evidence of a relationship** specific to inequality
+	- Life expectancy is related to national income, poverty, inequality, culture (see Japan, Hong Kong, and Singapore), and other factors
+	- For this conclusion, I considered Rambotti's analysis, Saunders' critique, Snowden's critique, and my own data
+
+Obesity - adults
+	- **No evidence of a relationship**
+	- Wilkinson and Pickett include only Japan out of all Asian countries.  Snowden rightly includes Singapore, Korea, and Hong Kong.  His results show there's no relationship between obesity and inequality.  The Asian countries provide a good snapshot of the issue.  They all have low levels of obesity, but very different levels of inequality.  Cultural similarities seem to be more powerful than inequality.
+	
+Obesity - children
+	- **No evidence of a relationship**, see above
+
+Literacy and numeracy
+	- **No evidence of a relationship**
+	- When Hong Kong is included, there's no longer evidence of a trend (Snowden, Figure 9.2, p 156).
+
+Innovation and creativity
+	- **No evidence of a relationship**
+	- The histogram of standardized residuals should be normally distributed, but it is clearly not.  In this case, Saunders' rejection of the statistical validity of the data is warranted.
+
+Teenage births
+	- **Relationship is valid**
+	- Saunders removes both the Scandinavian and Anglo countries to try to argue that the relationship doesn't exist
+	- Saunders and Snowden both show that divorce rates are greater in more equal countries.  Snowden shows that single parent households are unrelated to inequality.
+	- Teenage births are related to inequality, but other factors of family relationships are better in more unequal countries.  Family connectedness is unrelated to inequality.
+
+Imprisonment rates
+	- **Relationship is valid**
+	- Snowden shows that crime rates including homicide and theft are unrelated to inequality
+	- The imprisonment rate correlation with inequality is due to government policies
+	
+Social mobility
+	- **No evidence of a relationship**
+	- Too few countries included in _Spirit Level_ analysis
+	- In "Response to Policy Exchange," the authors mention other studies on social mobility and claim the relationship has strengthened since _The Spirit Level_ was published.
+	
+
+4/14 measures are valid
+
+Childhood conflict, infant mortality, teenage birth rates, and imprisonment rates show strong evidence of being related to income inequality.
+
+With each outcome that's related to income inequality, there are other outcomes that seem to counterbalance the relationship.  Infant mortality is lower in more equal nations, but life expectancy and obesity show little relationship with inequality.  Teenage births are related to inequality, but so are divorce rates, with more unequal countries having lower divorce rates.  Imprisonment rates are related to inequality, but crime rates are not.  Imprisonment rates seem to be related to government policies that are common among unequal countries, and different government policies that are common among more equal countries.
+
+Snowden explains several outcomes that are unrelated to inequality - smoking prevalence, obesity, life expectancy, most diseases, happiness, children living in single parent households, unemployment, the "quality of life" index created by the Economist Intelligence Unit, homicide, theft, overall crime rates, and total percentage of GNI donated to developing countries (including individual charity).  Snowden also mentions a few outcomes that are better among more unequal nations - membership in a community organization, divorce rates, suicide, and individual charity.
+
+I conclude that societal outcomes are very complicated and influenced by many factors.  On the international level, a few factors are hugely significant.  Culture, government policy, per capita wealth, and poverty levels play a major role.  Inequality does seem to be related to outcomes in subtle ways, but the evidence that Wilkinson and Pickett produce is misleading.  The criticism that they don't use a complete dataset is legitimate.  Hong Kong, Singapore, and Korea should be included in most or all of their graphs.  Singapore is part of their dataset, but they exclude it from a few regressions.  The US plays an outsize role in many of their regressions.  The regressions should hold when the US is removed, and they often do not.  **International data does not provide evidence of a strong relationship between societal outcomes and inequality.**
+
+
+### Disclaimer:
+
+I used AI to research and produce some of the code used in this report. I did not use AI to edit or write any of the analysis.

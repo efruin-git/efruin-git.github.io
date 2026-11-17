@@ -24,7 +24,7 @@ _From the source page:_
 ### Data Preparation
 I performed a few key steps to prepare the data for modeling - encoding categorical data, imputing values for missing data, and scaling the features.
 
-Several fields contained categorical data - gender, family history of breast cancer, smoking indicator, alcohol consumption indicator, etc.  The classification models require numerical variables in order to run.  I used the ordinal encoder from the Scikit Learn and mapped unknown or missing values to -1.  The categorical variables were transformed into ordinal integers ranging from -1 to 5.  Most encoded variables had only two categories and no missing values, so they were encoded as 0's and 1's.
+Several fields contained categorical data - gender, family history of breast cancer, smoking indicator, alcohol consumption indicator, etc.  The classification models require numerical variables in order to run.  I used the ordinal encoder from Scikit Learn and mapped unknown or missing values to -1.  The categorical variables were transformed into ordinal integers ranging from -1 to 5.  Most encoded variables had only two categories and no missing values, so they were encoded as 0's and 1's.
 
 ```
 from sklearn.preprocessing import OrdinalEncoder
@@ -259,7 +259,7 @@ ICE plots are explained on the Scikit Learn website - [ICE Plots Scikit-Learn](h
 
 ![Tumor_Size_ICE](images/TumorSize_ICE.png)
 
-ICE plots can show interactions with other variables, but don't explain which other variables are involved.  For example, in the Tumor Size ICE plot, the viewer can see a gap between lines near the top of the graph and lines near the bottom.  The gap is especially pronounced for tumors with size greater than 0.3 standard deviations above the mean.  There are other variable(s) that either make cancer much more likely, or make cancer unlikely when the tumor size is above that 0.3 SD threshold.
+ICE plots can show interactions with other variables, but don't explain which other variables are involved.  For example, in the Tumor Size ICE plot, the viewer can see a gap between lines near the top of the graph and lines near the bottom.  The gap is especially pronounced for tumors with size greater than 0.25 standard deviations above the mean.  There are other variable(s) that either make cancer much more likely, or make cancer unlikely when the tumor size is above that 0.25 SD threshold.
 
 
 ![BMI_ICE](images/BMI_ICE.png)
